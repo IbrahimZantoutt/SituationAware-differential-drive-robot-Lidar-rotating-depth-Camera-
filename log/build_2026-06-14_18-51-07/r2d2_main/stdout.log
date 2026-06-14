@@ -1,0 +1,39 @@
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ibrahim/R2D2/src/r2d2_main/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ibrahim/R2D2/build/r2d2_main
+[35m[1mConsolidate compiler generated dependencies of target LidarDetect[0m
+[100%] Built target LidarDetect
+-- Install configuration: ""
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/LidarDetect
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch
+-- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/display.launch.py
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/urdf
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/urdf/robot.urdf
+-- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/rviz
+-- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/rviz/robot.rviz
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/ament_index/resource_index/package_run_dependencies/r2d2_main
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/ament_index/resource_index/parent_prefix_path/r2d2_main
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/ament_prefix_path.sh
+-- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/path.sh
+-- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/path.dsv
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.bash
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.sh
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.zsh
+-- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.dsv
+-- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/package.dsv
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/ament_index/resource_index/packages/r2d2_main
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/cmake/r2d2_mainConfig.cmake
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/cmake/r2d2_mainConfig-version.cmake
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/package.xml

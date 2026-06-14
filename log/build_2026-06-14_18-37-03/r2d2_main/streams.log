@@ -1,0 +1,41 @@
+[0.041s] Invoking command in '/home/ibrahim/R2D2/build/r2d2_main': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/R2D2/build/r2d2_main -- -j16 -l16
+[0.109s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.316s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.418s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.418s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ibrahim/R2D2/src/r2d2_main/include>
+[0.419s] -- Configured cppcheck exclude dirs and/or files: 
+[0.419s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.424s] -- Added test 'lint_cmake' to check CMake code style
+[0.425s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.429s] -- Added test 'uncrustify' to check C / C++ code style
+[0.429s] -- Configured uncrustify additional arguments: 
+[0.429s] -- Added test 'xmllint' to check XML markup files
+[0.435s] -- Configuring done
+[0.457s] -- Generating done
+[0.462s] -- Build files have been written to: /home/ibrahim/R2D2/build/r2d2_main
+[0.497s] [35m[1mConsolidate compiler generated dependencies of target LidarDetect[0m
+[0.522s] [100%] Built target LidarDetect
+[0.543s] Invoked command in '/home/ibrahim/R2D2/build/r2d2_main' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/R2D2/build/r2d2_main -- -j16 -l16
+[0.562s] Invoking command in '/home/ibrahim/R2D2/build/r2d2_main': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --install /home/ibrahim/R2D2/build/r2d2_main
+[0.576s] -- Install configuration: ""
+[0.577s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/LidarDetect
+[0.577s] -- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch
+[0.578s] -- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/display.launch.py
+[0.579s] -- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/urdf
+[0.580s] -- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/urdf/robot.urdf
+[0.580s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/ament_index/resource_index/package_run_dependencies/r2d2_main
+[0.580s] -- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/ament_index/resource_index/parent_prefix_path/r2d2_main
+[0.581s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/ament_prefix_path.sh
+[0.581s] -- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/ament_prefix_path.dsv
+[0.581s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/path.sh
+[0.582s] -- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/path.dsv
+[0.582s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.bash
+[0.582s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.sh
+[0.583s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.zsh
+[0.583s] -- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.dsv
+[0.583s] -- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/package.dsv
+[0.584s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/ament_index/resource_index/packages/r2d2_main
+[0.584s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/cmake/r2d2_mainConfig.cmake
+[0.584s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/cmake/r2d2_mainConfig-version.cmake
+[0.584s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/package.xml
+[0.589s] Invoked command in '/home/ibrahim/R2D2/build/r2d2_main' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --install /home/ibrahim/R2D2/build/r2d2_main

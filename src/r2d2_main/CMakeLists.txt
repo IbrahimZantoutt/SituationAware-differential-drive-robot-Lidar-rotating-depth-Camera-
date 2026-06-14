@@ -32,4 +32,16 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+#launch files
+install(DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME})
+
+#urdf files
+install(DIRECTORY urdf
+  DESTINATION share/${PROJECT_NAME})
+
+#rviz config files
+install(DIRECTORY rviz
+  DESTINATION share/${PROJECT_NAME})
+
 ament_package()
