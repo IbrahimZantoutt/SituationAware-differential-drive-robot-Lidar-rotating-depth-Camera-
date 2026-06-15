@@ -1,0 +1,19 @@
+# Controllers for the camera rotator joint (ros2_control + gazebo_ros2_control)
+controller_manager:
+  ros__parameters:
+    update_rate: 100          # Hz - how fast the controller manager ticks
+    use_sim_time: true
+
+    # Publishes /joint_states (this is how a node reads the rotator angle)
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    # Position-commands the rotator joint
+    rotator_position_controller:
+      type: position_controllers/JointGroupPositionController
+
+# Per-controller parameters
+rotator_position_controller:
+  ros__parameters:
+    joints:
+      - rotator_joint

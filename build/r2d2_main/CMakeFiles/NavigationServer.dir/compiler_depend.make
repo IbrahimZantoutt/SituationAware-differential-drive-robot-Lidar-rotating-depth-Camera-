@@ -163,14 +163,48 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
   /usr/include/c++/11/tr1/poly_hermite.tcc \
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
-  /usr/include/c++/11/memory \
+  /usr/include/c++/11/mutex \
+  /usr/include/c++/11/system_error \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+  /usr/include/c++/11/stdexcept \
+  /usr/include/c++/11/string \
+  /usr/include/c++/11/bits/char_traits.h \
   /usr/include/c++/11/bits/allocator.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
   /usr/include/c++/11/ext/new_allocator.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/localefwd.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
+  /usr/include/c++/11/clocale \
+  /usr/include/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/c++/11/cctype \
+  /usr/include/ctype.h \
+  /usr/include/c++/11/bits/ostream_insert.h \
+  /usr/include/c++/11/bits/cxxabi_forced.h \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/atomicity.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/c++/11/ext/alloc_traits.h \
   /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/bits/stl_construct.h \
+  /usr/include/c++/11/string_view \
+  /usr/include/c++/11/bits/string_view.tcc \
+  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/cstdlib \
+  /usr/include/c++/11/cstdio \
+  /usr/include/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/c++/11/bits/charconv.h \
+  /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/c++/11/bits/std_mutex.h \
+  /usr/include/c++/11/bits/unique_lock.h \
+  /usr/include/c++/11/memory \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
@@ -179,9 +213,6 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
   /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/ext/atomicity.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
-  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/c++/11/ext/concurrence.h \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/bits/atomic_base.h \
@@ -189,6 +220,25 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/stl_algo.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
   /usr/include/signal.h \
@@ -223,65 +273,15 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
   /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
   /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp \
   /usr/include/c++/11/future \
-  /usr/include/c++/11/mutex \
-  /usr/include/c++/11/system_error \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
-  /usr/include/c++/11/stdexcept \
-  /usr/include/c++/11/string \
-  /usr/include/c++/11/bits/char_traits.h \
-  /usr/include/c++/11/bits/localefwd.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
-  /usr/include/c++/11/clocale \
-  /usr/include/locale.h \
-  /usr/include/x86_64-linux-gnu/bits/locale.h \
-  /usr/include/c++/11/cctype \
-  /usr/include/ctype.h \
-  /usr/include/c++/11/bits/ostream_insert.h \
-  /usr/include/c++/11/bits/cxxabi_forced.h \
-  /usr/include/c++/11/bits/basic_string.h \
-  /usr/include/c++/11/string_view \
-  /usr/include/c++/11/bits/string_view.tcc \
-  /usr/include/c++/11/ext/string_conversions.h \
-  /usr/include/c++/11/cstdlib \
-  /usr/include/c++/11/cstdio \
-  /usr/include/stdio.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/c++/11/bits/charconv.h \
-  /usr/include/c++/11/bits/basic_string.tcc \
-  /usr/include/c++/11/bits/std_mutex.h \
-  /usr/include/c++/11/bits/unique_lock.h \
   /usr/include/c++/11/condition_variable \
   /usr/include/c++/11/atomic \
   /usr/include/c++/11/bits/atomic_futex.h \
-  /usr/include/c++/11/bits/std_function.h \
   /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp \
   /usr/include/c++/11/set \
   /usr/include/c++/11/bits/stl_tree.h \
-  /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/stl_set.h \
   /usr/include/c++/11/bits/stl_multiset.h \
-  /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/bits/enable_special_members.h \
-  /usr/include/c++/11/bits/unordered_map.h \
   /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp \
-  /usr/include/c++/11/algorithm \
-  /usr/include/c++/11/bits/stl_algo.h \
-  /usr/include/c++/11/bits/algorithmfwd.h \
-  /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/bits/uniform_int_dist.h \
-  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/11/functional \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/cassert \
   /usr/include/assert.h \
   /usr/include/c++/11/iostream \
@@ -780,16 +780,29 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp \
   /opt/ros/humble/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__type_support.hpp \
   /opt/ros/humble/include/nav2_msgs/nav2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/occupancy_grid.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__struct.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__builder.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__traits.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__traits.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__type_support.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h \
   /opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp \
   /opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.hpp \
@@ -808,10 +821,8 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
   /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__type_support.hpp \
   /opt/ros/humble/include/tf2/tf2/buffer_core_interface.hpp \
   /opt/ros/humble/include/tf2/tf2/time.hpp \
@@ -852,8 +863,6 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 
 /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h:
 
-/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
 /opt/ros/humble/include/tf2/tf2/impl/convert.hpp:
 
 /opt/ros/humble/include/tf2/tf2/convert.hpp:
@@ -863,8 +872,6 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 /opt/ros/humble/include/tf2/tf2/time.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
 
 /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp:
 
@@ -882,13 +889,27 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 
 /opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__traits.hpp:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__builder.hpp:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__struct.hpp:
 
 /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.hpp:
 
@@ -929,6 +950,8 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 /opt/ros/humble/include/action_msgs/action_msgs/srv/cancel_goal.hpp:
 
 /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__struct.hpp:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__type_support.hpp:
 
 /opt/ros/humble/include/rclcpp_action/rclcpp_action/server.hpp:
 
@@ -1194,101 +1217,13 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
 
-/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__type_support.h:
-
-/opt/ros/humble/include/rcutils/rcutils/logging_macros.h:
-
-/usr/include/c++/11/string_view:
-
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
-/usr/include/c++/11/numeric:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp:
-
-/usr/include/c++/11/bits/ostream_insert.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/ctype.h:
-
-/usr/include/c++/11/locale:
-
-/usr/include/c++/11/cctype:
-
-/usr/include/c++/11/iomanip:
-
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/locale.h:
-
-/usr/include/c++/11/stdexcept:
-
-/usr/include/c++/11/pstl/glue_algorithm_defs.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp:
-
-/usr/include/c++/11/utility:
-
-/usr/include/c++/11/ios:
-
-/opt/ros/humble/include/rcpputils/rcpputils/filesystem_helper.hpp:
-
-/usr/include/c++/11/future:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/usr/include/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
-
-/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:
-
-/usr/include/c++/11/bits/exception_defines.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/event.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
 /usr/include/x86_64-linux-gnu/sys/ucontext.h:
 
 /opt/ros/humble/include/rclcpp_action/rclcpp_action/server_goal_handle.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
 
-/opt/ros/humble/include/rcl_action/rcl_action/goal_handle.h:
-
-/usr/include/c++/11/bits/basic_string.tcc:
-
-/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__struct.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/sigaction.h:
-
-/home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/nav.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
-
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
-
-/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__functions.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp:
 
@@ -1314,21 +1249,59 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 
 /usr/include/c++/11/pstl/glue_memory_defs.h:
 
-/usr/include/c++/11/string:
-
-/opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp:
 
-/opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.hpp:
+/usr/include/c++/11/bits/vector.tcc:
 
-/opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h:
+/usr/include/c++/11/bits/stl_bvector.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_topics_interface.hpp:
+
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp:
+
+/home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/nav.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
+
+/usr/include/c++/11/bits/erase_if.h:
+
+/usr/include/stdint.h:
+
+/usr/include/c++/11/bits/ptr_traits.h:
+
+/opt/ros/humble/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__traits.hpp:
+
+/usr/include/c++/11/bits/enable_special_members.h:
+
+/usr/include/c++/11/bits/basic_ios.tcc:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:
+
+/usr/include/c++/11/bits/hashtable_policy.h:
+
+/usr/include/c++/11/bits/hashtable.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:
+
+/usr/include/c++/11/bits/stl_heap.h:
+
+/opt/ros/humble/include/rcpputils/rcpputils/pointer_traits.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
+
+/usr/include/c++/11/bits/std_abs.h:
+
+/usr/include/c++/11/pstl/execution_defs.h:
+
+/usr/include/c++/11/vector:
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:
 
@@ -1340,17 +1313,101 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 
 /usr/include/c++/11/bits/stl_raw_storage_iter.h:
 
-/usr/include/stdc-predef.h:
-
-/usr/include/c++/11/ext/alloc_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
 /usr/include/c++/11/memory:
 
 /opt/ros/humble/include/rmw/rmw/serialized_message.h:
+
+/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__struct.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/sigaction.h:
+
+/opt/ros/humble/include/rcl_action/rcl_action/goal_handle.h:
+
+/usr/include/c++/11/bits/basic_string.tcc:
+
+/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__type_support.h:
+
+/opt/ros/humble/include/rcutils/rcutils/logging_macros.h:
+
+/usr/include/c++/11/string_view:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/usr/include/c++/11/numeric:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
+
+/usr/include/stdc-predef.h:
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.hpp:
+
+/opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
+
+/usr/include/c++/11/ext/alloc_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/c++/11/bits/algorithmfwd.h:
+
+/usr/include/c++/11/bits/cxxabi_forced.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp:
+
+/usr/include/c++/11/bits/ostream_insert.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/ctype.h:
+
+/usr/include/c++/11/locale:
+
+/usr/include/c++/11/cctype:
+
+/usr/include/c++/11/iomanip:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__functions.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
+
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
+
+/usr/include/c++/11/string:
+
+/usr/include/c++/11/stdexcept:
+
+/usr/include/c++/11/pstl/glue_algorithm_defs.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp:
+
+/usr/include/c++/11/utility:
+
+/usr/include/c++/11/ios:
+
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:
+
+/usr/include/c++/11/unordered_map:
+
+/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:
+
+/opt/ros/humble/include/rcpputils/rcpputils/filesystem_helper.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/typesupport_helpers.hpp:
 
@@ -1382,10 +1439,6 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 
 /usr/include/c++/11/bits/uses_allocator.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
 /usr/include/c++/11/tr1/beta_function.tcc:
 
 /opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:
@@ -1397,6 +1450,10 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 /opt/ros/humble/include/nav2_msgs/nav2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /usr/include/c++/11/tr1/bessel_function.tcc:
+
+/usr/include/c++/11/bits/codecvt.h:
+
+/opt/ros/humble/include/rmw/rmw/events_statuses/liveliness_lost.h:
 
 /usr/include/c++/11/tr1/gamma.tcc:
 
@@ -1422,29 +1479,17 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
-/usr/include/stdint.h:
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__traits.hpp:
 
-/usr/include/c++/11/bits/ptr_traits.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp:
 
-/usr/include/c++/11/bits/erase_if.h:
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/c++/11/future:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /usr/include/stdlib.h:
-
-/opt/ros/humble/include/rcpputils/rcpputils/pointer_traits.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
-
-/usr/include/c++/11/bits/std_abs.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:
-
-/usr/include/c++/11/bits/stl_heap.h:
-
-/usr/include/c++/11/ext/string_conversions.h:
-
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
 /usr/include/c++/11/bits/stl_list.h:
 
@@ -1463,6 +1508,8 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/include/c++/11/bits/stl_algo.h:
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
@@ -1495,6 +1542,10 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 /usr/include/c++/11/bits/std_mutex.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
 /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.hpp:
 
@@ -1564,12 +1615,6 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp:
-
-/usr/include/c++/11/bits/atomic_futex.h:
-
-/usr/include/c++/11/cstring:
-
 /opt/ros/humble/include/rclcpp/rclcpp/qos_event.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
@@ -1604,11 +1649,11 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 
 /usr/include/c++/11/pstl/pstl_config.h:
 
+/usr/include/strings.h:
+
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
-
-/usr/include/strings.h:
 
 /usr/include/c++/11/unordered_set:
 
@@ -1636,23 +1681,23 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 
 /usr/include/c++/11/functional:
 
+/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:
+
+/usr/include/c++/11/bits/exception_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/event.hpp:
+
 /usr/include/c++/11/system_error:
 
 /usr/include/features-time64.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
-/usr/include/c++/11/pstl/execution_defs.h:
-
-/usr/include/c++/11/bits/cxxabi_forced.h:
-
-/usr/include/c++/11/bits/algorithmfwd.h:
-
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigthread.h:
-
-/usr/include/c++/11/chrono:
 
 /usr/include/c++/11/bits/stl_relops.h:
 
@@ -1664,9 +1709,25 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 
 /usr/include/stdio.h:
 
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/occupancy_grid.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/c++/11/ext/string_conversions.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp:
+
+/usr/include/c++/11/cstring:
+
+/usr/include/c++/11/bits/atomic_futex.h:
+
 /opt/ros/humble/include/rcl/rcl/graph.h:
 
 /usr/include/c++/11/bits/concept_check.h:
+
+/usr/include/c++/11/bits/uniform_int_dist.h:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
@@ -1704,6 +1765,8 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 
 /usr/include/c++/11/bits/exception.h:
 
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
 
 /usr/include/c++/11/bits/locale_facets.h:
@@ -1715,8 +1778,6 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:
 
 /usr/include/c++/11/iterator:
-
-/usr/include/x86_64-linux-gnu/bits/confname.h:
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
 
@@ -1744,8 +1805,6 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 
 /opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:
 
-/usr/include/c++/11/atomic:
-
 /usr/include/c++/11/bits/string_view.tcc:
 
 /usr/include/c++/11/bits/hash_bytes.h:
@@ -1753,12 +1812,6 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 /opt/ros/humble/include/rcl_action/rcl_action/goal_state_machine.h:
 
 /usr/include/c++/11/bits/move.h:
-
-/opt/ros/humble/include/rcutils/rcutils/allocator.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
-/usr/include/c++/11/bits/functexcept.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
 
@@ -1779,18 +1832,6 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 /usr/include/c++/11/tuple:
 
 /opt/ros/humble/include/rcl/rcl/network_flow_endpoints.h:
-
-/usr/include/c++/11/bits/stl_numeric.h:
-
-/usr/include/linux/close_range.h:
-
-/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__traits.hpp:
-
-/opt/ros/humble/include/rcl/rcl/init_options.h:
-
-/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__struct.h:
-
-/opt/ros/humble/include/rcpputils/rcpputils/join.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
 
@@ -1834,6 +1875,8 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
+/usr/include/c++/11/algorithm:
+
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
 /opt/ros/humble/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__struct.hpp:
@@ -1868,9 +1911,15 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
+/usr/include/c++/11/bits/unordered_map.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
 /usr/include/asm-generic/errno.h:
+
+/usr/include/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
 /opt/ros/humble/include/rcutils/rcutils/types/uint8_array.h:
 
@@ -1879,16 +1928,6 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 /opt/ros/humble/include/rcl/rcl/types.h:
 
 /usr/include/c++/11/bits/stl_pair.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/c++/11/bits/stl_bvector.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_topics_interface.hpp:
-
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp:
 
 /usr/include/c++/11/mutex:
 
@@ -1956,6 +1995,36 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/opt/ros/humble/include/rcutils/rcutils/allocator.h:
+
+/usr/include/c++/11/bits/functexcept.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+/usr/include/c++/11/bits/stl_numeric.h:
+
+/usr/include/linux/close_range.h:
+
+/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__traits.hpp:
+
+/opt/ros/humble/include/rcl/rcl/init_options.h:
+
+/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__struct.h:
+
+/opt/ros/humble/include/rcpputils/rcpputils/join.hpp:
+
+/usr/include/c++/11/chrono:
+
+/usr/include/x86_64-linux-gnu/bits/sigthread.h:
+
+/usr/include/c++/11/atomic:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
@@ -1973,46 +2042,6 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 /usr/include/c++/11/bits/stl_set.h:
 
 /usr/include/c++/11/bits/stl_multiset.h:
-
-/usr/include/c++/11/bits/hashtable.h:
-
-/usr/include/c++/11/bits/hashtable_policy.h:
-
-/opt/ros/humble/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__traits.hpp:
-
-/usr/include/c++/11/bits/enable_special_members.h:
-
-/usr/include/c++/11/bits/basic_ios.tcc:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:
-
-/opt/ros/humble/include/rmw/rmw/events_statuses/liveliness_lost.h:
-
-/usr/include/c++/11/bits/codecvt.h:
-
-/usr/include/c++/11/bits/unordered_map.h:
-
-/usr/include/c++/11/algorithm:
-
-/usr/include/c++/11/bits/stl_algo.h:
-
-/usr/include/c++/11/bits/uniform_int_dist.h:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
-
-/usr/include/c++/11/vector:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:
-
-/usr/include/c++/11/unordered_map:
-
-/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:
-
-/usr/include/c++/11/bits/vector.tcc:
 
 /usr/include/c++/11/cassert:
 
@@ -2070,17 +2099,17 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:
-
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/macros.h:
 
 /opt/ros/humble/include/rcutils/rcutils/testing/fault_injection.h:
 
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
 /opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h:
 
@@ -2256,6 +2285,8 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:
+
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/sequence_bound.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp:
@@ -2304,17 +2335,17 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
-
 /usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
-
 /usr/include/c++/11/condition_variable:
+
+/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
 
 /usr/include/c++/11/optional:
 
@@ -2501,6 +2532,8 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 /opt/ros/humble/include/rmw/rmw/time.h:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp:
 
 /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__builder.hpp:
 

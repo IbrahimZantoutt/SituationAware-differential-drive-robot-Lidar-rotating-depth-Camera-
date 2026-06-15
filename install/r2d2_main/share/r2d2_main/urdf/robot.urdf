@@ -316,5 +316,25 @@
     </gazebo>
 
 
+    <ros2_control name="GazeboSystem" type="system">
+        <hardware>
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        </hardware>
+        <joint name="rotator_joint">
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+    </ros2_control>
+
+    <gazebo>
+        <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+            <parameters>$(find r2d2_main)/config/rotator_controllers.yaml</parameters>
+        </plugin>
+    </gazebo>
+
+
+
+
 
 </robot>
