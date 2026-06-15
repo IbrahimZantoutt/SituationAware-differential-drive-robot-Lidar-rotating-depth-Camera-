@@ -59,15 +59,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2d2_main" TYPE DIRECTORY FILES "/home/ibrahim/R2D2/src/r2d2_main/launch")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2d2_main" TYPE DIRECTORY FILES "/home/ibrahim/R2D2/src/r2d2_main/urdf")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2d2_main" TYPE DIRECTORY FILES "/home/ibrahim/R2D2/src/r2d2_main/rviz")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2d2_main" TYPE DIRECTORY FILES
+    "/home/ibrahim/R2D2/src/r2d2_main/launch"
+    "/home/ibrahim/R2D2/src/r2d2_main/urdf"
+    "/home/ibrahim/R2D2/src/r2d2_main/rviz"
+    "/home/ibrahim/R2D2/src/r2d2_main/worlds"
+    "/home/ibrahim/R2D2/src/r2d2_main/config"
+    "/home/ibrahim/R2D2/src/r2d2_main/maps"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

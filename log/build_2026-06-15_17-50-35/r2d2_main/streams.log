@@ -1,0 +1,35 @@
+[0.025s] Invoking command in '/home/ibrahim/R2D2/build/r2d2_main': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/R2D2/build/r2d2_main -- -j16 -l16
+[0.095s] [100%] Built target LidarDetect
+[0.128s] Invoked command in '/home/ibrahim/R2D2/build/r2d2_main' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/R2D2/build/r2d2_main -- -j16 -l16
+[0.130s] Invoking command in '/home/ibrahim/R2D2/build/r2d2_main': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --install /home/ibrahim/R2D2/build/r2d2_main
+[0.139s] -- Install configuration: ""
+[0.140s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/LidarDetect
+[0.140s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch
+[0.140s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/display.launch.py
+[0.140s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/gazebo.launch.py
+[0.140s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/urdf
+[0.140s] -- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/urdf/robot.urdf
+[0.141s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/rviz
+[0.141s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/rviz/robot.rviz
+[0.141s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/worlds
+[0.141s] -- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/worlds/world.sdf
+[0.142s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/config
+[0.142s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/config/mapper_params.yaml
+[0.142s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/maps
+[0.142s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/maps/my_map.yaml
+[0.143s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/ament_index/resource_index/package_run_dependencies/r2d2_main
+[0.143s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/ament_index/resource_index/parent_prefix_path/r2d2_main
+[0.143s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/ament_prefix_path.sh
+[0.143s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/ament_prefix_path.dsv
+[0.144s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/path.sh
+[0.144s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/path.dsv
+[0.144s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.bash
+[0.144s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.sh
+[0.144s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.zsh
+[0.144s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.dsv
+[0.144s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/package.dsv
+[0.144s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/ament_index/resource_index/packages/r2d2_main
+[0.144s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/cmake/r2d2_mainConfig.cmake
+[0.144s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/cmake/r2d2_mainConfig-version.cmake
+[0.144s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/package.xml
+[0.147s] Invoked command in '/home/ibrahim/R2D2/build/r2d2_main' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --install /home/ibrahim/R2D2/build/r2d2_main

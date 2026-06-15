@@ -1,0 +1,21 @@
+[100%] Built target LidarDetect
+-- Install configuration: ""
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/LidarDetect
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/display.launch.py
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/gazebo.launch.py
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/urdf
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/urdf/robot.urdf
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/rviz
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/rviz/robot.rviz
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/worlds
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/worlds/world.sdf
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/urdf
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/urdf/robot.urdf
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/worlds
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/worlds/world.sdf
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/display.launch.py
+-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/gazebo.launch.py
+-- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/config
+-- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/config/mapper_params.yaml

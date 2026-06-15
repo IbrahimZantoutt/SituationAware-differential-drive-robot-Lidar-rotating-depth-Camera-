@@ -1,0 +1,15 @@
+/home/ibrahim/R2D2/install/action_interfaces/share/ament_index/resource_index/package_run_dependencies/action_interfaces
+/home/ibrahim/R2D2/install/action_interfaces/share/ament_index/resource_index/parent_prefix_path/action_interfaces
+/home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/environment/ament_prefix_path.sh
+/home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/environment/ament_prefix_path.dsv
+/home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/environment/path.sh
+/home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/environment/path.dsv
+/home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/local_setup.bash
+/home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/local_setup.sh
+/home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/local_setup.zsh
+/home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/local_setup.dsv
+/home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/package.dsv
+/home/ibrahim/R2D2/install/action_interfaces/share/ament_index/resource_index/packages/action_interfaces
+/home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/action_interfacesConfig.cmake
+/home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/action_interfacesConfig-version.cmake
+/home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/package.xml

@@ -32,16 +32,8 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-#launch files
-install(DIRECTORY launch
-  DESTINATION share/${PROJECT_NAME})
-
-#urdf files
-install(DIRECTORY urdf
-  DESTINATION share/${PROJECT_NAME})
-
-#rviz config files
-install(DIRECTORY rviz
+# shared resources (launch, urdf, rviz, worlds, slam config, maps)
+install(DIRECTORY launch urdf rviz worlds config maps
   DESTINATION share/${PROJECT_NAME})
 
 ament_package()
