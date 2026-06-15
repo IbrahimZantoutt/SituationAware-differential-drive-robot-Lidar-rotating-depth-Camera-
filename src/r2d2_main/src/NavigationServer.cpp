@@ -14,6 +14,7 @@
 #include "geometry_msgs/msg/transform_stamped.hpp"
 #include "tf2_ros/buffer.h"
 #include "tf2_ros/transform_listener.h"
+#include "std_msgs/msg/float64.hpp"
 
 using namespace std::chrono_literals;
 
@@ -57,6 +58,9 @@ class NavigationServer : public rclcpp::Node
 
             tf_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
             tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
+
+            camera_angle_pub_ = this->create_publisher<std_msgs::msg::Float64>("camera_angle_target", 10);
+            camera_angle_pub_->publish(std_msgs::msg::Float64{210.0});  // look forward by default
         }
 
     private:
@@ -277,6 +281,8 @@ class NavigationServer : public rclcpp::Node
 
         std::mutex map_mutex_;
         nav_msgs::msg::OccupancyGrid::SharedPtr latest_map_;
+
+        rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr camera_angle_pub_;
 };
 
 int main(int argc, char **argv)
