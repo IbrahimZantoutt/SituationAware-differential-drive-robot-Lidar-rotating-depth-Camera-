@@ -30,6 +30,10 @@ add_executable(NavigationClient src/NavigationClient.cpp)
 ament_target_dependencies(NavigationClient
   rclcpp rclcpp_action action_interfaces tf2_ros geometry_msgs)
 
+add_executable(CameraRotator src/CameraRotator.cpp)
+ament_target_dependencies(CameraRotator
+  rclcpp sensor_msgs std_msgs)  
+
 install(TARGETS
   LidarDetect
   NavigationServer
