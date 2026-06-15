@@ -210,6 +210,32 @@ LidarDetect/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LidarDetect.dir/build.make CMakeFiles/LidarDetect.dir/build
 .PHONY : LidarDetect/fast
 
+#=============================================================================
+# Target rules for targets named NavigationServer
+
+# Build rule for target.
+NavigationServer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NavigationServer
+.PHONY : NavigationServer
+
+# fast build rule for target.
+NavigationServer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NavigationServer.dir/build.make CMakeFiles/NavigationServer.dir/build
+.PHONY : NavigationServer/fast
+
+#=============================================================================
+# Target rules for targets named NavigationClient
+
+# Build rule for target.
+NavigationClient: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NavigationClient
+.PHONY : NavigationClient
+
+# fast build rule for target.
+NavigationClient/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NavigationClient.dir/build.make CMakeFiles/NavigationClient.dir/build
+.PHONY : NavigationClient/fast
+
 src/LidarDetect.o: src/LidarDetect.cpp.o
 .PHONY : src/LidarDetect.o
 
@@ -234,6 +260,54 @@ src/LidarDetect.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LidarDetect.dir/build.make CMakeFiles/LidarDetect.dir/src/LidarDetect.cpp.s
 .PHONY : src/LidarDetect.cpp.s
 
+src/NavigationClient.o: src/NavigationClient.cpp.o
+.PHONY : src/NavigationClient.o
+
+# target to build an object file
+src/NavigationClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NavigationClient.dir/build.make CMakeFiles/NavigationClient.dir/src/NavigationClient.cpp.o
+.PHONY : src/NavigationClient.cpp.o
+
+src/NavigationClient.i: src/NavigationClient.cpp.i
+.PHONY : src/NavigationClient.i
+
+# target to preprocess a source file
+src/NavigationClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NavigationClient.dir/build.make CMakeFiles/NavigationClient.dir/src/NavigationClient.cpp.i
+.PHONY : src/NavigationClient.cpp.i
+
+src/NavigationClient.s: src/NavigationClient.cpp.s
+.PHONY : src/NavigationClient.s
+
+# target to generate assembly for a file
+src/NavigationClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NavigationClient.dir/build.make CMakeFiles/NavigationClient.dir/src/NavigationClient.cpp.s
+.PHONY : src/NavigationClient.cpp.s
+
+src/NavigationServer.o: src/NavigationServer.cpp.o
+.PHONY : src/NavigationServer.o
+
+# target to build an object file
+src/NavigationServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NavigationServer.dir/build.make CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o
+.PHONY : src/NavigationServer.cpp.o
+
+src/NavigationServer.i: src/NavigationServer.cpp.i
+.PHONY : src/NavigationServer.i
+
+# target to preprocess a source file
+src/NavigationServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NavigationServer.dir/build.make CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.i
+.PHONY : src/NavigationServer.cpp.i
+
+src/NavigationServer.s: src/NavigationServer.cpp.s
+.PHONY : src/NavigationServer.s
+
+# target to generate assembly for a file
+src/NavigationServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NavigationServer.dir/build.make CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.s
+.PHONY : src/NavigationServer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -250,9 +324,17 @@ help:
 	@echo "... r2d2_main_uninstall"
 	@echo "... uninstall"
 	@echo "... LidarDetect"
+	@echo "... NavigationClient"
+	@echo "... NavigationServer"
 	@echo "... src/LidarDetect.o"
 	@echo "... src/LidarDetect.i"
 	@echo "... src/LidarDetect.s"
+	@echo "... src/NavigationClient.o"
+	@echo "... src/NavigationClient.i"
+	@echo "... src/NavigationClient.s"
+	@echo "... src/NavigationServer.o"
+	@echo "... src/NavigationServer.i"
+	@echo "... src/NavigationServer.s"
 .PHONY : help
 
 

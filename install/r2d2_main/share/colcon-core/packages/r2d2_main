@@ -1,1 +1,1 @@
-joint_state_publisher_gui:robot_state_publisher:rviz2:xacro
+action_interfaces:geometry_msgs:joint_state_publisher_gui:nav2_msgs:nav_msgs:rclcpp:rclcpp_action:robot_state_publisher:rviz2:tf2_ros:xacro

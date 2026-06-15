@@ -1,0 +1,51 @@
+[0.126s] Invoking command in '/home/ibrahim/R2D2/build/r2d2_main': AMENT_PREFIX_PATH=/home/ibrahim/R2D2/install/action_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/R2D2/build/r2d2_main -- -j16 -l16
+[0.201s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.511s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[1.006s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.030s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.067s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.124s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.186s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.367s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.382s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.479s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.523s] -- Looking for pthread.h
+[2.005s] -- Looking for pthread.h - found
+[2.006s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.380s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.381s] -- Found Threads: TRUE  
+[2.554s] -- Found rclcpp_action: 16.0.19 (/opt/ros/humble/share/rclcpp_action/cmake)
+[2.664s] -- Found action_interfaces: 0.0.0 (/home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake)
+[2.676s] -- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.953s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.108s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.108s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ibrahim/R2D2/src/r2d2_main/include>
+[3.108s] -- Configured cppcheck exclude dirs and/or files: 
+[3.110s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.112s] -- Added test 'lint_cmake' to check CMake code style
+[3.113s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.117s] -- Added test 'uncrustify' to check C / C++ code style
+[3.117s] -- Configured uncrustify additional arguments: 
+[3.118s] -- Added test 'xmllint' to check XML markup files
+[3.123s] -- Configuring done
+[3.173s] -- Generating done
+[3.190s] -- Build files have been written to: /home/ibrahim/R2D2/build/r2d2_main
+[3.256s] Consolidate compiler generated dependencies of target LidarDetect
+[3.269s] [ 33%] Building CXX object CMakeFiles/NavigationClient.dir/src/NavigationClient.cpp.o
+[3.269s] [ 33%] Building CXX object CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o
+[3.284s] [ 66%] Built target LidarDetect
+[4.203s] /home/ibrahim/R2D2/src/r2d2_main/src/NavigationServer.cpp:8:10: fatal error: action_interfaces/action/nav.hpp: No such file or directory
+[4.203s]     8 | #include "action_interfaces/action/nav.hpp"
+[4.203s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.203s] /home/ibrahim/R2D2/src/r2d2_main/src/NavigationClient.cpp:8:10: fatal error: action_interfaces/action/nav.hpp: No such file or directory
+[4.203s]     8 | #include "action_interfaces/action/nav.hpp"
+[4.203s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4.203s] compilation terminated.
+[4.203s] compilation terminated.
+[4.214s] gmake[2]: *** [CMakeFiles/NavigationClient.dir/build.make:76: CMakeFiles/NavigationClient.dir/src/NavigationClient.cpp.o] Error 1
+[4.214s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/NavigationClient.dir/all] Error 2
+[4.214s] gmake[1]: *** Waiting for unfinished jobs....
+[4.217s] gmake[2]: *** [CMakeFiles/NavigationServer.dir/build.make:76: CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o] Error 1
+[4.217s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/NavigationServer.dir/all] Error 2
+[4.218s] gmake: *** [Makefile:146: all] Error 2
+[4.222s] Invoked command in '/home/ibrahim/R2D2/build/r2d2_main' returned '2': AMENT_PREFIX_PATH=/home/ibrahim/R2D2/install/action_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/R2D2/build/r2d2_main -- -j16 -l16

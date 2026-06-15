@@ -7,9 +7,13 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(rclcpp_action REQUIRED)
+find_package(action_interfaces REQUIRED)
+find_package(nav2_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 add_executable(LidarDetect src/LidarDetect.cpp)
 target_include_directories(LidarDetect PUBLIC
@@ -17,7 +21,19 @@ target_include_directories(LidarDetect PUBLIC
   $<INSTALL_INTERFACE:include>)
 target_compile_features(LidarDetect PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 
-install(TARGETS LidarDetect
+# Custom navigation action server / client
+add_executable(NavigationServer src/NavigationServer.cpp)
+ament_target_dependencies(NavigationServer
+  rclcpp rclcpp_action action_interfaces nav2_msgs nav_msgs tf2_ros geometry_msgs)
+
+add_executable(NavigationClient src/NavigationClient.cpp)
+ament_target_dependencies(NavigationClient
+  rclcpp rclcpp_action action_interfaces tf2_ros geometry_msgs)
+
+install(TARGETS
+  LidarDetect
+  NavigationServer
+  NavigationClient
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

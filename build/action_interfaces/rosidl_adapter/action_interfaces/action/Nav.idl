@@ -1,0 +1,34 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from action_interfaces/action/Nav.action
+// generated code does not contain a copyright notice
+
+
+module action_interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal")
+    struct Nav_Goal {
+      float target_x;
+
+      float target_y;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct Nav_Result {
+      string status;
+
+      float final_x;
+
+      float final_y;
+    };
+    @verbatim (language="comment", text=
+      "Feedback")
+    struct Nav_Feedback {
+      float current_x;
+
+      float current_y;
+
+      float distance_remaining;
+    };
+  };
+};

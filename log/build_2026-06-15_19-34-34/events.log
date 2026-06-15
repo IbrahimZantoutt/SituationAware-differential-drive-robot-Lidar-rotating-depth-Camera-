@@ -1,0 +1,479 @@
+[0.000000] (-) TimerEvent: {}
+[0.000594] (action_interfaces) JobQueued: {'identifier': 'action_interfaces', 'dependencies': OrderedDict()}
+[0.000643] (r2d2_main) JobQueued: {'identifier': 'r2d2_main', 'dependencies': OrderedDict([('action_interfaces', '/home/ibrahim/R2D2/install/action_interfaces')])}
+[0.000659] (action_interfaces) JobStarted: {'identifier': 'action_interfaces'}
+[0.011499] (action_interfaces) JobProgress: {'identifier': 'action_interfaces', 'progress': 'cmake'}
+[0.011928] (action_interfaces) JobProgress: {'identifier': 'action_interfaces', 'progress': 'build'}
+[0.012925] (action_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ibrahim/R2D2/build/action_interfaces', '--', '-j16', '-l16'], 'cwd': '/home/ibrahim/R2D2/build/action_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/mnt/c/Users/zanto/AppData/Local/Programs/Microsoft VS Code'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('AI_AGENT', 'claude-code_2-1-177_agent'), ('USER', 'ibrahim'), ('CLAUDE_CODE_ENTRYPOINT', 'claude-vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/out/nls.messages.json","locale":"en","availableLanguages":{}}'), ('GIT_EDITOR', 'true'), ('VSCODE_WSL_EXT_LOCATION', '/mnt/c/Users/zanto/.vscode/extensions/ms-vscode-remote.remote-wsl-0.104.3'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('CLAUDE_AGENT_SDK_VERSION', '0.3.177'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/home/ibrahim/RobotArmExpanded/install/action_interfaces/lib:/home/ibrahim/RobotArm/install/action_interfaces/lib:/home/ibrahim/RobotNav/install/action_interfaces/lib:/home/ibrahim/ros2_ws/install/action_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/ibrahim'), ('VSCODE_RECONNECTION_GRACE_TIME', '10800000'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-86c949d0-3a25-4b2f-8541-a9d3e064e0d7.sock'), ('ROS_PYTHON_VERSION', '3'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/home/ibrahim/MoveItArm/install:/home/ibrahim/RobotArmExpanded/install:/home/ibrahim/RobotArm/install:/home/ibrahim/TF2Sample/install:/home/ibrahim/RobotNav/install:/home/ibrahim/RobotMonitor/install:/home/ibrahim/ros2_ws/install'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ibrahim'), ('NAME', 'Ibrahim-laptop'), ('WSL_INTEROP', '/run/WSL/420_interop'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('MCP_CONNECTION_NONBLOCKING', 'true'), ('PATH', '/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PostgreSQL/18/bin:/mnt/c/Users/zanto/.local/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/zanto/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/zanto/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/zanto/AppData/Local/Programs/Ollama:/mnt/c/Users/zanto/AppData/Roaming/npm:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('CLAUDE_EFFORT', 'high'), ('DISPLAY', ':0'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ELECTRON_RUN_AS_NODE', '1'), ('CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING', 'true'), ('CLAUDE_CODE_SESSION_ID', '9a1463da-c5cd-418b-be57-8bd69eb59e1a'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_SERVER_TAR', '/mnt/c/Users/zanto/vscode-remote-wsl/stable/6928394f91b684055b873eecb8bc281365131f1c/vscode-server-stable-linux-x64.tar.gz'), ('CLAUDECODE', '1'), ('PWD', '/home/ibrahim/R2D2/build/action_interfaces'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/home/ibrahim/.vscode-server/extensions/anthropic.claude-code-2.1.177-linux-x64/resources/native-binary/claude'), ('PYTHONPATH', '/home/ibrahim/RobotArmExpanded/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotArm/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotNav/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/ros2_ws/install/action_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CLAUDE_CODE_ENABLE_TASKS', '0'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up')]), 'shell': False}
+[0.048748] (action_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099648] (-) TimerEvent: {}
+[0.165650] (action_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.172191] (action_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.184144] (action_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.199862] (-) TimerEvent: {}
+[0.300198] (-) TimerEvent: {}
+[0.360859] (action_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.400359] (-) TimerEvent: {}
+[0.500668] (-) TimerEvent: {}
+[0.600960] (-) TimerEvent: {}
+[0.660484] (action_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.701115] (-) TimerEvent: {}
+[0.801374] (-) TimerEvent: {}
+[0.839719] (action_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.901620] (-) TimerEvent: {}
+[1.002107] (-) TimerEvent: {}
+[1.053691] (action_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.102250] (-) TimerEvent: {}
+[1.202469] (action_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.202748] (-) TimerEvent: {}
+[1.208292] (action_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.302965] (-) TimerEvent: {}
+[1.403392] (-) TimerEvent: {}
+[1.503702] (-) TimerEvent: {}
+[1.604070] (-) TimerEvent: {}
+[1.664963] (action_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.665203] (action_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.665320] (action_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.665387] (action_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.682878] (action_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.704292] (-) TimerEvent: {}
+[1.804628] (-) TimerEvent: {}
+[1.823582] (action_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.842092] (action_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.843016] (action_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.848171] (action_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.904810] (-) TimerEvent: {}
+[1.927809] (action_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.941598] (action_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/ibrahim/R2D2/build/action_interfaces\n'}
+[1.969306] (action_interfaces) StdoutLine: {'line': b'[  3%] Generating C code for ROS interfaces\n'}
+[1.980724] (action_interfaces) StdoutLine: {'line': b'[  9%] Generating C++ code for ROS interfaces\n'}
+[1.981088] (action_interfaces) StdoutLine: {'line': b'[  9%] Generating Rust code for ROS interfaces\n'}
+[1.994961] (action_interfaces) StdoutLine: {'line': b'[  9%] Built target ament_cmake_python_copy_action_interfaces\n'}
+[2.005042] (-) TimerEvent: {}
+[2.105366] (-) TimerEvent: {}
+[2.205693] (-) TimerEvent: {}
+[2.231510] (action_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[2.232151] (action_interfaces) StdoutLine: {'line': b'creating action_interfaces.egg-info\n'}
+[2.232913] (action_interfaces) StdoutLine: {'line': b'writing action_interfaces.egg-info/PKG-INFO\n'}
+[2.233236] (action_interfaces) StdoutLine: {'line': b'writing dependency_links to action_interfaces.egg-info/dependency_links.txt\n'}
+[2.233533] (action_interfaces) StdoutLine: {'line': b'writing top-level names to action_interfaces.egg-info/top_level.txt\n'}
+[2.233795] (action_interfaces) StdoutLine: {'line': b"writing manifest file 'action_interfaces.egg-info/SOURCES.txt'\n"}
+[2.237273] (action_interfaces) StdoutLine: {'line': b"reading manifest file 'action_interfaces.egg-info/SOURCES.txt'\n"}
+[2.237683] (action_interfaces) StdoutLine: {'line': b"writing manifest file 'action_interfaces.egg-info/SOURCES.txt'\n"}
+[2.262841] (action_interfaces) StdoutLine: {'line': b'[  9%] Built target action_interfaces__rs\n'}
+[2.277475] (action_interfaces) StdoutLine: {'line': b'[  9%] Built target ament_cmake_python_build_action_interfaces_egg\n'}
+[2.305896] (-) TimerEvent: {}
+[2.363639] (action_interfaces) StdoutLine: {'line': b'[ 12%] Building C object CMakeFiles/action_interfaces__rosidl_generator_c.dir/rosidl_generator_c/action_interfaces/action/detail/nav__functions.c.o\n'}
+[2.375375] (action_interfaces) StdoutLine: {'line': b'[ 12%] Built target action_interfaces__cpp\n'}
+[2.388965] (action_interfaces) StdoutLine: {'line': b'[ 21%] Generating C++ type support dispatch for ROS interfaces\n'}
+[2.389196] (action_interfaces) StdoutLine: {'line': b'[ 21%] Generating C++ introspection for ROS interfaces\n'}
+[2.389293] (action_interfaces) StdoutLine: {'line': b'[ 21%] Generating C++ type support for eProsima Fast-RTPS\n'}
+[2.406077] (-) TimerEvent: {}
+[2.506332] (-) TimerEvent: {}
+[2.520208] (action_interfaces) StdoutLine: {'line': b'[ 25%] Linking C shared library libaction_interfaces__rosidl_generator_c.so\n'}
+[2.606475] (-) TimerEvent: {}
+[2.688859] (action_interfaces) StdoutLine: {'line': b'[ 25%] Built target action_interfaces__rosidl_generator_c\n'}
+[2.701275] (action_interfaces) StdoutLine: {'line': b'[ 28%] Building CXX object CMakeFiles/action_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/action_interfaces/action/nav__type_support.cpp.o\n'}
+[2.704406] (action_interfaces) StdoutLine: {'line': b'[ 31%] Generating C introspection for ROS interfaces\n'}
+[2.704979] (action_interfaces) StdoutLine: {'line': b'[ 37%] Generating C type support for eProsima Fast-RTPS\n'}
+[2.705103] (action_interfaces) StdoutLine: {'line': b'[ 37%] Generating C type support dispatch for ROS interfaces\n'}
+[2.706601] (-) TimerEvent: {}
+[2.758118] (action_interfaces) StdoutLine: {'line': b'[ 40%] Building CXX object CMakeFiles/action_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/action_interfaces/action/detail/nav__type_support.cpp.o\n'}
+[2.806775] (-) TimerEvent: {}
+[2.814349] (action_interfaces) StdoutLine: {'line': b'[ 43%] Building CXX object CMakeFiles/action_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/action_interfaces/action/detail/dds_fastrtps/nav__type_support.cpp.o\n'}
+[2.906959] (-) TimerEvent: {}
+[3.007252] (-) TimerEvent: {}
+[3.045423] (action_interfaces) StdoutLine: {'line': b'[ 46%] Building CXX object CMakeFiles/action_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/action_interfaces/action/nav__type_support.cpp.o\n'}
+[3.107431] (-) TimerEvent: {}
+[3.127979] (action_interfaces) StdoutLine: {'line': b'[ 50%] Building C object CMakeFiles/action_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/action_interfaces/action/detail/nav__type_support.c.o\n'}
+[3.134545] (action_interfaces) StdoutLine: {'line': b'[ 53%] Linking CXX shared library libaction_interfaces__rosidl_typesupport_c.so\n'}
+[3.159177] (action_interfaces) StdoutLine: {'line': b'[ 56%] Building CXX object CMakeFiles/action_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/action_interfaces/action/detail/nav__type_support_c.cpp.o\n'}
+[3.207608] (-) TimerEvent: {}
+[3.212994] (action_interfaces) StdoutLine: {'line': b'[ 59%] Linking C shared library libaction_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[3.307784] (-) TimerEvent: {}
+[3.365741] (action_interfaces) StdoutLine: {'line': b'[ 59%] Built target action_interfaces__rosidl_typesupport_c\n'}
+[3.396639] (action_interfaces) StdoutLine: {'line': b'[ 59%] Built target action_interfaces__rosidl_typesupport_introspection_c\n'}
+[3.407972] (-) TimerEvent: {}
+[3.418618] (action_interfaces) StdoutLine: {'line': b'[ 62%] Linking CXX shared library libaction_interfaces__rosidl_typesupport_cpp.so\n'}
+[3.508113] (-) TimerEvent: {}
+[3.598841] (action_interfaces) StdoutLine: {'line': b'[ 65%] Linking CXX shared library libaction_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[3.608284] (-) TimerEvent: {}
+[3.610615] (action_interfaces) StdoutLine: {'line': b'[ 68%] Linking CXX shared library libaction_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.621600] (action_interfaces) StdoutLine: {'line': b'[ 68%] Built target action_interfaces__rosidl_typesupport_cpp\n'}
+[3.674485] (action_interfaces) StdoutLine: {'line': b'[ 71%] Linking CXX shared library libaction_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[3.708451] (-) TimerEvent: {}
+[3.807281] (action_interfaces) StdoutLine: {'line': b'[ 71%] Built target action_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[3.808550] (-) TimerEvent: {}
+[3.810222] (action_interfaces) StdoutLine: {'line': b'[ 71%] Built target action_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[3.868411] (action_interfaces) StdoutLine: {'line': b'[ 71%] Built target action_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[3.892727] (action_interfaces) StdoutLine: {'line': b'[ 71%] Built target action_interfaces\n'}
+[3.908771] (-) TimerEvent: {}
+[3.920960] (action_interfaces) StdoutLine: {'line': b'[ 75%] Generating Python code for ROS interfaces\n'}
+[4.008901] (-) TimerEvent: {}
+[4.109203] (-) TimerEvent: {}
+[4.209929] (-) TimerEvent: {}
+[4.310466] (-) TimerEvent: {}
+[4.410713] (-) TimerEvent: {}
+[4.414161] (action_interfaces) StdoutLine: {'line': b'[ 75%] Built target action_interfaces__py\n'}
+[4.440038] (action_interfaces) StdoutLine: {'line': b'[ 78%] Building C object CMakeFiles/action_interfaces__rosidl_generator_py.dir/rosidl_generator_py/action_interfaces/action/_nav_s.c.o\n'}
+[4.510884] (-) TimerEvent: {}
+[4.578018] (action_interfaces) StdoutLine: {'line': b'[ 81%] Linking C shared library rosidl_generator_py/action_interfaces/libaction_interfaces__rosidl_generator_py.so\n'}
+[4.611044] (-) TimerEvent: {}
+[4.711319] (-) TimerEvent: {}
+[4.712042] (action_interfaces) StdoutLine: {'line': b'[ 81%] Built target action_interfaces__rosidl_generator_py\n'}
+[4.736859] (action_interfaces) StdoutLine: {'line': b'[ 87%] Building C object CMakeFiles/action_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/action_interfaces/_action_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\n'}
+[4.737069] (action_interfaces) StdoutLine: {'line': b'[ 87%] Building C object CMakeFiles/action_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/action_interfaces/_action_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\n'}
+[4.737700] (action_interfaces) StdoutLine: {'line': b'[ 90%] Building C object CMakeFiles/action_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/action_interfaces/_action_interfaces_s.ep.rosidl_typesupport_c.c.o\n'}
+[4.811499] (-) TimerEvent: {}
+[4.844633] (action_interfaces) StdoutLine: {'line': b'[ 96%] Linking C shared library rosidl_generator_py/action_interfaces/action_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.844836] (action_interfaces) StdoutLine: {'line': b'[ 96%] Linking C shared library rosidl_generator_py/action_interfaces/action_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.853357] (action_interfaces) StdoutLine: {'line': b'[100%] Linking C shared library rosidl_generator_py/action_interfaces/action_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.911652] (-) TimerEvent: {}
+[4.945165] (action_interfaces) StdoutLine: {'line': b'[100%] Built target action_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.948378] (action_interfaces) StdoutLine: {'line': b'[100%] Built target action_interfaces__rosidl_typesupport_c__pyext\n'}
+[4.990826] (action_interfaces) StdoutLine: {'line': b'[100%] Built target action_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[5.005650] (action_interfaces) CommandEnded: {'returncode': 0}
+[5.006834] (action_interfaces) JobProgress: {'identifier': 'action_interfaces', 'progress': 'install'}
+[5.011795] (-) TimerEvent: {}
+[5.016984] (action_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ibrahim/R2D2/build/action_interfaces'], 'cwd': '/home/ibrahim/R2D2/build/action_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/mnt/c/Users/zanto/AppData/Local/Programs/Microsoft VS Code'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('AI_AGENT', 'claude-code_2-1-177_agent'), ('USER', 'ibrahim'), ('CLAUDE_CODE_ENTRYPOINT', 'claude-vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/out/nls.messages.json","locale":"en","availableLanguages":{}}'), ('GIT_EDITOR', 'true'), ('VSCODE_WSL_EXT_LOCATION', '/mnt/c/Users/zanto/.vscode/extensions/ms-vscode-remote.remote-wsl-0.104.3'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('CLAUDE_AGENT_SDK_VERSION', '0.3.177'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/home/ibrahim/RobotArmExpanded/install/action_interfaces/lib:/home/ibrahim/RobotArm/install/action_interfaces/lib:/home/ibrahim/RobotNav/install/action_interfaces/lib:/home/ibrahim/ros2_ws/install/action_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/ibrahim'), ('VSCODE_RECONNECTION_GRACE_TIME', '10800000'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-86c949d0-3a25-4b2f-8541-a9d3e064e0d7.sock'), ('ROS_PYTHON_VERSION', '3'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/home/ibrahim/MoveItArm/install:/home/ibrahim/RobotArmExpanded/install:/home/ibrahim/RobotArm/install:/home/ibrahim/TF2Sample/install:/home/ibrahim/RobotNav/install:/home/ibrahim/RobotMonitor/install:/home/ibrahim/ros2_ws/install'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ibrahim'), ('NAME', 'Ibrahim-laptop'), ('WSL_INTEROP', '/run/WSL/420_interop'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('MCP_CONNECTION_NONBLOCKING', 'true'), ('PATH', '/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PostgreSQL/18/bin:/mnt/c/Users/zanto/.local/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/zanto/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/zanto/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/zanto/AppData/Local/Programs/Ollama:/mnt/c/Users/zanto/AppData/Roaming/npm:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('CLAUDE_EFFORT', 'high'), ('DISPLAY', ':0'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ELECTRON_RUN_AS_NODE', '1'), ('CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING', 'true'), ('CLAUDE_CODE_SESSION_ID', '9a1463da-c5cd-418b-be57-8bd69eb59e1a'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_SERVER_TAR', '/mnt/c/Users/zanto/vscode-remote-wsl/stable/6928394f91b684055b873eecb8bc281365131f1c/vscode-server-stable-linux-x64.tar.gz'), ('CLAUDECODE', '1'), ('PWD', '/home/ibrahim/R2D2/build/action_interfaces'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/home/ibrahim/.vscode-server/extensions/anthropic.claude-code-2.1.177-linux-x64/resources/native-binary/claude'), ('PYTHONPATH', '/home/ibrahim/RobotArmExpanded/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotArm/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotNav/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/ros2_ws/install/action_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CLAUDE_CODE_ENABLE_TASKS', '0'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up')]), 'shell': False}
+[5.026569] (action_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.027124] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/ament_index/resource_index/rosidl_interfaces/action_interfaces\n'}
+[5.027432] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces\n'}
+[5.028941] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/msg\n'}
+[5.029364] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.029551] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action\n'}
+[5.029968] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail\n'}
+[5.030458] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__functions.h\n'}
+[5.030846] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__struct.h\n'}
+[5.031076] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__type_support.h\n'}
+[5.031304] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__functions.c\n'}
+[5.031615] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/nav.h\n'}
+[5.031867] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/environment/library_path.sh\n'}
+[5.032104] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/environment/library_path.dsv\n'}
+[5.032797] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_generator_c.so\n'}
+[5.034458] (action_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_generator_c.so" to ""\n'}
+[5.034546] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces\n'}
+[5.034716] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/msg\n'}
+[5.035020] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.035089] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action\n'}
+[5.035133] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail\n'}
+[5.035172] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__rosidl_typesupport_fastrtps_c.h\n'}
+[5.035229] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[5.035608] (action_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.035774] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces\n'}
+[5.035926] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/msg\n'}
+[5.036240] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.036541] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action\n'}
+[5.036624] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail\n'}
+[5.036694] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__type_support.c\n'}
+[5.036735] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__rosidl_typesupport_introspection_c.h\n'}
+[5.036927] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[5.036980] (action_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.037015] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_c.so\n'}
+[5.037406] (action_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[5.037584] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces\n'}
+[5.037933] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/msg\n'}
+[5.038092] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[5.038273] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action\n'}
+[5.038606] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail\n'}
+[5.038860] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__traits.hpp\n'}
+[5.038926] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__builder.hpp\n'}
+[5.039200] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__struct.hpp\n'}
+[5.039260] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__type_support.hpp\n'}
+[5.039357] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/nav.hpp\n'}
+[5.039400] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces\n'}
+[5.039446] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/msg\n'}
+[5.039482] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.039602] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action\n'}
+[5.039674] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail\n'}
+[5.039715] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/dds_fastrtps\n'}
+[5.039908] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.040313] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.042695] (action_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.043088] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces\n'}
+[5.043159] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action\n'}
+[5.043216] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail\n'}
+[5.043441] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.043497] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__type_support.cpp\n'}
+[5.043536] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[5.044194] (action_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.044293] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_cpp.so\n'}
+[5.044675] (action_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[5.045039] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/environment/pythonpath.sh\n'}
+[5.045153] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/environment/pythonpath.dsv\n'}
+[5.045428] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces-0.0.0-py3.10.egg-info\n'}
+[5.048236] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[5.048593] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[5.048809] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[5.049130] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[5.049395] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces\n'}
+[5.049814] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/_action_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.051543] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/_action_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[5.052330] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.052568] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/_action_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.052846] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/libaction_interfaces__rosidl_generator_py.so\n'}
+[5.053213] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.053497] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action\n'}
+[5.054045] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action/_nav.py\n'}
+[5.054482] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action/_nav_s.c\n'}
+[5.054722] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action/__init__.py\n'}
+[5.054978] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/__init__.py\n'}
+[5.055257] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.094003] (action_interfaces) StdoutLine: {'line': b"Listing '/home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces'...\n"}
+[5.094178] (action_interfaces) StdoutLine: {'line': b"Compiling '/home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/__init__.py'...\n"}
+[5.094221] (action_interfaces) StdoutLine: {'line': b"Listing '/home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action'...\n"}
+[5.094254] (action_interfaces) StdoutLine: {'line': b"Compiling '/home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action/__init__.py'...\n"}
+[5.094285] (action_interfaces) StdoutLine: {'line': b"Compiling '/home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action/_nav.py'...\n"}
+[5.098816] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.099247] (action_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.099708] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.100318] (action_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.100549] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.101106] (action_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.101392] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_generator_py.so\n'}
+[5.101810] (action_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_generator_py.so" to ""\n'}
+[5.102671] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/ament_index/resource_index/rust_packages/action_interfaces\n'}
+[5.102872] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/rust\n'}
+[5.103316] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/rust/src\n'}
+[5.103665] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/rust/src/action.rs\n'}
+[5.103962] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/rust/src/lib.rs\n'}
+[5.104182] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/rust/src/action\n'}
+[5.104699] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/rust/src/action/rmw.rs\n'}
+[5.104970] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/rust/build.rs\n'}
+[5.105184] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/rust/Cargo.toml\n'}
+[5.106353] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/action/Nav.idl\n'}
+[5.106666] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/action/Nav.action\n'}
+[5.106884] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/ament_index/resource_index/package_run_dependencies/action_interfaces\n'}
+[5.107312] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/ament_index/resource_index/parent_prefix_path/action_interfaces\n'}
+[5.107596] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/environment/ament_prefix_path.sh\n'}
+[5.107791] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/environment/ament_prefix_path.dsv\n'}
+[5.108022] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/environment/path.sh\n'}
+[5.108088] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/environment/path.dsv\n'}
+[5.108386] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/local_setup.bash\n'}
+[5.108475] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/local_setup.sh\n'}
+[5.108704] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/local_setup.zsh\n'}
+[5.108790] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/local_setup.dsv\n'}
+[5.108999] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/package.dsv\n'}
+[5.109231] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/ament_index/resource_index/packages/action_interfaces\n'}
+[5.109443] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_generator_cExport.cmake\n'}
+[5.109611] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.111113] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.111387] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.111669] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.111974] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.112078] (-) TimerEvent: {}
+[5.112338] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[5.112725] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.113063] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_generator_cppExport.cmake\n'}
+[5.113309] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.113533] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.113750] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.113978] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.114217] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[5.114450] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.114691] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_generator_pyExport.cmake\n'}
+[5.116630] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.117017] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[5.117323] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.117780] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.117994] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.118083] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.118235] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.118324] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.118501] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/action_interfacesConfig.cmake\n'}
+[5.118803] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/action_interfacesConfig-version.cmake\n'}
+[5.118876] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/package.xml\n'}
+[5.122816] (action_interfaces) CommandEnded: {'returncode': 0}
+[5.145542] (action_interfaces) JobEnded: {'identifier': 'action_interfaces', 'rc': 0}
+[5.146975] (r2d2_main) JobStarted: {'identifier': 'r2d2_main'}
+[5.212251] (-) TimerEvent: {}
+[5.256674] (r2d2_main) JobProgress: {'identifier': 'r2d2_main', 'progress': 'cmake'}
+[5.258599] (r2d2_main) JobProgress: {'identifier': 'r2d2_main', 'progress': 'build'}
+[5.259007] (r2d2_main) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ibrahim/R2D2/build/r2d2_main', '--', '-j16', '-l16'], 'cwd': '/home/ibrahim/R2D2/build/r2d2_main', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/mnt/c/Users/zanto/AppData/Local/Programs/Microsoft VS Code'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('AI_AGENT', 'claude-code_2-1-177_agent'), ('USER', 'ibrahim'), ('CLAUDE_CODE_ENTRYPOINT', 'claude-vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/out/nls.messages.json","locale":"en","availableLanguages":{}}'), ('GIT_EDITOR', 'true'), ('VSCODE_WSL_EXT_LOCATION', '/mnt/c/Users/zanto/.vscode/extensions/ms-vscode-remote.remote-wsl-0.104.3'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('CLAUDE_AGENT_SDK_VERSION', '0.3.177'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/home/ibrahim/R2D2/install/action_interfaces/lib:/home/ibrahim/RobotArmExpanded/install/action_interfaces/lib:/home/ibrahim/RobotArm/install/action_interfaces/lib:/home/ibrahim/RobotNav/install/action_interfaces/lib:/home/ibrahim/ros2_ws/install/action_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/ibrahim'), ('VSCODE_RECONNECTION_GRACE_TIME', '10800000'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-86c949d0-3a25-4b2f-8541-a9d3e064e0d7.sock'), ('ROS_PYTHON_VERSION', '3'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/home/ibrahim/MoveItArm/install:/home/ibrahim/RobotArmExpanded/install:/home/ibrahim/RobotArm/install:/home/ibrahim/TF2Sample/install:/home/ibrahim/RobotNav/install:/home/ibrahim/RobotMonitor/install:/home/ibrahim/ros2_ws/install'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ibrahim'), ('NAME', 'Ibrahim-laptop'), ('WSL_INTEROP', '/run/WSL/420_interop'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('MCP_CONNECTION_NONBLOCKING', 'true'), ('PATH', '/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PostgreSQL/18/bin:/mnt/c/Users/zanto/.local/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/zanto/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/zanto/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/zanto/AppData/Local/Programs/Ollama:/mnt/c/Users/zanto/AppData/Roaming/npm:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('CLAUDE_EFFORT', 'high'), ('DISPLAY', ':0'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ELECTRON_RUN_AS_NODE', '1'), ('CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING', 'true'), ('CLAUDE_CODE_SESSION_ID', '9a1463da-c5cd-418b-be57-8bd69eb59e1a'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_SERVER_TAR', '/mnt/c/Users/zanto/vscode-remote-wsl/stable/6928394f91b684055b873eecb8bc281365131f1c/vscode-server-stable-linux-x64.tar.gz'), ('CLAUDECODE', '1'), ('PWD', '/home/ibrahim/R2D2/build/r2d2_main'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/home/ibrahim/.vscode-server/extensions/anthropic.claude-code-2.1.177-linux-x64/resources/native-binary/claude'), ('PYTHONPATH', '/home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotArmExpanded/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotArm/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotNav/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/ros2_ws/install/action_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CLAUDE_CODE_ENABLE_TASKS', '0'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up')]), 'shell': False}
+[5.294951] (r2d2_main) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[5.312424] (-) TimerEvent: {}
+[5.412710] (-) TimerEvent: {}
+[5.432290] (r2d2_main) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[5.512963] (-) TimerEvent: {}
+[5.602392] (r2d2_main) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.604137] (r2d2_main) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.610887] (r2d2_main) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.613048] (-) TimerEvent: {}
+[5.620541] (r2d2_main) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.631284] (r2d2_main) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.654681] (r2d2_main) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.655808] (r2d2_main) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[5.669712] (r2d2_main) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[5.709038] (r2d2_main) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.19 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[5.713224] (-) TimerEvent: {}
+[5.734622] (r2d2_main) StdoutLine: {'line': b'-- Found action_interfaces: 0.0.0 (/home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake)\n'}
+[5.744452] (r2d2_main) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[5.794248] (r2d2_main) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.813374] (-) TimerEvent: {}
+[5.856836] (r2d2_main) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.857053] (r2d2_main) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ibrahim/R2D2/src/r2d2_main/include>\n'}
+[5.857131] (r2d2_main) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.857379] (r2d2_main) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[5.857829] (r2d2_main) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.858285] (r2d2_main) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[5.859858] (r2d2_main) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.860009] (r2d2_main) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.860516] (r2d2_main) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.861547] (r2d2_main) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.879394] (r2d2_main) StdoutLine: {'line': b'-- Generating done\n'}
+[5.886212] (r2d2_main) StdoutLine: {'line': b'-- Build files have been written to: /home/ibrahim/R2D2/build/r2d2_main\n'}
+[5.913547] (-) TimerEvent: {}
+[5.916686] (r2d2_main) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target LidarDetect\n'}
+[5.930545] (r2d2_main) StdoutLine: {'line': b'[ 66%] Building CXX object CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o\n'}
+[5.930819] (r2d2_main) StdoutLine: {'line': b'[ 66%] Built target LidarDetect\n'}
+[5.930953] (r2d2_main) StdoutLine: {'line': b'[ 66%] Building CXX object CMakeFiles/NavigationClient.dir/src/NavigationClient.cpp.o\n'}
+[6.013767] (-) TimerEvent: {}
+[6.114158] (-) TimerEvent: {}
+[6.214446] (-) TimerEvent: {}
+[6.314718] (-) TimerEvent: {}
+[6.415029] (-) TimerEvent: {}
+[6.515331] (-) TimerEvent: {}
+[6.615661] (-) TimerEvent: {}
+[6.716027] (-) TimerEvent: {}
+[6.816413] (-) TimerEvent: {}
+[6.916736] (-) TimerEvent: {}
+[7.017128] (-) TimerEvent: {}
+[7.117469] (-) TimerEvent: {}
+[7.217859] (-) TimerEvent: {}
+[7.318244] (-) TimerEvent: {}
+[7.418530] (-) TimerEvent: {}
+[7.518799] (-) TimerEvent: {}
+[7.619104] (-) TimerEvent: {}
+[7.719410] (-) TimerEvent: {}
+[7.819714] (-) TimerEvent: {}
+[7.920006] (-) TimerEvent: {}
+[8.020304] (-) TimerEvent: {}
+[8.120598] (-) TimerEvent: {}
+[8.220898] (-) TimerEvent: {}
+[8.321187] (-) TimerEvent: {}
+[8.421458] (-) TimerEvent: {}
+[8.521780] (-) TimerEvent: {}
+[8.622059] (-) TimerEvent: {}
+[8.722353] (-) TimerEvent: {}
+[8.822645] (-) TimerEvent: {}
+[8.922928] (-) TimerEvent: {}
+[9.023218] (-) TimerEvent: {}
+[9.123513] (-) TimerEvent: {}
+[9.223809] (-) TimerEvent: {}
+[9.324109] (-) TimerEvent: {}
+[9.424426] (-) TimerEvent: {}
+[9.524716] (-) TimerEvent: {}
+[9.625012] (-) TimerEvent: {}
+[9.725294] (-) TimerEvent: {}
+[9.825609] (-) TimerEvent: {}
+[9.925917] (-) TimerEvent: {}
+[10.026319] (-) TimerEvent: {}
+[10.126594] (-) TimerEvent: {}
+[10.226863] (-) TimerEvent: {}
+[10.327132] (-) TimerEvent: {}
+[10.427392] (-) TimerEvent: {}
+[10.527677] (-) TimerEvent: {}
+[10.627958] (-) TimerEvent: {}
+[10.728225] (-) TimerEvent: {}
+[10.828582] (-) TimerEvent: {}
+[10.928857] (-) TimerEvent: {}
+[11.029111] (-) TimerEvent: {}
+[11.129390] (-) TimerEvent: {}
+[11.229705] (-) TimerEvent: {}
+[11.330045] (-) TimerEvent: {}
+[11.430381] (-) TimerEvent: {}
+[11.530675] (-) TimerEvent: {}
+[11.630955] (-) TimerEvent: {}
+[11.731240] (-) TimerEvent: {}
+[11.831484] (-) TimerEvent: {}
+[11.849131] (r2d2_main) StdoutLine: {'line': b'[ 83%] Linking CXX executable NavigationServer\n'}
+[11.931657] (-) TimerEvent: {}
+[12.031962] (-) TimerEvent: {}
+[12.132301] (-) TimerEvent: {}
+[12.232632] (-) TimerEvent: {}
+[12.294854] (r2d2_main) StdoutLine: {'line': b'[ 83%] Built target NavigationServer\n'}
+[12.332794] (-) TimerEvent: {}
+[12.433108] (-) TimerEvent: {}
+[12.533416] (-) TimerEvent: {}
+[12.633706] (-) TimerEvent: {}
+[12.734042] (-) TimerEvent: {}
+[12.834378] (-) TimerEvent: {}
+[12.934737] (-) TimerEvent: {}
+[13.035041] (-) TimerEvent: {}
+[13.135425] (-) TimerEvent: {}
+[13.235820] (-) TimerEvent: {}
+[13.336232] (-) TimerEvent: {}
+[13.436603] (-) TimerEvent: {}
+[13.536895] (-) TimerEvent: {}
+[13.637188] (-) TimerEvent: {}
+[13.737507] (-) TimerEvent: {}
+[13.837874] (-) TimerEvent: {}
+[13.938218] (-) TimerEvent: {}
+[14.038575] (-) TimerEvent: {}
+[14.138899] (-) TimerEvent: {}
+[14.239143] (-) TimerEvent: {}
+[14.339385] (-) TimerEvent: {}
+[14.439700] (-) TimerEvent: {}
+[14.540019] (-) TimerEvent: {}
+[14.640341] (-) TimerEvent: {}
+[14.740627] (-) TimerEvent: {}
+[14.840891] (-) TimerEvent: {}
+[14.941159] (-) TimerEvent: {}
+[15.041430] (-) TimerEvent: {}
+[15.141839] (-) TimerEvent: {}
+[15.242261] (-) TimerEvent: {}
+[15.342627] (-) TimerEvent: {}
+[15.442948] (-) TimerEvent: {}
+[15.543257] (-) TimerEvent: {}
+[15.577378] (r2d2_main) StdoutLine: {'line': b'[100%] Linking CXX executable NavigationClient\n'}
+[15.643413] (-) TimerEvent: {}
+[15.743678] (-) TimerEvent: {}
+[15.844048] (-) TimerEvent: {}
+[15.944357] (-) TimerEvent: {}
+[16.030416] (r2d2_main) StdoutLine: {'line': b'[100%] Built target NavigationClient\n'}
+[16.044030] (r2d2_main) CommandEnded: {'returncode': 0}
+[16.045889] (-) TimerEvent: {}
+[16.046222] (r2d2_main) JobProgress: {'identifier': 'r2d2_main', 'progress': 'install'}
+[16.046612] (r2d2_main) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ibrahim/R2D2/build/r2d2_main'], 'cwd': '/home/ibrahim/R2D2/build/r2d2_main', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/mnt/c/Users/zanto/AppData/Local/Programs/Microsoft VS Code'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('AI_AGENT', 'claude-code_2-1-177_agent'), ('USER', 'ibrahim'), ('CLAUDE_CODE_ENTRYPOINT', 'claude-vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/out/nls.messages.json","locale":"en","availableLanguages":{}}'), ('GIT_EDITOR', 'true'), ('VSCODE_WSL_EXT_LOCATION', '/mnt/c/Users/zanto/.vscode/extensions/ms-vscode-remote.remote-wsl-0.104.3'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('CLAUDE_AGENT_SDK_VERSION', '0.3.177'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/home/ibrahim/R2D2/install/action_interfaces/lib:/home/ibrahim/RobotArmExpanded/install/action_interfaces/lib:/home/ibrahim/RobotArm/install/action_interfaces/lib:/home/ibrahim/RobotNav/install/action_interfaces/lib:/home/ibrahim/ros2_ws/install/action_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/ibrahim'), ('VSCODE_RECONNECTION_GRACE_TIME', '10800000'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-86c949d0-3a25-4b2f-8541-a9d3e064e0d7.sock'), ('ROS_PYTHON_VERSION', '3'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/home/ibrahim/MoveItArm/install:/home/ibrahim/RobotArmExpanded/install:/home/ibrahim/RobotArm/install:/home/ibrahim/TF2Sample/install:/home/ibrahim/RobotNav/install:/home/ibrahim/RobotMonitor/install:/home/ibrahim/ros2_ws/install'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ibrahim'), ('NAME', 'Ibrahim-laptop'), ('WSL_INTEROP', '/run/WSL/420_interop'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('MCP_CONNECTION_NONBLOCKING', 'true'), ('PATH', '/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PostgreSQL/18/bin:/mnt/c/Users/zanto/.local/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/zanto/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/zanto/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/zanto/AppData/Local/Programs/Ollama:/mnt/c/Users/zanto/AppData/Roaming/npm:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('CLAUDE_EFFORT', 'high'), ('DISPLAY', ':0'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ELECTRON_RUN_AS_NODE', '1'), ('CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING', 'true'), ('CLAUDE_CODE_SESSION_ID', '9a1463da-c5cd-418b-be57-8bd69eb59e1a'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_SERVER_TAR', '/mnt/c/Users/zanto/vscode-remote-wsl/stable/6928394f91b684055b873eecb8bc281365131f1c/vscode-server-stable-linux-x64.tar.gz'), ('CLAUDECODE', '1'), ('PWD', '/home/ibrahim/R2D2/build/r2d2_main'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/home/ibrahim/.vscode-server/extensions/anthropic.claude-code-2.1.177-linux-x64/resources/native-binary/claude'), ('PYTHONPATH', '/home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotArmExpanded/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotArm/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotNav/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/ros2_ws/install/action_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CLAUDE_CODE_ENABLE_TASKS', '0'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up')]), 'shell': False}
+[16.055852] (r2d2_main) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.056535] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/LidarDetect\n'}
+[16.056639] (r2d2_main) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/NavigationServer\n'}
+[16.059009] (r2d2_main) StdoutLine: {'line': b'-- Set runtime path of "/home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/NavigationServer" to ""\n'}
+[16.059187] (r2d2_main) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/NavigationClient\n'}
+[16.065272] (r2d2_main) StdoutLine: {'line': b'-- Set runtime path of "/home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/NavigationClient" to ""\n'}
+[16.065661] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch\n'}
+[16.066425] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/bringup.launch.py\n'}
+[16.066548] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/display.launch.py\n'}
+[16.066600] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/slam_rviz.launch.py\n'}
+[16.066639] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/gazebo.launch.py\n'}
+[16.066764] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/nav2.launch.py\n'}
+[16.066901] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/urdf\n'}
+[16.067012] (r2d2_main) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/urdf/robot.urdf\n'}
+[16.067251] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/rviz\n'}
+[16.067294] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/rviz/robot.rviz\n'}
+[16.067330] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/rviz/model.rviz\n'}
+[16.067363] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/worlds\n'}
+[16.067393] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/worlds/world.sdf\n'}
+[16.067424] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/config\n'}
+[16.067453] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/config/mapper_params.yaml\n'}
+[16.067483] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/config/nav2_params.yaml\n'}
+[16.067528] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/maps\n'}
+[16.067555] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/maps/my_map.yaml\n'}
+[16.067626] (r2d2_main) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/ament_index/resource_index/package_run_dependencies/r2d2_main\n'}
+[16.067881] (r2d2_main) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/ament_index/resource_index/parent_prefix_path/r2d2_main\n'}
+[16.068402] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/ament_prefix_path.sh\n'}
+[16.068921] (r2d2_main) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/ament_prefix_path.dsv\n'}
+[16.069752] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/path.sh\n'}
+[16.069856] (r2d2_main) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/path.dsv\n'}
+[16.070318] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.bash\n'}
+[16.070655] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.sh\n'}
+[16.070780] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.zsh\n'}
+[16.070839] (r2d2_main) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.dsv\n'}
+[16.071188] (r2d2_main) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/package.dsv\n'}
+[16.072235] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/ament_index/resource_index/packages/r2d2_main\n'}
+[16.072517] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/cmake/r2d2_mainConfig.cmake\n'}
+[16.072578] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/cmake/r2d2_mainConfig-version.cmake\n'}
+[16.072616] (r2d2_main) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/package.xml\n'}
+[16.074911] (r2d2_main) CommandEnded: {'returncode': 0}
+[16.087675] (r2d2_main) JobEnded: {'identifier': 'r2d2_main', 'rc': 0}
+[16.088604] (-) EventReactorShutdown: {}
