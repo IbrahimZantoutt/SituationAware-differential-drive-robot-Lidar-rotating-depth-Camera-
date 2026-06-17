@@ -8,6 +8,10 @@ def generate_launch_description():
     share_dir = get_package_share_directory('r2d2_main')
     urdf_path = os.path.join(share_dir, 'urdf', 'robot.urdf')
 
+    # ---- Change this one line to switch worlds (files live in worlds/) ----
+    world_file = 'world2.sdf'        # e.g. 'world.sdf' or 'world2.sdf'
+    world_path = os.path.join(share_dir, 'worlds', world_file)
+
     with open(urdf_path, 'r') as f:
         robot_description = f.read()
 
@@ -33,12 +37,12 @@ def generate_launch_description():
         SetEnvironmentVariable('GAZEBO_MODEL_DATABASE_URI', ''),
         SetEnvironmentVariable('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models'),
 
-        # Start Gazebo with an empty world
+        # Start Gazebo with the selected world (see the 'world' launch arg above)
         ExecuteProcess(
             cmd=['gazebo', '--verbose',
                 '-s', 'libgazebo_ros_init.so',      # publishes /clock (needed for use_sim_time)
                 '-s', 'libgazebo_ros_factory.so',   # spawn/delete entity services
-                os.path.join(share_dir, 'worlds', 'world.sdf')],
+                world_path],
             output='screen'
         ),
 
