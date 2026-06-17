@@ -221,16 +221,48 @@ class NavigationServer : public rclcpp::Node
             finish(goal_handle, result, ok ? "Goal reached" : "Navigation failed", ok, false);
         }
 
-        // ---- Mode 2: blind drive toward the point (no map, no avoidance) ----
+        // ---- Mode 2: blind drive toward the point, avoiding obstacles (Bug2) ----
         void blindMove(const std::shared_ptr<GoalHandle> goal_handle, double tx, double ty){
             auto result = std::make_shared<Navigation::Result>();
 
+            // go-to-goal gains
             const double goal_tol = 0.15;   // m
-            const double yaw_tol  = 0.30;    // rad: turn in place above this
-            const double max_lin  = 0.22;    // m/s
-            const double max_ang  = 1.0;     // rad/s
+            const double yaw_tol  = 0.30;   // rad: turn in place above this
+            const double max_lin  = 0.22;   // m/s
+            const double max_ang  = 1.0;    // rad/s
             const double k_lin    = 0.5;
             const double k_ang    = 1.5;
+
+            // obstacle / wall-follow params
+            const double safe_front   = 0.5;   // m: closer than this in front => obstacle
+            const double safe_clear   = 0.7;   // m: front must beat this to leave (hysteresis)
+            const double desired_wall = 0.6;   // m: distance to hold from the wall
+            const double wall_speed   = 0.15;  // m/s while following
+            const double turn_speed   = 0.8;   // rad/s when turning out of a corner
+            const double kp_wall      = 1.5;   // P gain on wall-distance error
+            const double leave_eps    = 0.10;  // m: must be this much closer than hit_dist
+            const double hit_far      = 0.6;   // m: counts as "left the hit point"
+            const double hit_near     = 0.3;   // m: returning this close => looped => fail
+
+            // sector arcs (radians, 0 = forward)
+            auto front_of = [](const sensor_msgs::msg::LaserScan::SharedPtr & s){ return sectorMin(s, -0.35, 0.35); };
+            auto left_of  = [](const sensor_msgs::msg::LaserScan::SharedPtr & s){ return sectorMin(s,  1.22, 1.92); };
+            auto right_of = [](const sensor_msgs::msg::LaserScan::SharedPtr & s){ return sectorMin(s, -1.92, -1.22); };
+
+            enum class BugState { GO_TO_GOAL, WALL_FOLLOW };
+            enum class FollowSide { LEFT, RIGHT };
+
+            // m-line tail = start point; wait for the first pose to anchor it
+            double sx, sy, syaw;
+            while(rclcpp::ok() && !getRobotPose(sx, sy, syaw))
+                std::this_thread::sleep_for(50ms);
+
+            BugState state      = BugState::GO_TO_GOAL;
+            FollowSide side     = FollowSide::LEFT;
+            double hit_dist     = 0.0;     // distance-to-goal when we hit the obstacle
+            double hit_x = 0.0, hit_y = 0.0;
+            bool   left_hit     = false;   // have we moved away from the hit point yet?
+            double prev_side_of = sideOfMLine(sx, sy, sx, sy, tx, ty);  // = 0 at start
 
             geometry_msgs::msg::Twist cmd;
 
@@ -246,14 +278,8 @@ class NavigationServer : public rclcpp::Node
                 { std::lock_guard<std::mutex> lk(scan_mtx_); scan = last_scan_; }
                 if(!scan){
                     std::this_thread::sleep_for(100ms);
-                    continue;   // legal now — we're inside the while loop
+                    continue;
                 }
-
-                RCLCPP_INFO(this->get_logger(), "front=%.2f  left=%.2f  right=%.2f",
-                    sectorMin(scan, -0.35, 0.35),    // front  +/-20 deg
-                    sectorMin(scan,  1.22, 1.92),    // left   ~+90 deg
-                    sectorMin(scan, -1.92, -1.22));  // right  ~-90 deg
-
 
                 double cx, cy, cyaw;
                 if(!getRobotPose(cx, cy, cyaw)){
@@ -268,12 +294,77 @@ class NavigationServer : public rclcpp::Node
                     break;  // arrived
                 }
 
-                double yaw_err = normalizeAngle(std::atan2(dy, dx) - cyaw);
-                aimCamera(yaw_err);
-                cmd.angular.z = std::clamp(k_ang * yaw_err, -max_ang, max_ang);
-                // only drive forward once roughly facing the target
-                cmd.linear.x = (std::abs(yaw_err) > yaw_tol) ? 0.0
-                                                             : std::min(k_lin * dist, max_lin);
+                double front = front_of(scan);
+                double left  = left_of(scan);
+                double right = right_of(scan);
+                double m_side = sideOfMLine(cx, cy, sx, sy, tx, ty);
+
+                cmd = geometry_msgs::msg::Twist();  // default: stop, fill per state
+
+                if(state == BugState::GO_TO_GOAL){
+                    if(front < safe_front){
+                        // hit an obstacle -> switch to wall-following
+                        state    = BugState::WALL_FOLLOW;
+                        hit_dist = dist;
+                        hit_x = cx; hit_y = cy;
+                        left_hit = false;
+                        prev_side_of = m_side;
+                        // hug whichever side is more open so we turn into free space
+                        side = (left > right) ? FollowSide::RIGHT : FollowSide::LEFT;
+                        RCLCPP_INFO(this->get_logger(),
+                            "HIT front=%.2f at dist=%.2f -> WALL_FOLLOW (%s)",
+                            front, dist, side == FollowSide::LEFT ? "left" : "right");
+                    } else {
+                        // ---- go straight at the goal (original blind controller) ----
+                        double yaw_err = normalizeAngle(std::atan2(dy, dx) - cyaw);
+                        aimCamera(yaw_err);
+                        cmd.angular.z = std::clamp(k_ang * yaw_err, -max_ang, max_ang);
+                        cmd.linear.x  = (std::abs(yaw_err) > yaw_tol) ? 0.0
+                                                                     : std::min(k_lin * dist, max_lin);
+                    }
+                } else {  // WALL_FOLLOW
+                    // track whether we've moved off the hit point (for loop detection)
+                    double from_hit = std::hypot(cx - hit_x, cy - hit_y);
+                    if(from_hit > hit_far) left_hit = true;
+
+                    bool crossed = (prev_side_of * m_side < 0.0);   // sign flip = re-crossed m-line
+                    if(crossed && dist < hit_dist - leave_eps && front > safe_clear){
+                        // leave point found: head for the goal again
+                        state = BugState::GO_TO_GOAL;
+                        RCLCPP_INFO(this->get_logger(),
+                            "LEAVE: re-crossed m-line at dist=%.2f (hit was %.2f) -> GO_TO_GOAL",
+                            dist, hit_dist);
+                        prev_side_of = m_side;
+                        std::this_thread::sleep_for(50ms);
+                        continue;   // next tick drives toward goal
+                    }
+
+                    if(left_hit && from_hit < hit_near){
+                        // looped the whole obstacle without leaving => unreachable
+                        cmd_vel_pub_->publish(geometry_msgs::msg::Twist());
+                        finish(goal_handle, result, "Goal unreachable (blind)", false, false);
+                        return;
+                    }
+
+                    // ---- wall-follow control ----
+                    // side_sign: +1 hug wall on LEFT, -1 hug wall on RIGHT
+                    double side_sign = (side == FollowSide::LEFT) ? 1.0 : -1.0;
+                    double measured  = (side == FollowSide::LEFT) ? left : right;
+                    aimCamera(0.0);  // look where we're going
+
+                    if(front < safe_front){
+                        // inside corner / dead end -> turn in place away from the wall
+                        cmd.linear.x  = 0.0;
+                        cmd.angular.z = -side_sign * turn_speed;
+                    } else {
+                        // hold desired_wall on the followed side; +error (too far) steers toward wall
+                        double err = measured - desired_wall;
+                        cmd.linear.x  = wall_speed;
+                        cmd.angular.z = side_sign * std::clamp(kp_wall * err, -max_ang, max_ang);
+                    }
+                    prev_side_of = m_side;
+                }
+
                 cmd_vel_pub_->publish(cmd);
 
                 auto fb = std::make_shared<Navigation::Feedback>();
@@ -338,6 +429,14 @@ class NavigationServer : public rclcpp::Node
                     best = std::min(best, r);
             }
             return best;
+        }
+
+        // Signed position of (cx,cy) relative to the m-line (start -> goal).
+        // >0 on one side, <0 on the other, ~0 on the line. The sign flipping
+        // between two ticks means the robot crossed the m-line.
+        static double sideOfMLine(double cx, double cy,
+                                  double sx, double sy, double tx, double ty){
+            return (cx - sx) * (ty - sy) - (cy - sy) * (tx - sx);
         }
 
         void aimCamera(double body_angle){
