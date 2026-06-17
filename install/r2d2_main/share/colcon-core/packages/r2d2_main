@@ -1,1 +1,1 @@
-action_interfaces:gazebo_ros2_control:geometry_msgs:joint_state_publisher_gui:nav2_msgs:nav_msgs:rclcpp:rclcpp_action:robot_state_publisher:ros2_control:ros2_controllers:rviz2:tf2_ros:xacro
+action_interfaces:gazebo_ros2_control:geometry_msgs:joint_state_publisher_gui:nav2_msgs:nav_msgs:rclcpp:rclcpp_action:robot_state_publisher:ros2_control:ros2_controllers:rviz2:sensor_msgs:std_msgs:tf2_ros:trajectory_msgs:xacro

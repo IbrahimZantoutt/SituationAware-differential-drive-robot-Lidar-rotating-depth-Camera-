@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /home/ibrahim/R2D2/build/r2d2_main
 all: CMakeFiles/LidarDetect.dir/all
 all: CMakeFiles/NavigationServer.dir/all
 all: CMakeFiles/NavigationClient.dir/all
+all: CMakeFiles/CameraRotator.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -78,6 +79,7 @@ clean: CMakeFiles/r2d2_main_uninstall.dir/clean
 clean: CMakeFiles/LidarDetect.dir/clean
 clean: CMakeFiles/NavigationServer.dir/clean
 clean: CMakeFiles/NavigationClient.dir/clean
+clean: CMakeFiles/CameraRotator.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -139,7 +141,7 @@ CMakeFiles/r2d2_main_uninstall.dir/clean:
 CMakeFiles/LidarDetect.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LidarDetect.dir/build.make CMakeFiles/LidarDetect.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LidarDetect.dir/build.make CMakeFiles/LidarDetect.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ibrahim/R2D2/build/r2d2_main/CMakeFiles --progress-num=1,2 "Built target LidarDetect"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ibrahim/R2D2/build/r2d2_main/CMakeFiles --progress-num=3,4 "Built target LidarDetect"
 .PHONY : CMakeFiles/LidarDetect.dir/all
 
 # Build rule for subdir invocation for target.
@@ -165,7 +167,7 @@ CMakeFiles/LidarDetect.dir/clean:
 CMakeFiles/NavigationServer.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NavigationServer.dir/build.make CMakeFiles/NavigationServer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NavigationServer.dir/build.make CMakeFiles/NavigationServer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ibrahim/R2D2/build/r2d2_main/CMakeFiles --progress-num=5,6 "Built target NavigationServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ibrahim/R2D2/build/r2d2_main/CMakeFiles --progress-num=7,8 "Built target NavigationServer"
 .PHONY : CMakeFiles/NavigationServer.dir/all
 
 # Build rule for subdir invocation for target.
@@ -191,7 +193,7 @@ CMakeFiles/NavigationServer.dir/clean:
 CMakeFiles/NavigationClient.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NavigationClient.dir/build.make CMakeFiles/NavigationClient.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NavigationClient.dir/build.make CMakeFiles/NavigationClient.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ibrahim/R2D2/build/r2d2_main/CMakeFiles --progress-num=3,4 "Built target NavigationClient"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ibrahim/R2D2/build/r2d2_main/CMakeFiles --progress-num=5,6 "Built target NavigationClient"
 .PHONY : CMakeFiles/NavigationClient.dir/all
 
 # Build rule for subdir invocation for target.
@@ -209,6 +211,32 @@ NavigationClient: CMakeFiles/NavigationClient.dir/rule
 CMakeFiles/NavigationClient.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NavigationClient.dir/build.make CMakeFiles/NavigationClient.dir/clean
 .PHONY : CMakeFiles/NavigationClient.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/CameraRotator.dir
+
+# All Build rule for target.
+CMakeFiles/CameraRotator.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CameraRotator.dir/build.make CMakeFiles/CameraRotator.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CameraRotator.dir/build.make CMakeFiles/CameraRotator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ibrahim/R2D2/build/r2d2_main/CMakeFiles --progress-num=1,2 "Built target CameraRotator"
+.PHONY : CMakeFiles/CameraRotator.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/CameraRotator.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ibrahim/R2D2/build/r2d2_main/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CameraRotator.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ibrahim/R2D2/build/r2d2_main/CMakeFiles 0
+.PHONY : CMakeFiles/CameraRotator.dir/rule
+
+# Convenience name for target.
+CameraRotator: CMakeFiles/CameraRotator.dir/rule
+.PHONY : CameraRotator
+
+# clean rule for target.
+CMakeFiles/CameraRotator.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CameraRotator.dir/build.make CMakeFiles/CameraRotator.dir/clean
+.PHONY : CMakeFiles/CameraRotator.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

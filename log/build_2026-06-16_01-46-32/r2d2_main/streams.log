@@ -1,0 +1,34 @@
+[0.125s] Invoking command in '/home/ibrahim/R2D2/build/r2d2_main': CMAKE_PREFIX_PATH=/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/R2D2/install/r2d2_main:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/R2D2/build/r2d2_main -- -j16 -l16
+[0.203s] Consolidate compiler generated dependencies of target NavigationServer
+[0.211s] [ 25%] Built target LidarDetect
+[0.215s] [ 50%] Built target CameraRotator
+[0.216s] [ 75%] Built target NavigationClient
+[0.225s] [ 87%] Building CXX object CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o
+[3.511s] /home/ibrahim/R2D2/src/r2d2_main/src/NavigationServer.cpp: In member function ‘void NavigationServer::blindMove(std::shared_ptr<rclcpp_action::ServerGoalHandle<action_interfaces::action::Nav> >, double, double)’:
+[3.511s] /home/ibrahim/R2D2/src/r2d2_main/src/NavigationServer.cpp:214:74: error: no matching function for call to ‘std_msgs::msg::Float64_<std::allocator<void> >::Float64_(<brace-enclosed initializer list>)’
+[3.511s]   214 |                     camera_angle_pub_->publish(std_msgs::msg::Float64{0.0});  // look forward
+[3.511s]       |                                                                          ^
+[3.512s] In file included from /opt/ros/humble/include/std_msgs/std_msgs/msg/float64.hpp:7,
+[3.512s]                  from /home/ibrahim/R2D2/src/r2d2_main/src/NavigationServer.cpp:17:
+[3.513s] /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:46:12: note: candidate: ‘std_msgs::msg::Float64_<ContainerAllocator>::Float64_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]’
+[3.513s]    46 |   explicit Float64_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+[3.513s]       |            ^~~~~~~~
+[3.513s] /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:46:48: note:   no known conversion for argument 1 from ‘double’ to ‘const std::allocator<void>&’
+[3.513s]    46 |   explicit Float64_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+[3.513s]       |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+[3.513s] /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:37:12: note: candidate: ‘std_msgs::msg::Float64_<ContainerAllocator>::Float64_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]’
+[3.513s]    37 |   explicit Float64_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+[3.513s]       |            ^~~~~~~~
+[3.513s] /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:37:63: note:   no known conversion for argument 1 from ‘double’ to ‘rosidl_runtime_cpp::MessageInitialization’
+[3.513s]    37 |   explicit Float64_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+[3.513s]       |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3.513s] /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:33:8: note: candidate: ‘constexpr std_msgs::msg::Float64_<std::allocator<void> >::Float64_(const std_msgs::msg::Float64_<std::allocator<void> >&)’
+[3.513s]    33 | struct Float64_
+[3.513s]       |        ^~~~~~~~
+[3.514s] /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:33:8: note:   no known conversion for argument 1 from ‘double’ to ‘const std_msgs::msg::Float64_<std::allocator<void> >&’
+[3.514s] /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:33:8: note: candidate: ‘constexpr std_msgs::msg::Float64_<std::allocator<void> >::Float64_(std_msgs::msg::Float64_<std::allocator<void> >&&)’
+[3.514s] /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:33:8: note:   no known conversion for argument 1 from ‘double’ to ‘std_msgs::msg::Float64_<std::allocator<void> >&&’
+[6.928s] gmake[2]: *** [CMakeFiles/NavigationServer.dir/build.make:76: CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o] Error 1
+[6.928s] gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/NavigationServer.dir/all] Error 2
+[6.929s] gmake: *** [Makefile:146: all] Error 2
+[6.932s] Invoked command in '/home/ibrahim/R2D2/build/r2d2_main' returned '2': CMAKE_PREFIX_PATH=/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/R2D2/install/r2d2_main:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/R2D2/build/r2d2_main -- -j16 -l16

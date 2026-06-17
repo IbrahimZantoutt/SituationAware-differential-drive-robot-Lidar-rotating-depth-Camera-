@@ -3,6 +3,7 @@
 /home/ibrahim/R2D2/build/r2d2_main/CMakeFiles/LidarDetect.dir
 /home/ibrahim/R2D2/build/r2d2_main/CMakeFiles/NavigationServer.dir
 /home/ibrahim/R2D2/build/r2d2_main/CMakeFiles/NavigationClient.dir
+/home/ibrahim/R2D2/build/r2d2_main/CMakeFiles/CameraRotator.dir
 /home/ibrahim/R2D2/build/r2d2_main/CMakeFiles/test.dir
 /home/ibrahim/R2D2/build/r2d2_main/CMakeFiles/edit_cache.dir
 /home/ibrahim/R2D2/build/r2d2_main/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,233 @@
+[0.000000] (-) TimerEvent: {}
+[0.000111] (-) JobUnselected: {'identifier': 'action_interfaces'}
+[0.000219] (r2d2_main) JobQueued: {'identifier': 'r2d2_main', 'dependencies': OrderedDict([('action_interfaces', '/home/ibrahim/R2D2/install/action_interfaces')])}
+[0.000319] (r2d2_main) JobStarted: {'identifier': 'r2d2_main'}
+[0.099063] (-) TimerEvent: {}
+[0.114234] (r2d2_main) JobProgress: {'identifier': 'r2d2_main', 'progress': 'cmake'}
+[0.115220] (r2d2_main) JobProgress: {'identifier': 'r2d2_main', 'progress': 'build'}
+[0.116879] (r2d2_main) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ibrahim/R2D2/build/r2d2_main', '--', '-j16', '-l16'], 'cwd': '/home/ibrahim/R2D2/build/r2d2_main', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/mnt/c/Users/zanto/AppData/Local/Programs/Microsoft VS Code'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('AI_AGENT', 'claude-code_2-1-177_agent'), ('USER', 'ibrahim'), ('CLAUDE_CODE_ENTRYPOINT', 'claude-vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/out/nls.messages.json","locale":"en","availableLanguages":{}}'), ('GIT_EDITOR', 'true'), ('VSCODE_WSL_EXT_LOCATION', '/mnt/c/Users/zanto/.vscode/extensions/ms-vscode-remote.remote-wsl-0.104.3'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('CLAUDE_AGENT_SDK_VERSION', '0.3.177'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/home/ibrahim/R2D2/install/action_interfaces/lib:/home/ibrahim/RobotArmExpanded/install/action_interfaces/lib:/home/ibrahim/RobotArm/install/action_interfaces/lib:/home/ibrahim/RobotNav/install/action_interfaces/lib:/home/ibrahim/ros2_ws/install/action_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/ibrahim'), ('GIT_CONFIG_COUNT', '1'), ('VSCODE_RECONNECTION_GRACE_TIME', '10800000'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-86c949d0-3a25-4b2f-8541-a9d3e064e0d7.sock'), ('ROS_PYTHON_VERSION', '3'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('COPILOT_OTEL_FILE_EXPORTER_PATH', '/dev/null'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/home/ibrahim/R2D2/install:/home/ibrahim/MoveItArm/install:/home/ibrahim/RobotArmExpanded/install:/home/ibrahim/RobotArm/install:/home/ibrahim/TF2Sample/install:/home/ibrahim/RobotNav/install:/home/ibrahim/RobotMonitor/install:/home/ibrahim/ros2_ws/install'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ibrahim'), ('NAME', 'Ibrahim-laptop'), ('WSL_INTEROP', '/run/WSL/420_interop'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('GIT_CONFIG_VALUE_0', 'explicit'), ('MCP_CONNECTION_NONBLOCKING', 'true'), ('PATH', '/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PostgreSQL/18/bin:/mnt/c/Users/zanto/.local/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/zanto/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/zanto/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/zanto/AppData/Local/Programs/Ollama:/mnt/c/Users/zanto/AppData/Roaming/npm:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('CLAUDE_EFFORT', 'high'), ('DISPLAY', ':0'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/ibrahim/R2D2/install/r2d2_main:/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('MXC_BIN_DIR', '/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/node_modules/@microsoft/mxc-sdk/bin'), ('ELECTRON_RUN_AS_NODE', '1'), ('GIT_CONFIG_KEY_0', 'safe.bareRepository'), ('CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING', 'true'), ('CLAUDE_CODE_SESSION_ID', '47615eb1-a4af-44d6-a623-491430c612c9'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_SERVER_TAR', '/mnt/c/Users/zanto/vscode-remote-wsl/stable/6928394f91b684055b873eecb8bc281365131f1c/vscode-server-stable-linux-x64.tar.gz'), ('CLAUDECODE', '1'), ('PWD', '/home/ibrahim/R2D2/build/r2d2_main'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/home/ibrahim/.vscode-server/extensions/anthropic.claude-code-2.1.177-linux-x64/resources/native-binary/claude'), ('PYTHONPATH', '/home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotArmExpanded/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotArm/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotNav/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/ros2_ws/install/action_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CLAUDE_CODE_ENABLE_TASKS', '0'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/R2D2/install/r2d2_main:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up')]), 'shell': False}
+[0.158565] (r2d2_main) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199268] (-) TimerEvent: {}
+[0.293655] (r2d2_main) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.299355] (-) TimerEvent: {}
+[0.399535] (-) TimerEvent: {}
+[0.473719] (r2d2_main) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.475572] (r2d2_main) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.480295] (r2d2_main) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.488449] (r2d2_main) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.499407] (r2d2_main) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.499595] (-) TimerEvent: {}
+[0.526698] (r2d2_main) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.528153] (r2d2_main) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.544268] (r2d2_main) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.583454] (r2d2_main) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.19 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[0.599735] (-) TimerEvent: {}
+[0.608965] (r2d2_main) StdoutLine: {'line': b'-- Found action_interfaces: 0.0.0 (/home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake)\n'}
+[0.619297] (r2d2_main) StdoutLine: {'line': b'-- Found nav2_msgs: 1.1.20 (/opt/ros/humble/share/nav2_msgs/cmake)\n'}
+[0.660351] (r2d2_main) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.699859] (-) TimerEvent: {}
+[0.726331] (r2d2_main) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.759918] (r2d2_main) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.799986] (-) TimerEvent: {}
+[0.855217] (r2d2_main) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.855438] (r2d2_main) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ibrahim/R2D2/src/r2d2_main/include>\n'}
+[0.855485] (r2d2_main) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.856076] (r2d2_main) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.857219] (r2d2_main) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.858171] (r2d2_main) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.860877] (r2d2_main) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.861067] (r2d2_main) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.861876] (r2d2_main) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.866048] (r2d2_main) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.900111] (-) TimerEvent: {}
+[0.908983] (r2d2_main) StdoutLine: {'line': b'-- Generating done\n'}
+[0.919370] (r2d2_main) StdoutLine: {'line': b'-- Build files have been written to: /home/ibrahim/R2D2/build/r2d2_main\n'}
+[0.956231] (r2d2_main) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target LidarDetect\n'}
+[0.966372] (r2d2_main) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target NavigationServer\n'}
+[0.968162] (r2d2_main) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target NavigationClient\n'}
+[0.973668] (r2d2_main) StdoutLine: {'line': b'[ 25%] Built target LidarDetect\n'}
+[0.974262] (r2d2_main) StdoutLine: {'line': b'[ 37%] Building CXX object CMakeFiles/CameraRotator.dir/src/CameraRotator.cpp.o\n'}
+[0.986466] (r2d2_main) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o\n'}
+[0.988935] (r2d2_main) StdoutLine: {'line': b'[ 75%] Built target NavigationClient\n'}
+[1.000189] (-) TimerEvent: {}
+[1.100414] (-) TimerEvent: {}
+[1.200662] (-) TimerEvent: {}
+[1.300972] (-) TimerEvent: {}
+[1.401239] (-) TimerEvent: {}
+[1.501467] (-) TimerEvent: {}
+[1.601691] (-) TimerEvent: {}
+[1.701992] (-) TimerEvent: {}
+[1.802260] (-) TimerEvent: {}
+[1.902472] (-) TimerEvent: {}
+[2.002789] (-) TimerEvent: {}
+[2.103127] (-) TimerEvent: {}
+[2.203472] (-) TimerEvent: {}
+[2.303942] (-) TimerEvent: {}
+[2.404294] (-) TimerEvent: {}
+[2.504859] (-) TimerEvent: {}
+[2.605237] (-) TimerEvent: {}
+[2.705609] (-) TimerEvent: {}
+[2.805907] (-) TimerEvent: {}
+[2.906190] (-) TimerEvent: {}
+[3.006629] (-) TimerEvent: {}
+[3.106975] (-) TimerEvent: {}
+[3.207199] (-) TimerEvent: {}
+[3.307483] (-) TimerEvent: {}
+[3.407736] (-) TimerEvent: {}
+[3.507963] (-) TimerEvent: {}
+[3.608250] (-) TimerEvent: {}
+[3.708481] (-) TimerEvent: {}
+[3.808838] (-) TimerEvent: {}
+[3.909124] (-) TimerEvent: {}
+[4.009357] (-) TimerEvent: {}
+[4.109609] (-) TimerEvent: {}
+[4.209913] (-) TimerEvent: {}
+[4.310180] (-) TimerEvent: {}
+[4.410483] (-) TimerEvent: {}
+[4.434060] (r2d2_main) StderrLine: {'line': b'/home/ibrahim/R2D2/src/r2d2_main/src/NavigationServer.cpp: In constructor \xe2\x80\x98NavigationServer::NavigationServer()\xe2\x80\x99:\n'}
+[4.434311] (r2d2_main) StderrLine: {'line': b'/home/ibrahim/R2D2/src/r2d2_main/src/NavigationServer.cpp:66:66: error: no matching function for call to \xe2\x80\x98std_msgs::msg::Float64_<std::allocator<void> >::Float64_(<brace-enclosed initializer list>)\xe2\x80\x99\n'}
+[4.434376] (r2d2_main) StderrLine: {'line': b'   66 |             camera_angle_pub_->publish(std_msgs::msg::Float64{2.0});  // test angle (off-forward) so the rotator visibly moves\n'}
+[4.434430] (r2d2_main) StderrLine: {'line': b'      |                                                                  ^\n'}
+[4.435500] (r2d2_main) StderrLine: {'line': b'In file included from /opt/ros/humble/include/std_msgs/std_msgs/msg/float64.hpp:7,\n'}
+[4.435663] (r2d2_main) StderrLine: {'line': b'                 from /home/ibrahim/R2D2/src/r2d2_main/src/NavigationServer.cpp:17:\n'}
+[4.435723] (r2d2_main) StderrLine: {'line': b'/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:46:12: note: candidate: \xe2\x80\x98std_msgs::msg::Float64_<ContainerAllocator>::Float64_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]\xe2\x80\x99\n'}
+[4.435775] (r2d2_main) StderrLine: {'line': b'   46 |   explicit Float64_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)\n'}
+[4.435822] (r2d2_main) StderrLine: {'line': b'      |            ^~~~~~~~\n'}
+[4.435867] (r2d2_main) StderrLine: {'line': b'/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:46:48: note:   no known conversion for argument 1 from \xe2\x80\x98double\xe2\x80\x99 to \xe2\x80\x98const std::allocator<void>&\xe2\x80\x99\n'}
+[4.435999] (r2d2_main) StderrLine: {'line': b'   46 |   explicit Float64_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)\n'}
+[4.436062] (r2d2_main) StderrLine: {'line': b'      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\n'}
+[4.436114] (r2d2_main) StderrLine: {'line': b'/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:37:12: note: candidate: \xe2\x80\x98std_msgs::msg::Float64_<ContainerAllocator>::Float64_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]\xe2\x80\x99\n'}
+[4.436172] (r2d2_main) StderrLine: {'line': b'   37 |   explicit Float64_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)\n'}
+[4.436219] (r2d2_main) StderrLine: {'line': b'      |            ^~~~~~~~\n'}
+[4.436264] (r2d2_main) StderrLine: {'line': b'/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:37:63: note:   no known conversion for argument 1 from \xe2\x80\x98double\xe2\x80\x99 to \xe2\x80\x98rosidl_runtime_cpp::MessageInitialization\xe2\x80\x99\n'}
+[4.436308] (r2d2_main) StderrLine: {'line': b'   37 |   explicit Float64_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)\n'}
+[4.436353] (r2d2_main) StderrLine: {'line': b'      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[4.436399] (r2d2_main) StderrLine: {'line': b'/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:33:8: note: candidate: \xe2\x80\x98constexpr std_msgs::msg::Float64_<std::allocator<void> >::Float64_(const std_msgs::msg::Float64_<std::allocator<void> >&)\xe2\x80\x99\n'}
+[4.436448] (r2d2_main) StderrLine: {'line': b'   33 | struct Float64_\n'}
+[4.436493] (r2d2_main) StderrLine: {'line': b'      |        ^~~~~~~~\n'}
+[4.436538] (r2d2_main) StderrLine: {'line': b'/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:33:8: note:   no known conversion for argument 1 from \xe2\x80\x98double\xe2\x80\x99 to \xe2\x80\x98const std_msgs::msg::Float64_<std::allocator<void> >&\xe2\x80\x99\n'}
+[4.436583] (r2d2_main) StderrLine: {'line': b'/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:33:8: note: candidate: \xe2\x80\x98constexpr std_msgs::msg::Float64_<std::allocator<void> >::Float64_(std_msgs::msg::Float64_<std::allocator<void> >&&)\xe2\x80\x99\n'}
+[4.436629] (r2d2_main) StderrLine: {'line': b'/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:33:8: note:   no known conversion for argument 1 from \xe2\x80\x98double\xe2\x80\x99 to \xe2\x80\x98std_msgs::msg::Float64_<std::allocator<void> >&&\xe2\x80\x99\n'}
+[4.469148] (r2d2_main) StderrLine: {'line': b'/home/ibrahim/R2D2/src/r2d2_main/src/NavigationServer.cpp: In member function \xe2\x80\x98void NavigationServer::blindMove(std::shared_ptr<rclcpp_action::ServerGoalHandle<action_interfaces::action::Nav> >, double, double)\xe2\x80\x99:\n'}
+[4.469463] (r2d2_main) StderrLine: {'line': b'/home/ibrahim/R2D2/src/r2d2_main/src/NavigationServer.cpp:214:74: error: no matching function for call to \xe2\x80\x98std_msgs::msg::Float64_<std::allocator<void> >::Float64_(<brace-enclosed initializer list>)\xe2\x80\x99\n'}
+[4.469539] (r2d2_main) StderrLine: {'line': b'  214 |                     camera_angle_pub_->publish(std_msgs::msg::Float64{0.0});  // look forward\n'}
+[4.469589] (r2d2_main) StderrLine: {'line': b'      |                                                                          ^\n'}
+[4.469636] (r2d2_main) StderrLine: {'line': b'In file included from /opt/ros/humble/include/std_msgs/std_msgs/msg/float64.hpp:7,\n'}
+[4.469681] (r2d2_main) StderrLine: {'line': b'                 from /home/ibrahim/R2D2/src/r2d2_main/src/NavigationServer.cpp:17:\n'}
+[4.469738] (r2d2_main) StderrLine: {'line': b'/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:46:12: note: candidate: \xe2\x80\x98std_msgs::msg::Float64_<ContainerAllocator>::Float64_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]\xe2\x80\x99\n'}
+[4.469841] (r2d2_main) StderrLine: {'line': b'   46 |   explicit Float64_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)\n'}
+[4.469947] (r2d2_main) StderrLine: {'line': b'      |            ^~~~~~~~\n'}
+[4.470019] (r2d2_main) StderrLine: {'line': b'/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:46:48: note:   no known conversion for argument 1 from \xe2\x80\x98double\xe2\x80\x99 to \xe2\x80\x98const std::allocator<void>&\xe2\x80\x99\n'}
+[4.470064] (r2d2_main) StderrLine: {'line': b'   46 |   explicit Float64_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)\n'}
+[4.470100] (r2d2_main) StderrLine: {'line': b'      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\n'}
+[4.470132] (r2d2_main) StderrLine: {'line': b'/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:37:12: note: candidate: \xe2\x80\x98std_msgs::msg::Float64_<ContainerAllocator>::Float64_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]\xe2\x80\x99\n'}
+[4.470164] (r2d2_main) StderrLine: {'line': b'   37 |   explicit Float64_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)\n'}
+[4.470195] (r2d2_main) StderrLine: {'line': b'      |            ^~~~~~~~\n'}
+[4.470225] (r2d2_main) StderrLine: {'line': b'/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:37:63: note:   no known conversion for argument 1 from \xe2\x80\x98double\xe2\x80\x99 to \xe2\x80\x98rosidl_runtime_cpp::MessageInitialization\xe2\x80\x99\n'}
+[4.470256] (r2d2_main) StderrLine: {'line': b'   37 |   explicit Float64_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)\n'}
+[4.470287] (r2d2_main) StderrLine: {'line': b'      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[4.470324] (r2d2_main) StderrLine: {'line': b'/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:33:8: note: candidate: \xe2\x80\x98constexpr std_msgs::msg::Float64_<std::allocator<void> >::Float64_(const std_msgs::msg::Float64_<std::allocator<void> >&)\xe2\x80\x99\n'}
+[4.470355] (r2d2_main) StderrLine: {'line': b'   33 | struct Float64_\n'}
+[4.470385] (r2d2_main) StderrLine: {'line': b'      |        ^~~~~~~~\n'}
+[4.470415] (r2d2_main) StderrLine: {'line': b'/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:33:8: note:   no known conversion for argument 1 from \xe2\x80\x98double\xe2\x80\x99 to \xe2\x80\x98const std_msgs::msg::Float64_<std::allocator<void> >&\xe2\x80\x99\n'}
+[4.470449] (r2d2_main) StderrLine: {'line': b'/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:33:8: note: candidate: \xe2\x80\x98constexpr std_msgs::msg::Float64_<std::allocator<void> >::Float64_(std_msgs::msg::Float64_<std::allocator<void> >&&)\xe2\x80\x99\n'}
+[4.470482] (r2d2_main) StderrLine: {'line': b'/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:33:8: note:   no known conversion for argument 1 from \xe2\x80\x98double\xe2\x80\x99 to \xe2\x80\x98std_msgs::msg::Float64_<std::allocator<void> >&&\xe2\x80\x99\n'}
+[4.510677] (-) TimerEvent: {}
+[4.610973] (-) TimerEvent: {}
+[4.711306] (-) TimerEvent: {}
+[4.811554] (-) TimerEvent: {}
+[4.911897] (-) TimerEvent: {}
+[5.012162] (-) TimerEvent: {}
+[5.112484] (-) TimerEvent: {}
+[5.212719] (-) TimerEvent: {}
+[5.313063] (-) TimerEvent: {}
+[5.413410] (-) TimerEvent: {}
+[5.513691] (-) TimerEvent: {}
+[5.614015] (-) TimerEvent: {}
+[5.714308] (-) TimerEvent: {}
+[5.814673] (-) TimerEvent: {}
+[5.914947] (-) TimerEvent: {}
+[6.015193] (-) TimerEvent: {}
+[6.115430] (-) TimerEvent: {}
+[6.215728] (-) TimerEvent: {}
+[6.316043] (-) TimerEvent: {}
+[6.416340] (-) TimerEvent: {}
+[6.516591] (-) TimerEvent: {}
+[6.616887] (-) TimerEvent: {}
+[6.717157] (-) TimerEvent: {}
+[6.817427] (-) TimerEvent: {}
+[6.917782] (-) TimerEvent: {}
+[7.018089] (-) TimerEvent: {}
+[7.118404] (-) TimerEvent: {}
+[7.218708] (-) TimerEvent: {}
+[7.318950] (-) TimerEvent: {}
+[7.419169] (-) TimerEvent: {}
+[7.519387] (-) TimerEvent: {}
+[7.619639] (-) TimerEvent: {}
+[7.719906] (-) TimerEvent: {}
+[7.820195] (-) TimerEvent: {}
+[7.920501] (-) TimerEvent: {}
+[8.020768] (-) TimerEvent: {}
+[8.105978] (r2d2_main) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/NavigationServer.dir/build.make:76: CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o] Error 1\n'}
+[8.106371] (r2d2_main) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/NavigationServer.dir/all] Error 2\n'}
+[8.106577] (r2d2_main) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[8.120895] (-) TimerEvent: {}
+[8.221182] (-) TimerEvent: {}
+[8.321448] (-) TimerEvent: {}
+[8.421699] (-) TimerEvent: {}
+[8.521977] (-) TimerEvent: {}
+[8.622263] (-) TimerEvent: {}
+[8.722501] (-) TimerEvent: {}
+[8.822736] (-) TimerEvent: {}
+[8.922990] (-) TimerEvent: {}
+[9.023256] (-) TimerEvent: {}
+[9.123546] (-) TimerEvent: {}
+[9.223822] (-) TimerEvent: {}
+[9.324067] (-) TimerEvent: {}
+[9.424345] (-) TimerEvent: {}
+[9.524609] (-) TimerEvent: {}
+[9.624891] (-) TimerEvent: {}
+[9.725114] (-) TimerEvent: {}
+[9.825395] (-) TimerEvent: {}
+[9.925710] (-) TimerEvent: {}
+[10.025975] (-) TimerEvent: {}
+[10.126278] (-) TimerEvent: {}
+[10.226558] (-) TimerEvent: {}
+[10.326953] (-) TimerEvent: {}
+[10.427332] (-) TimerEvent: {}
+[10.527672] (-) TimerEvent: {}
+[10.628067] (-) TimerEvent: {}
+[10.728458] (-) TimerEvent: {}
+[10.828855] (-) TimerEvent: {}
+[10.929214] (-) TimerEvent: {}
+[11.029675] (-) TimerEvent: {}
+[11.130531] (-) TimerEvent: {}
+[11.230824] (-) TimerEvent: {}
+[11.331213] (-) TimerEvent: {}
+[11.431583] (-) TimerEvent: {}
+[11.531987] (-) TimerEvent: {}
+[11.632362] (-) TimerEvent: {}
+[11.732732] (-) TimerEvent: {}
+[11.833126] (-) TimerEvent: {}
+[11.933578] (-) TimerEvent: {}
+[12.033997] (-) TimerEvent: {}
+[12.134333] (-) TimerEvent: {}
+[12.234615] (-) TimerEvent: {}
+[12.334983] (-) TimerEvent: {}
+[12.435291] (-) TimerEvent: {}
+[12.535601] (-) TimerEvent: {}
+[12.635864] (-) TimerEvent: {}
+[12.696069] (r2d2_main) StdoutLine: {'line': b'[ 87%] Linking CXX executable CameraRotator\n'}
+[12.736034] (-) TimerEvent: {}
+[12.836429] (-) TimerEvent: {}
+[12.936891] (-) TimerEvent: {}
+[13.037225] (-) TimerEvent: {}
+[13.137503] (-) TimerEvent: {}
+[13.237936] (-) TimerEvent: {}
+[13.338272] (-) TimerEvent: {}
+[13.416570] (r2d2_main) StdoutLine: {'line': b'[ 87%] Built target CameraRotator\n'}
+[13.418886] (r2d2_main) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[13.421387] (r2d2_main) CommandEnded: {'returncode': 2}
+[13.433017] (r2d2_main) JobEnded: {'identifier': 'r2d2_main', 'rc': 2}
+[13.438365] (-) TimerEvent: {}
+[13.443838] (-) EventReactorShutdown: {}

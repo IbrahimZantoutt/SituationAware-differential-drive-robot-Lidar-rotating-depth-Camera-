@@ -14,6 +14,9 @@ find_package(nav2_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(trajectory_msgs REQUIRED)
 
 add_executable(LidarDetect src/LidarDetect.cpp)
 target_include_directories(LidarDetect PUBLIC
@@ -24,7 +27,7 @@ target_compile_features(LidarDetect PUBLIC c_std_99 cxx_std_17)  # Require C99 a
 # Custom navigation action server / client
 add_executable(NavigationServer src/NavigationServer.cpp)
 ament_target_dependencies(NavigationServer
-  rclcpp rclcpp_action action_interfaces nav2_msgs nav_msgs tf2_ros geometry_msgs)
+  rclcpp rclcpp_action action_interfaces nav2_msgs nav_msgs tf2_ros geometry_msgs std_msgs)
 
 add_executable(NavigationClient src/NavigationClient.cpp)
 ament_target_dependencies(NavigationClient
@@ -32,12 +35,13 @@ ament_target_dependencies(NavigationClient
 
 add_executable(CameraRotator src/CameraRotator.cpp)
 ament_target_dependencies(CameraRotator
-  rclcpp sensor_msgs std_msgs)  
+  rclcpp sensor_msgs std_msgs trajectory_msgs)
 
 install(TARGETS
   LidarDetect
   NavigationServer
   NavigationClient
+  CameraRotator
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

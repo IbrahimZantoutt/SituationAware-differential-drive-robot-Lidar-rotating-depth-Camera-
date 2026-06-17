@@ -236,6 +236,43 @@ NavigationClient/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NavigationClient.dir/build.make CMakeFiles/NavigationClient.dir/build
 .PHONY : NavigationClient/fast
 
+#=============================================================================
+# Target rules for targets named CameraRotator
+
+# Build rule for target.
+CameraRotator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CameraRotator
+.PHONY : CameraRotator
+
+# fast build rule for target.
+CameraRotator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CameraRotator.dir/build.make CMakeFiles/CameraRotator.dir/build
+.PHONY : CameraRotator/fast
+
+src/CameraRotator.o: src/CameraRotator.cpp.o
+.PHONY : src/CameraRotator.o
+
+# target to build an object file
+src/CameraRotator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CameraRotator.dir/build.make CMakeFiles/CameraRotator.dir/src/CameraRotator.cpp.o
+.PHONY : src/CameraRotator.cpp.o
+
+src/CameraRotator.i: src/CameraRotator.cpp.i
+.PHONY : src/CameraRotator.i
+
+# target to preprocess a source file
+src/CameraRotator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CameraRotator.dir/build.make CMakeFiles/CameraRotator.dir/src/CameraRotator.cpp.i
+.PHONY : src/CameraRotator.cpp.i
+
+src/CameraRotator.s: src/CameraRotator.cpp.s
+.PHONY : src/CameraRotator.s
+
+# target to generate assembly for a file
+src/CameraRotator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CameraRotator.dir/build.make CMakeFiles/CameraRotator.dir/src/CameraRotator.cpp.s
+.PHONY : src/CameraRotator.cpp.s
+
 src/LidarDetect.o: src/LidarDetect.cpp.o
 .PHONY : src/LidarDetect.o
 
@@ -323,9 +360,13 @@ help:
 	@echo "... test"
 	@echo "... r2d2_main_uninstall"
 	@echo "... uninstall"
+	@echo "... CameraRotator"
 	@echo "... LidarDetect"
 	@echo "... NavigationClient"
 	@echo "... NavigationServer"
+	@echo "... src/CameraRotator.o"
+	@echo "... src/CameraRotator.i"
+	@echo "... src/CameraRotator.s"
 	@echo "... src/LidarDetect.o"
 	@echo "... src/LidarDetect.i"
 	@echo "... src/LidarDetect.s"

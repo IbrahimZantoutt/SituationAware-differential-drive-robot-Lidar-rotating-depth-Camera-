@@ -1,0 +1,89 @@
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found rclcpp_action: 16.0.19 (/opt/ros/humble/share/rclcpp_action/cmake)
+-- Found action_interfaces: 0.0.0 (/home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake)
+-- Found nav2_msgs: 1.1.20 (/opt/ros/humble/share/nav2_msgs/cmake)
+-- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ibrahim/R2D2/src/r2d2_main/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ibrahim/R2D2/build/r2d2_main
+Consolidate compiler generated dependencies of target LidarDetect
+Consolidate compiler generated dependencies of target NavigationServer
+Consolidate compiler generated dependencies of target NavigationClient
+[ 25%] Built target LidarDetect
+[ 37%] Building CXX object CMakeFiles/CameraRotator.dir/src/CameraRotator.cpp.o
+[ 50%] Building CXX object CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o
+[ 75%] Built target NavigationClient
+/home/ibrahim/R2D2/src/r2d2_main/src/NavigationServer.cpp: In constructor ‘NavigationServer::NavigationServer()’:
+/home/ibrahim/R2D2/src/r2d2_main/src/NavigationServer.cpp:66:66: error: no matching function for call to ‘std_msgs::msg::Float64_<std::allocator<void> >::Float64_(<brace-enclosed initializer list>)’
+   66 |             camera_angle_pub_->publish(std_msgs::msg::Float64{2.0});  // test angle (off-forward) so the rotator visibly moves
+      |                                                                  ^
+In file included from /opt/ros/humble/include/std_msgs/std_msgs/msg/float64.hpp:7,
+                 from /home/ibrahim/R2D2/src/r2d2_main/src/NavigationServer.cpp:17:
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:46:12: note: candidate: ‘std_msgs::msg::Float64_<ContainerAllocator>::Float64_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]’
+   46 |   explicit Float64_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |            ^~~~~~~~
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:46:48: note:   no known conversion for argument 1 from ‘double’ to ‘const std::allocator<void>&’
+   46 |   explicit Float64_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:37:12: note: candidate: ‘std_msgs::msg::Float64_<ContainerAllocator>::Float64_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]’
+   37 |   explicit Float64_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |            ^~~~~~~~
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:37:63: note:   no known conversion for argument 1 from ‘double’ to ‘rosidl_runtime_cpp::MessageInitialization’
+   37 |   explicit Float64_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:33:8: note: candidate: ‘constexpr std_msgs::msg::Float64_<std::allocator<void> >::Float64_(const std_msgs::msg::Float64_<std::allocator<void> >&)’
+   33 | struct Float64_
+      |        ^~~~~~~~
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:33:8: note:   no known conversion for argument 1 from ‘double’ to ‘const std_msgs::msg::Float64_<std::allocator<void> >&’
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:33:8: note: candidate: ‘constexpr std_msgs::msg::Float64_<std::allocator<void> >::Float64_(std_msgs::msg::Float64_<std::allocator<void> >&&)’
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:33:8: note:   no known conversion for argument 1 from ‘double’ to ‘std_msgs::msg::Float64_<std::allocator<void> >&&’
+/home/ibrahim/R2D2/src/r2d2_main/src/NavigationServer.cpp: In member function ‘void NavigationServer::blindMove(std::shared_ptr<rclcpp_action::ServerGoalHandle<action_interfaces::action::Nav> >, double, double)’:
+/home/ibrahim/R2D2/src/r2d2_main/src/NavigationServer.cpp:214:74: error: no matching function for call to ‘std_msgs::msg::Float64_<std::allocator<void> >::Float64_(<brace-enclosed initializer list>)’
+  214 |                     camera_angle_pub_->publish(std_msgs::msg::Float64{0.0});  // look forward
+      |                                                                          ^
+In file included from /opt/ros/humble/include/std_msgs/std_msgs/msg/float64.hpp:7,
+                 from /home/ibrahim/R2D2/src/r2d2_main/src/NavigationServer.cpp:17:
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:46:12: note: candidate: ‘std_msgs::msg::Float64_<ContainerAllocator>::Float64_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]’
+   46 |   explicit Float64_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |            ^~~~~~~~
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:46:48: note:   no known conversion for argument 1 from ‘double’ to ‘const std::allocator<void>&’
+   46 |   explicit Float64_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:37:12: note: candidate: ‘std_msgs::msg::Float64_<ContainerAllocator>::Float64_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]’
+   37 |   explicit Float64_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |            ^~~~~~~~
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:37:63: note:   no known conversion for argument 1 from ‘double’ to ‘rosidl_runtime_cpp::MessageInitialization’
+   37 |   explicit Float64_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:33:8: note: candidate: ‘constexpr std_msgs::msg::Float64_<std::allocator<void> >::Float64_(const std_msgs::msg::Float64_<std::allocator<void> >&)’
+   33 | struct Float64_
+      |        ^~~~~~~~
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:33:8: note:   no known conversion for argument 1 from ‘double’ to ‘const std_msgs::msg::Float64_<std::allocator<void> >&’
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:33:8: note: candidate: ‘constexpr std_msgs::msg::Float64_<std::allocator<void> >::Float64_(std_msgs::msg::Float64_<std::allocator<void> >&&)’
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:33:8: note:   no known conversion for argument 1 from ‘double’ to ‘std_msgs::msg::Float64_<std::allocator<void> >&&’
+gmake[2]: *** [CMakeFiles/NavigationServer.dir/build.make:76: CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/NavigationServer.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 87%] Linking CXX executable CameraRotator
+[ 87%] Built target CameraRotator
+gmake: *** [Makefile:146: all] Error 2

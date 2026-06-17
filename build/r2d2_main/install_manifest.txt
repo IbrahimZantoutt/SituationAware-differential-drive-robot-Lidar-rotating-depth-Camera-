@@ -1,6 +1,7 @@
 /home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/LidarDetect
 /home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/NavigationServer
 /home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/NavigationClient
+/home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/CameraRotator
 /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/bringup.launch.py
 /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/display.launch.py
 /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/slam_rviz.launch.py

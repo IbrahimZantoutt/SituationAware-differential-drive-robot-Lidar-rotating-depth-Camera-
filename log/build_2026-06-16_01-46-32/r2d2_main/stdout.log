@@ -1,0 +1,5 @@
+Consolidate compiler generated dependencies of target NavigationServer
+[ 25%] Built target LidarDetect
+[ 50%] Built target CameraRotator
+[ 75%] Built target NavigationClient
+[ 87%] Building CXX object CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o

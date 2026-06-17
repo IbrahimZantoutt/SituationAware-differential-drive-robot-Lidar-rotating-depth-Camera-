@@ -59,8 +59,11 @@ class NavigationServer : public rclcpp::Node
             tf_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
             tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
 
-            camera_angle_pub_ = this->create_publisher<std_msgs::msg::Float64>("camera_angle_target", 10);
-            camera_angle_pub_->publish(std_msgs::msg::Float64{210.0});  // look forward by default
+            // Latched so a late-joining CameraRotator still gets the last target.
+            rclcpp::QoS cam_qos(rclcpp::KeepLast(1));
+            cam_qos.transient_local().reliable();
+            camera_angle_pub_ = this->create_publisher<std_msgs::msg::Float64>("camera_angle_target", cam_qos);
+            camera_angle_pub_->publish(std_msgs::msg::Float64().set__data(2.0));  // test angle (off-forward) so the rotator visibly moves
         }
 
     private:
@@ -208,6 +211,7 @@ class NavigationServer : public rclcpp::Node
             while(rclcpp::ok()){
                 if(goal_handle->is_canceling()){
                     cmd_vel_pub_->publish(geometry_msgs::msg::Twist());  // stop
+                    camera_angle_pub_->publish(std_msgs::msg::Float64().set__data(0.0));  // look forward
                     finish(goal_handle, result, "canceled", false, true);
                     return;
                 }
