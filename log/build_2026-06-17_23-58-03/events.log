@@ -1,0 +1,377 @@
+[0.000000] (-) TimerEvent: {}
+[0.000685] (action_interfaces) JobQueued: {'identifier': 'action_interfaces', 'dependencies': OrderedDict()}
+[0.000766] (r2d2_main) JobQueued: {'identifier': 'r2d2_main', 'dependencies': OrderedDict([('action_interfaces', '/home/ibrahim/R2D2/install/action_interfaces')])}
+[0.000837] (action_interfaces) JobStarted: {'identifier': 'action_interfaces'}
+[0.010919] (action_interfaces) JobProgress: {'identifier': 'action_interfaces', 'progress': 'cmake'}
+[0.011640] (action_interfaces) JobProgress: {'identifier': 'action_interfaces', 'progress': 'build'}
+[0.012535] (action_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ibrahim/R2D2/build/action_interfaces', '--', '-j16', '-l16'], 'cwd': '/home/ibrahim/R2D2/build/action_interfaces', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ibrahim'), ('GIT_ASKPASS', '/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ibrahim/R2D2/install/action_interfaces/lib:/home/ibrahim/RobotArmExpanded/install/action_interfaces/lib:/home/ibrahim/RobotArm/install/action_interfaces/lib:/home/ibrahim/RobotNav/install/action_interfaces/lib:/home/ibrahim/ros2_ws/install/action_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/ibrahim'), ('OLDPWD', '/home/ibrahim/R2D2'), ('TERM_PROGRAM_VERSION', '1.124.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-dbd0244f-7d0f-46e7-b69c-16228c0e0f5b.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/ibrahim/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ibrahim/R2D2/install:/home/ibrahim/MoveItArm/install:/home/ibrahim/RobotArmExpanded/install:/home/ibrahim/RobotArm/install:/home/ibrahim/TF2Sample/install:/home/ibrahim/RobotNav/install:/home/ibrahim/RobotMonitor/install:/home/ibrahim/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ibrahim'), ('NAME', 'Ibrahim-laptop'), ('WSL_INTEROP', '/run/WSL/419_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '49359'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ibrahim/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ibrahim/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PostgreSQL/18/bin:/mnt/c/Users/zanto/.local/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/zanto/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/zanto/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/zanto/AppData/Local/Programs/Ollama:/mnt/c/Users/zanto/AppData/Roaming/npm:/mnt/c/msys64/ucrt64/bin:/snap/bin:/home/ibrahim/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/ibrahim/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-d25663f49e104508.txt'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/ibrahim/.vscode-server/data/User/workspaceStorage/0758fd1c63bb490b00f75db623d0df75/ms-python.python/pythonrc.py'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-90d41d2bb8.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/ibrahim/R2D2/install/r2d2_main:/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ibrahim/R2D2/build/action_interfaces'), ('COPILOT_DEBUG_NONCE', '74c6633776c58fe5b48ff725eedbf72f'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotArmExpanded/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotArm/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotNav/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/ros2_ws/install/action_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ibrahim/R2D2/install/r2d2_main:/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[0.067964] (action_interfaces) StdoutLine: {'line': b'[  6%] Built target action_interfaces__cpp\n'}
+[0.068162] (action_interfaces) StdoutLine: {'line': b'[  6%] Built target action_interfaces__rs\n'}
+[0.068388] (action_interfaces) StdoutLine: {'line': b'[ 15%] Built target action_interfaces__rosidl_generator_c\n'}
+[0.079706] (action_interfaces) StdoutLine: {'line': b'[ 15%] Built target ament_cmake_python_copy_action_interfaces\n'}
+[0.091689] (action_interfaces) StdoutLine: {'line': b'[ 34%] Built target action_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.091949] (action_interfaces) StdoutLine: {'line': b'[ 34%] Built target action_interfaces__rosidl_typesupport_c\n'}
+[0.092091] (action_interfaces) StdoutLine: {'line': b'[ 43%] Built target action_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.093117] (action_interfaces) StdoutLine: {'line': b'[ 53%] Built target action_interfaces__rosidl_typesupport_cpp\n'}
+[0.093387] (action_interfaces) StdoutLine: {'line': b'[ 71%] Built target action_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.093537] (action_interfaces) StdoutLine: {'line': b'[ 71%] Built target action_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.099554] (-) TimerEvent: {}
+[0.119168] (action_interfaces) StdoutLine: {'line': b'[ 71%] Built target action_interfaces\n'}
+[0.144960] (action_interfaces) StdoutLine: {'line': b'[ 75%] Built target action_interfaces__py\n'}
+[0.169782] (action_interfaces) StdoutLine: {'line': b'[ 81%] Built target action_interfaces__rosidl_generator_py\n'}
+[0.192944] (action_interfaces) StdoutLine: {'line': b'[100%] Built target action_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[0.193179] (action_interfaces) StdoutLine: {'line': b'[100%] Built target action_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.193241] (action_interfaces) StdoutLine: {'line': b'[100%] Built target action_interfaces__rosidl_typesupport_c__pyext\n'}
+[0.199649] (-) TimerEvent: {}
+[0.257578] (action_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[0.258210] (action_interfaces) StdoutLine: {'line': b'writing action_interfaces.egg-info/PKG-INFO\n'}
+[0.258510] (action_interfaces) StdoutLine: {'line': b'writing dependency_links to action_interfaces.egg-info/dependency_links.txt\n'}
+[0.258714] (action_interfaces) StdoutLine: {'line': b'writing top-level names to action_interfaces.egg-info/top_level.txt\n'}
+[0.260508] (action_interfaces) StdoutLine: {'line': b"reading manifest file 'action_interfaces.egg-info/SOURCES.txt'\n"}
+[0.260896] (action_interfaces) StdoutLine: {'line': b"writing manifest file 'action_interfaces.egg-info/SOURCES.txt'\n"}
+[0.299787] (-) TimerEvent: {}
+[0.305566] (action_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_action_interfaces_egg\n'}
+[0.321405] (action_interfaces) CommandEnded: {'returncode': 0}
+[0.322149] (action_interfaces) JobProgress: {'identifier': 'action_interfaces', 'progress': 'install'}
+[0.335988] (action_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ibrahim/R2D2/build/action_interfaces'], 'cwd': '/home/ibrahim/R2D2/build/action_interfaces', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ibrahim'), ('GIT_ASKPASS', '/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ibrahim/R2D2/install/action_interfaces/lib:/home/ibrahim/RobotArmExpanded/install/action_interfaces/lib:/home/ibrahim/RobotArm/install/action_interfaces/lib:/home/ibrahim/RobotNav/install/action_interfaces/lib:/home/ibrahim/ros2_ws/install/action_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/ibrahim'), ('OLDPWD', '/home/ibrahim/R2D2'), ('TERM_PROGRAM_VERSION', '1.124.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-dbd0244f-7d0f-46e7-b69c-16228c0e0f5b.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/ibrahim/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ibrahim/R2D2/install:/home/ibrahim/MoveItArm/install:/home/ibrahim/RobotArmExpanded/install:/home/ibrahim/RobotArm/install:/home/ibrahim/TF2Sample/install:/home/ibrahim/RobotNav/install:/home/ibrahim/RobotMonitor/install:/home/ibrahim/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ibrahim'), ('NAME', 'Ibrahim-laptop'), ('WSL_INTEROP', '/run/WSL/419_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '49359'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ibrahim/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ibrahim/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PostgreSQL/18/bin:/mnt/c/Users/zanto/.local/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/zanto/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/zanto/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/zanto/AppData/Local/Programs/Ollama:/mnt/c/Users/zanto/AppData/Roaming/npm:/mnt/c/msys64/ucrt64/bin:/snap/bin:/home/ibrahim/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/ibrahim/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-d25663f49e104508.txt'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/ibrahim/.vscode-server/data/User/workspaceStorage/0758fd1c63bb490b00f75db623d0df75/ms-python.python/pythonrc.py'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-90d41d2bb8.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/ibrahim/R2D2/install/r2d2_main:/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ibrahim/R2D2/build/action_interfaces'), ('COPILOT_DEBUG_NONCE', '74c6633776c58fe5b48ff725eedbf72f'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotArmExpanded/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotArm/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotNav/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/ros2_ws/install/action_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ibrahim/R2D2/install/r2d2_main:/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[0.344507] (action_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.344856] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/ament_index/resource_index/rosidl_interfaces/action_interfaces\n'}
+[0.345049] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces\n'}
+[0.345275] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/msg\n'}
+[0.345447] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.345603] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action\n'}
+[0.345734] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail\n'}
+[0.345777] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__functions.h\n'}
+[0.345929] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__struct.h\n'}
+[0.346165] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__type_support.h\n'}
+[0.346351] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__functions.c\n'}
+[0.346399] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/nav.h\n'}
+[0.346488] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/environment/library_path.sh\n'}
+[0.346633] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/environment/library_path.dsv\n'}
+[0.346750] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_generator_c.so\n'}
+[0.346878] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces\n'}
+[0.347077] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/msg\n'}
+[0.347120] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.347152] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action\n'}
+[0.347182] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail\n'}
+[0.347210] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__rosidl_typesupport_fastrtps_c.h\n'}
+[0.347239] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[0.347267] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces\n'}
+[0.347372] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/msg\n'}
+[0.347523] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.347618] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action\n'}
+[0.347665] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail\n'}
+[0.347698] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__type_support.c\n'}
+[0.347729] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__rosidl_typesupport_introspection_c.h\n'}
+[0.347810] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[0.347855] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_c.so\n'}
+[0.347984] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces\n'}
+[0.348205] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/msg\n'}
+[0.348432] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.348597] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action\n'}
+[0.348782] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail\n'}
+[0.348841] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__traits.hpp\n'}
+[0.348889] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__builder.hpp\n'}
+[0.349018] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__struct.hpp\n'}
+[0.349124] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__type_support.hpp\n'}
+[0.349328] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/nav.hpp\n'}
+[0.349531] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces\n'}
+[0.349617] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/msg\n'}
+[0.349689] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.349865] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action\n'}
+[0.349937] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail\n'}
+[0.350038] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/dds_fastrtps\n'}
+[0.350144] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.350201] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.350346] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces\n'}
+[0.350380] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action\n'}
+[0.350409] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail\n'}
+[0.350437] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.350472] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/nav__type_support.cpp\n'}
+[0.350570] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[0.350745] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_cpp.so\n'}
+[0.350812] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/environment/pythonpath.sh\n'}
+[0.350857] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/environment/pythonpath.dsv\n'}
+[0.350951] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces-0.0.0-py3.10.egg-info\n'}
+[0.351003] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.351048] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.351144] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.351210] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.351391] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces\n'}
+[0.351604] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/_action_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.351845] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/_action_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[0.351990] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.352040] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/_action_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.352186] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/libaction_interfaces__rosidl_generator_py.so\n'}
+[0.352291] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.352349] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action\n'}
+[0.352384] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action/_nav.py\n'}
+[0.352421] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action/_nav_s.c\n'}
+[0.352455] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action/__init__.py\n'}
+[0.352484] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/__init__.py\n'}
+[0.352513] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.378674] (action_interfaces) StdoutLine: {'line': b"Listing '/home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces'...\n"}
+[0.378896] (action_interfaces) StdoutLine: {'line': b"Listing '/home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action'...\n"}
+[0.383694] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.384114] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.384764] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.385076] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/lib/libaction_interfaces__rosidl_generator_py.so\n'}
+[0.385281] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/ament_index/resource_index/rust_packages/action_interfaces\n'}
+[0.385373] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/rust\n'}
+[0.385533] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/rust/src\n'}
+[0.385712] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/rust/src/action.rs\n'}
+[0.385964] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/rust/src/lib.rs\n'}
+[0.386187] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/rust/src/action\n'}
+[0.386361] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/rust/src/action/rmw.rs\n'}
+[0.386677] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/rust/build.rs\n'}
+[0.386834] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/rust/Cargo.toml\n'}
+[0.387091] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/action/Nav.idl\n'}
+[0.387159] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/action/Nav.action\n'}
+[0.387211] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/ament_index/resource_index/package_run_dependencies/action_interfaces\n'}
+[0.387306] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/ament_index/resource_index/parent_prefix_path/action_interfaces\n'}
+[0.387463] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/environment/ament_prefix_path.sh\n'}
+[0.387764] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/environment/ament_prefix_path.dsv\n'}
+[0.387949] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/environment/path.sh\n'}
+[0.388059] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/environment/path.dsv\n'}
+[0.388239] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/local_setup.bash\n'}
+[0.388372] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/local_setup.sh\n'}
+[0.388418] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/local_setup.zsh\n'}
+[0.388502] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/local_setup.dsv\n'}
+[0.388642] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/package.dsv\n'}
+[0.388796] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/ament_index/resource_index/packages/action_interfaces\n'}
+[0.388890] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_generator_cExport.cmake\n'}
+[0.389024] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.389250] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.389386] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.389496] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.389671] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.389891] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[0.390085] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.390127] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_generator_cppExport.cmake\n'}
+[0.390162] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.390192] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.390223] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.390261] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.390292] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[0.390379] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.390422] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_generator_pyExport.cmake\n'}
+[0.390458] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.390489] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[0.390522] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.390552] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.390580] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.390608] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.390636] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.390667] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.390697] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/action_interfacesConfig.cmake\n'}
+[0.390735] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/cmake/action_interfacesConfig-version.cmake\n'}
+[0.390764] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/action_interfaces/share/action_interfaces/package.xml\n'}
+[0.392729] (action_interfaces) CommandEnded: {'returncode': 0}
+[0.400095] (-) TimerEvent: {}
+[0.409261] (action_interfaces) JobEnded: {'identifier': 'action_interfaces', 'rc': 0}
+[0.410910] (r2d2_main) JobStarted: {'identifier': 'r2d2_main'}
+[0.486335] (r2d2_main) JobProgress: {'identifier': 'r2d2_main', 'progress': 'cmake'}
+[0.487539] (r2d2_main) JobProgress: {'identifier': 'r2d2_main', 'progress': 'build'}
+[0.487817] (r2d2_main) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ibrahim/R2D2/build/r2d2_main', '--', '-j16', '-l16'], 'cwd': '/home/ibrahim/R2D2/build/r2d2_main', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ibrahim'), ('GIT_ASKPASS', '/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ibrahim/R2D2/install/action_interfaces/lib:/home/ibrahim/RobotArmExpanded/install/action_interfaces/lib:/home/ibrahim/RobotArm/install/action_interfaces/lib:/home/ibrahim/RobotNav/install/action_interfaces/lib:/home/ibrahim/ros2_ws/install/action_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/ibrahim'), ('OLDPWD', '/home/ibrahim/R2D2'), ('TERM_PROGRAM_VERSION', '1.124.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-dbd0244f-7d0f-46e7-b69c-16228c0e0f5b.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/ibrahim/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ibrahim/R2D2/install:/home/ibrahim/MoveItArm/install:/home/ibrahim/RobotArmExpanded/install:/home/ibrahim/RobotArm/install:/home/ibrahim/TF2Sample/install:/home/ibrahim/RobotNav/install:/home/ibrahim/RobotMonitor/install:/home/ibrahim/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ibrahim'), ('NAME', 'Ibrahim-laptop'), ('WSL_INTEROP', '/run/WSL/419_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '49359'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ibrahim/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ibrahim/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PostgreSQL/18/bin:/mnt/c/Users/zanto/.local/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/zanto/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/zanto/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/zanto/AppData/Local/Programs/Ollama:/mnt/c/Users/zanto/AppData/Roaming/npm:/mnt/c/msys64/ucrt64/bin:/snap/bin:/home/ibrahim/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/ibrahim/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-d25663f49e104508.txt'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/ibrahim/.vscode-server/data/User/workspaceStorage/0758fd1c63bb490b00f75db623d0df75/ms-python.python/pythonrc.py'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-90d41d2bb8.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/ibrahim/R2D2/install/r2d2_main:/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ibrahim/R2D2/build/r2d2_main'), ('COPILOT_DEBUG_NONCE', '74c6633776c58fe5b48ff725eedbf72f'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotArmExpanded/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotArm/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotNav/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/ros2_ws/install/action_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/R2D2/install/r2d2_main:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[0.500198] (-) TimerEvent: {}
+[0.549494] (r2d2_main) StdoutLine: {'line': b'[ 25%] Built target LidarDetect\n'}
+[0.552071] (r2d2_main) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o\x1b[0m\n'}
+[0.552512] (r2d2_main) StdoutLine: {'line': b'[ 62%] Built target CameraRotator\n'}
+[0.552614] (r2d2_main) StdoutLine: {'line': b'[ 87%] Built target NavigationClient\n'}
+[0.600324] (-) TimerEvent: {}
+[0.700654] (-) TimerEvent: {}
+[0.800986] (-) TimerEvent: {}
+[0.901337] (-) TimerEvent: {}
+[1.001773] (-) TimerEvent: {}
+[1.102113] (-) TimerEvent: {}
+[1.202444] (-) TimerEvent: {}
+[1.302777] (-) TimerEvent: {}
+[1.403119] (-) TimerEvent: {}
+[1.503444] (-) TimerEvent: {}
+[1.603787] (-) TimerEvent: {}
+[1.704088] (-) TimerEvent: {}
+[1.804464] (-) TimerEvent: {}
+[1.904756] (-) TimerEvent: {}
+[2.005088] (-) TimerEvent: {}
+[2.105483] (-) TimerEvent: {}
+[2.205909] (-) TimerEvent: {}
+[2.306552] (-) TimerEvent: {}
+[2.407403] (-) TimerEvent: {}
+[2.507881] (-) TimerEvent: {}
+[2.608208] (-) TimerEvent: {}
+[2.708532] (-) TimerEvent: {}
+[2.808873] (-) TimerEvent: {}
+[2.909209] (-) TimerEvent: {}
+[3.009529] (-) TimerEvent: {}
+[3.109886] (-) TimerEvent: {}
+[3.210231] (-) TimerEvent: {}
+[3.310588] (-) TimerEvent: {}
+[3.410976] (-) TimerEvent: {}
+[3.511422] (-) TimerEvent: {}
+[3.611746] (-) TimerEvent: {}
+[3.712096] (-) TimerEvent: {}
+[3.812581] (-) TimerEvent: {}
+[3.913212] (-) TimerEvent: {}
+[4.013740] (-) TimerEvent: {}
+[4.114053] (-) TimerEvent: {}
+[4.214356] (-) TimerEvent: {}
+[4.314653] (-) TimerEvent: {}
+[4.414971] (-) TimerEvent: {}
+[4.515314] (-) TimerEvent: {}
+[4.615782] (-) TimerEvent: {}
+[4.716129] (-) TimerEvent: {}
+[4.816487] (-) TimerEvent: {}
+[4.916844] (-) TimerEvent: {}
+[5.017251] (-) TimerEvent: {}
+[5.117703] (-) TimerEvent: {}
+[5.218018] (-) TimerEvent: {}
+[5.318335] (-) TimerEvent: {}
+[5.418657] (-) TimerEvent: {}
+[5.519075] (-) TimerEvent: {}
+[5.619441] (-) TimerEvent: {}
+[5.719802] (-) TimerEvent: {}
+[5.820134] (-) TimerEvent: {}
+[5.920607] (-) TimerEvent: {}
+[6.020998] (-) TimerEvent: {}
+[6.121481] (-) TimerEvent: {}
+[6.222035] (-) TimerEvent: {}
+[6.322583] (-) TimerEvent: {}
+[6.423051] (-) TimerEvent: {}
+[6.523523] (-) TimerEvent: {}
+[6.624081] (-) TimerEvent: {}
+[6.724746] (-) TimerEvent: {}
+[6.825194] (-) TimerEvent: {}
+[6.925623] (-) TimerEvent: {}
+[7.026084] (-) TimerEvent: {}
+[7.126544] (-) TimerEvent: {}
+[7.226941] (-) TimerEvent: {}
+[7.327402] (-) TimerEvent: {}
+[7.427899] (-) TimerEvent: {}
+[7.528375] (-) TimerEvent: {}
+[7.628836] (-) TimerEvent: {}
+[7.729286] (-) TimerEvent: {}
+[7.829730] (-) TimerEvent: {}
+[7.930197] (-) TimerEvent: {}
+[8.030664] (-) TimerEvent: {}
+[8.131136] (-) TimerEvent: {}
+[8.231578] (-) TimerEvent: {}
+[8.332057] (-) TimerEvent: {}
+[8.432543] (-) TimerEvent: {}
+[8.532987] (-) TimerEvent: {}
+[8.633483] (-) TimerEvent: {}
+[8.734013] (-) TimerEvent: {}
+[8.834548] (-) TimerEvent: {}
+[8.935030] (-) TimerEvent: {}
+[9.035594] (-) TimerEvent: {}
+[9.136047] (-) TimerEvent: {}
+[9.236442] (-) TimerEvent: {}
+[9.336817] (-) TimerEvent: {}
+[9.437230] (-) TimerEvent: {}
+[9.537653] (-) TimerEvent: {}
+[9.638204] (-) TimerEvent: {}
+[9.738906] (-) TimerEvent: {}
+[9.839341] (-) TimerEvent: {}
+[9.939716] (-) TimerEvent: {}
+[10.040179] (-) TimerEvent: {}
+[10.140811] (-) TimerEvent: {}
+[10.241243] (-) TimerEvent: {}
+[10.341696] (-) TimerEvent: {}
+[10.442141] (-) TimerEvent: {}
+[10.542573] (-) TimerEvent: {}
+[10.643078] (-) TimerEvent: {}
+[10.743731] (-) TimerEvent: {}
+[10.844372] (-) TimerEvent: {}
+[10.944961] (-) TimerEvent: {}
+[11.045375] (-) TimerEvent: {}
+[11.145794] (-) TimerEvent: {}
+[11.246241] (-) TimerEvent: {}
+[11.346648] (-) TimerEvent: {}
+[11.447053] (-) TimerEvent: {}
+[11.547491] (-) TimerEvent: {}
+[11.648013] (-) TimerEvent: {}
+[11.748433] (-) TimerEvent: {}
+[11.848791] (-) TimerEvent: {}
+[11.949237] (-) TimerEvent: {}
+[12.049743] (-) TimerEvent: {}
+[12.150148] (-) TimerEvent: {}
+[12.250670] (-) TimerEvent: {}
+[12.351310] (-) TimerEvent: {}
+[12.451753] (-) TimerEvent: {}
+[12.552297] (-) TimerEvent: {}
+[12.652855] (-) TimerEvent: {}
+[12.753343] (-) TimerEvent: {}
+[12.853774] (-) TimerEvent: {}
+[12.954222] (-) TimerEvent: {}
+[13.054657] (-) TimerEvent: {}
+[13.155080] (-) TimerEvent: {}
+[13.255486] (-) TimerEvent: {}
+[13.355928] (-) TimerEvent: {}
+[13.456340] (-) TimerEvent: {}
+[13.556768] (-) TimerEvent: {}
+[13.657237] (-) TimerEvent: {}
+[13.757675] (-) TimerEvent: {}
+[13.858109] (-) TimerEvent: {}
+[13.958582] (-) TimerEvent: {}
+[14.059063] (-) TimerEvent: {}
+[14.159536] (-) TimerEvent: {}
+[14.259954] (-) TimerEvent: {}
+[14.360359] (-) TimerEvent: {}
+[14.374400] (r2d2_main) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable NavigationServer\x1b[0m\n'}
+[14.460453] (-) TimerEvent: {}
+[14.560803] (-) TimerEvent: {}
+[14.661147] (-) TimerEvent: {}
+[14.761466] (-) TimerEvent: {}
+[14.861829] (-) TimerEvent: {}
+[14.962190] (-) TimerEvent: {}
+[15.062596] (-) TimerEvent: {}
+[15.162986] (-) TimerEvent: {}
+[15.263330] (-) TimerEvent: {}
+[15.295529] (r2d2_main) StdoutLine: {'line': b'[100%] Built target NavigationServer\n'}
+[15.308050] (r2d2_main) CommandEnded: {'returncode': 0}
+[15.308879] (r2d2_main) JobProgress: {'identifier': 'r2d2_main', 'progress': 'install'}
+[15.309568] (r2d2_main) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ibrahim/R2D2/build/r2d2_main'], 'cwd': '/home/ibrahim/R2D2/build/r2d2_main', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ibrahim'), ('GIT_ASKPASS', '/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ibrahim/R2D2/install/action_interfaces/lib:/home/ibrahim/RobotArmExpanded/install/action_interfaces/lib:/home/ibrahim/RobotArm/install/action_interfaces/lib:/home/ibrahim/RobotNav/install/action_interfaces/lib:/home/ibrahim/ros2_ws/install/action_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/ibrahim'), ('OLDPWD', '/home/ibrahim/R2D2'), ('TERM_PROGRAM_VERSION', '1.124.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-dbd0244f-7d0f-46e7-b69c-16228c0e0f5b.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/ibrahim/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ibrahim/R2D2/install:/home/ibrahim/MoveItArm/install:/home/ibrahim/RobotArmExpanded/install:/home/ibrahim/RobotArm/install:/home/ibrahim/TF2Sample/install:/home/ibrahim/RobotNav/install:/home/ibrahim/RobotMonitor/install:/home/ibrahim/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ibrahim'), ('NAME', 'Ibrahim-laptop'), ('WSL_INTEROP', '/run/WSL/419_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '49359'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ibrahim/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ibrahim/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ibrahim/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PostgreSQL/18/bin:/mnt/c/Users/zanto/.local/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/zanto/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/zanto/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/zanto/AppData/Local/Programs/Ollama:/mnt/c/Users/zanto/AppData/Roaming/npm:/mnt/c/msys64/ucrt64/bin:/snap/bin:/home/ibrahim/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/ibrahim/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-d25663f49e104508.txt'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/ibrahim/.vscode-server/data/User/workspaceStorage/0758fd1c63bb490b00f75db623d0df75/ms-python.python/pythonrc.py'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-90d41d2bb8.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/ibrahim/R2D2/install/r2d2_main:/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ibrahim/R2D2/build/r2d2_main'), ('COPILOT_DEBUG_NONCE', '74c6633776c58fe5b48ff725eedbf72f'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotArmExpanded/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotArm/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotNav/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/ros2_ws/install/action_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/R2D2/install/r2d2_main:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[15.317079] (r2d2_main) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.317672] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/LidarDetect\n'}
+[15.319016] (r2d2_main) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/NavigationServer\n'}
+[15.330586] (r2d2_main) StdoutLine: {'line': b'-- Set runtime path of "/home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/NavigationServer" to ""\n'}
+[15.331723] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/NavigationClient\n'}
+[15.333452] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/CameraRotator\n'}
+[15.333745] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch\n'}
+[15.333876] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/bringup.launch.py\n'}
+[15.333986] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/display.launch.py\n'}
+[15.334145] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/slam_rviz.launch.py\n'}
+[15.334276] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/__pycache__\n'}
+[15.334338] (r2d2_main) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/__pycache__/gazebo.launch.cpython-310.pyc\n'}
+[15.334765] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/gazebo.launch.py\n'}
+[15.334950] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/nav2.launch.py\n'}
+[15.335039] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/urdf\n'}
+[15.335092] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/urdf/robot.urdf\n'}
+[15.335322] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/rviz\n'}
+[15.335472] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/rviz/robot.rviz\n'}
+[15.335608] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/rviz/model.rviz\n'}
+[15.335682] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/worlds\n'}
+[15.335753] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/worlds/world.sdf\n'}
+[15.335794] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/worlds/world2.sdf\n'}
+[15.335829] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/config\n'}
+[15.335859] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/config/mapper_params.yaml\n'}
+[15.335889] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/config/nav2_params.yaml\n'}
+[15.335917] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/maps\n'}
+[15.336020] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/maps/my_map.yaml\n'}
+[15.336368] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/ament_index/resource_index/package_run_dependencies/r2d2_main\n'}
+[15.336461] (r2d2_main) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/ament_index/resource_index/parent_prefix_path/r2d2_main\n'}
+[15.336689] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/ament_prefix_path.sh\n'}
+[15.336756] (r2d2_main) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/ament_prefix_path.dsv\n'}
+[15.336948] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/path.sh\n'}
+[15.337100] (r2d2_main) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/path.dsv\n'}
+[15.337256] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.bash\n'}
+[15.337418] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.sh\n'}
+[15.337558] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.zsh\n'}
+[15.337602] (r2d2_main) StdoutLine: {'line': b'-- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.dsv\n'}
+[15.337766] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/package.dsv\n'}
+[15.337928] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/ament_index/resource_index/packages/r2d2_main\n'}
+[15.338110] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/cmake/r2d2_mainConfig.cmake\n'}
+[15.338178] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/cmake/r2d2_mainConfig-version.cmake\n'}
+[15.338229] (r2d2_main) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/package.xml\n'}
+[15.340319] (r2d2_main) CommandEnded: {'returncode': 0}
+[15.350092] (r2d2_main) JobEnded: {'identifier': 'r2d2_main', 'rc': 0}
+[15.350977] (-) EventReactorShutdown: {}

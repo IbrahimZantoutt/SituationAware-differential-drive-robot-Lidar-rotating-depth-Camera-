@@ -1,0 +1,8 @@
+[35m[1mConsolidate compiler generated dependencies of target NavigationServer[0m
+[ 25%] Built target LidarDetect
+[ 62%] Built target CameraRotator
+[ 75%] Built target NavigationClient
+[ 87%] [32mBuilding CXX object CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o[0m
+gmake[2]: *** [CMakeFiles/NavigationServer.dir/build.make:76: CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/NavigationServer.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

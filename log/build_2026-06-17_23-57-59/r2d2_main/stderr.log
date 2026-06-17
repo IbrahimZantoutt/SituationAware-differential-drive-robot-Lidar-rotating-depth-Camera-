@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/NavigationServer.dir/build.make:76: CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/NavigationServer.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

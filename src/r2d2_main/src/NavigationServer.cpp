@@ -15,6 +15,7 @@
 #include "tf2_ros/buffer.h"
 #include "tf2_ros/transform_listener.h"
 #include "std_msgs/msg/float64.hpp"
+#include "sensor_msgs/msg/laser_scan.hpp"
 
 #include "nav_msgs/msg/path.hpp"
 #include <limits>
@@ -75,6 +76,11 @@ class NavigationServer : public rclcpp::Node
                 latest_plan_ = msg;
             });
 
+            laser_scan_sub_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
+                "scan", 10,
+                [this](sensor_msgs::msg::LaserScan::SharedPtr msg){
+                    std::lock_guard lk(scan_mtx_); last_scan_ = msg;
+                });
            
         }
 
@@ -236,6 +242,19 @@ class NavigationServer : public rclcpp::Node
                     return;
                 }
 
+                sensor_msgs::msg::LaserScan::SharedPtr scan;
+                { std::lock_guard<std::mutex> lk(scan_mtx_); scan = last_scan_; }
+                if(!scan){
+                    std::this_thread::sleep_for(100ms);
+                    continue;   // legal now — we're inside the while loop
+                }
+
+                RCLCPP_INFO(this->get_logger(), "front=%.2f  left=%.2f  right=%.2f",
+                    sectorMin(scan, -0.35, 0.35),    // front  +/-20 deg
+                    sectorMin(scan,  1.22, 1.92),    // left   ~+90 deg
+                    sectorMin(scan, -1.92, -1.22));  // right  ~-90 deg
+
+
                 double cx, cy, cyaw;
                 if(!getRobotPose(cx, cy, cyaw)){
                     std::this_thread::sleep_for(100ms);
@@ -297,6 +316,30 @@ class NavigationServer : public rclcpp::Node
             return a;
         }
 
+        // Smallest valid range (m) over the arc [lo, hi] in radians (robot frame,
+        // 0 = straight ahead). Ignores inf/nan and out-of-range returns. Returns
+        // range_max if the arc has no valid reading (i.e. "clear"). Handles arcs
+        // that wrap past +/-pi (e.g. the rear sector).
+        static double sectorMin(const sensor_msgs::msg::LaserScan::SharedPtr & scan,
+                                double lo, double hi){
+            const int n = static_cast<int>(scan->ranges.size());
+            if(n == 0) return 0.0;
+
+            // angle -> index:  index = round((angle - angle_min) / angle_increment)
+            int i_lo = static_cast<int>(std::lround((lo - scan->angle_min) / scan->angle_increment));
+            int i_hi = static_cast<int>(std::lround((hi - scan->angle_min) / scan->angle_increment));
+            if(i_hi < i_lo) i_hi += n;   // arc wraps past the +/-pi seam
+
+            double best = scan->range_max;
+            for(int i = i_lo; i <= i_hi; ++i){
+                int idx = ((i % n) + n) % n;   // wrap into [0, n)
+                double r = scan->ranges[idx];
+                if(std::isfinite(r) && r >= scan->range_min && r <= scan->range_max)
+                    best = std::min(best, r);
+            }
+            return best;
+        }
+
         void aimCamera(double body_angle){
             if(std::abs(normalizeAngle(body_angle - last_cam_angle_)) < 0.05)  // ~3 deg gate
                 return;
@@ -352,6 +395,12 @@ class NavigationServer : public rclcpp::Node
         rclcpp::Subscription<nav_msgs::msg::Path>::SharedPtr plan_sub_;
         std::mutex plan_mutex_;
         nav_msgs::msg::Path::SharedPtr latest_plan_;
+
+
+        rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr laser_scan_sub_;
+        sensor_msgs::msg::LaserScan::SharedPtr last_scan_;
+        std::mutex scan_mtx_;
+
 
 
 };
