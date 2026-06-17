@@ -12,7 +12,6 @@
 /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/rviz/robot.rviz
 /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/rviz/model.rviz
 /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/worlds/world.sdf
-/home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/config/rotator_controllers.yaml
 /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/config/mapper_params.yaml
 /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/config/nav2_params.yaml
 /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/maps/my_map.yaml

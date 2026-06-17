@@ -16,6 +16,10 @@
 #include "tf2_ros/transform_listener.h"
 #include "std_msgs/msg/float64.hpp"
 
+#include "nav_msgs/msg/path.hpp"
+#include <limits>
+
+
 using namespace std::chrono_literals;
 
 // Hybrid navigation server: exposes a simple (target_x, target_y) Nav action.
@@ -63,7 +67,15 @@ class NavigationServer : public rclcpp::Node
             rclcpp::QoS cam_qos(rclcpp::KeepLast(1));
             cam_qos.transient_local().reliable();
             camera_angle_pub_ = this->create_publisher<std_msgs::msg::Float64>("camera_angle_target", cam_qos);
-            camera_angle_pub_->publish(std_msgs::msg::Float64().set__data(2.0));  // test angle (off-forward) so the rotator visibly moves
+
+            plan_sub_ = this->create_subscription<nav_msgs::msg::Path>(
+            "plan", 10,
+            [this](nav_msgs::msg::Path::SharedPtr msg){
+                std::lock_guard<std::mutex> lock(plan_mutex_);
+                latest_plan_ = msg;
+            });
+
+           
         }
 
     private:
@@ -185,6 +197,14 @@ class NavigationServer : public rclcpp::Node
                     finish(goal_handle, result, "canceled", false, true);
                     return;
                 }
+                double cx, cy, cyaw;
+                if(getRobotPose(cx, cy, cyaw)){
+                    double angle;
+                    if(cameraAngleFromPath(cx, cy, cyaw, angle))
+                        aimCamera(angle);                                                  // path direction
+                    else
+                        aimCamera(normalizeAngle(std::atan2(ty - cy, tx - cx) - cyaw));     // fallback: goal
+                }
                 if(result_future.wait_for(100ms) == std::future_status::ready){
                     break;
                 }
@@ -230,6 +250,7 @@ class NavigationServer : public rclcpp::Node
                 }
 
                 double yaw_err = normalizeAngle(std::atan2(dy, dx) - cyaw);
+                aimCamera(yaw_err);
                 cmd.angular.z = std::clamp(k_ang * yaw_err, -max_ang, max_ang);
                 // only drive forward once roughly facing the target
                 cmd.linear.x = (std::abs(yaw_err) > yaw_tol) ? 0.0
@@ -276,6 +297,44 @@ class NavigationServer : public rclcpp::Node
             return a;
         }
 
+        void aimCamera(double body_angle){
+            if(std::abs(normalizeAngle(body_angle - last_cam_angle_)) < 0.05)  // ~3 deg gate
+                return;
+            last_cam_angle_ = body_angle;
+            camera_angle_pub_->publish(std_msgs::msg::Float64().set__data(body_angle));
+        }
+
+        bool cameraAngleFromPath(double cx, double cy, double cyaw, double & out_angle){
+            nav_msgs::msg::Path::SharedPtr path;
+            {
+                std::lock_guard<std::mutex> lock(plan_mutex_);
+                path = latest_plan_;
+            }
+            if(!path || path->poses.size() < 2) return false;
+
+            const double look_ahead = 0.6;  // m
+
+            // closest path point to the robot
+            size_t closest = 0;
+            double best = std::numeric_limits<double>::max();
+            for(size_t i = 0; i < path->poses.size(); ++i){
+                double d = std::hypot(path->poses[i].pose.position.x - cx,
+                                    path->poses[i].pose.position.y - cy);
+                if(d < best){ best = d; closest = i; }
+            }
+            // walk forward until ~look_ahead away (or path end)
+            size_t idx = closest;
+            for(size_t i = closest; i < path->poses.size(); ++i){
+                idx = i;
+                double d = std::hypot(path->poses[i].pose.position.x - cx,
+                                    path->poses[i].pose.position.y - cy);
+                if(d >= look_ahead) break;
+            }
+            out_angle = normalizeAngle(std::atan2(path->poses[idx].pose.position.y - cy,
+                                                path->poses[idx].pose.position.x - cx) - cyaw);
+            return true;
+        }
+
         rclcpp_action::Server<Navigation>::SharedPtr nav_server_;
         rclcpp_action::Client<NavToPose>::SharedPtr nav2_client_;
         rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_pub_;
@@ -287,6 +346,14 @@ class NavigationServer : public rclcpp::Node
         nav_msgs::msg::OccupancyGrid::SharedPtr latest_map_;
 
         rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr camera_angle_pub_;
+
+        double last_cam_angle_ = 100.0;  // last angle sent to the camera; 100 forces the first publish
+
+        rclcpp::Subscription<nav_msgs::msg::Path>::SharedPtr plan_sub_;
+        std::mutex plan_mutex_;
+        nav_msgs::msg::Path::SharedPtr latest_plan_;
+
+
 };
 
 int main(int argc, char **argv)

@@ -854,8 +854,15 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__builder.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__traits.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__type_support.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/path.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__builder.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__type_support.hpp
 
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__type_support.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
@@ -1413,6 +1420,8 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 
 /usr/include/c++/11/ios:
 
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:
@@ -1470,6 +1479,8 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 /opt/ros/humble/include/rmw/rmw/events_statuses/liveliness_lost.h:
 
 /usr/include/c++/11/tr1/gamma.tcc:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
@@ -2235,6 +2246,8 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/liveliness_changed.h:
 
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/path.hpp:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/message_lost.h:
@@ -2494,6 +2507,8 @@ CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o: /home/ibrahim/R2D2/s
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/type_adapter.hpp:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__builder.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
 

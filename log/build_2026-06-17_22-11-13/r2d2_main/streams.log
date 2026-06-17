@@ -1,0 +1,51 @@
+[0.119s] Invoking command in '/home/ibrahim/R2D2/build/r2d2_main': AMENT_PREFIX_PATH=/home/ibrahim/R2D2/install/action_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ibrahim/R2D2/install/action_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ibrahim/R2D2/build/r2d2_main -- -j16 -l16
+[0.188s] [ 25%] Built target LidarDetect
+[0.194s] [ 87%] Built target NavigationClient
+[0.194s] [ 87%] Built target CameraRotator
+[0.194s] [ 87%] Building CXX object CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o
+[14.191s] [100%] Linking CXX executable NavigationServer
+[15.027s] [100%] Built target NavigationServer
+[15.041s] Invoked command in '/home/ibrahim/R2D2/build/r2d2_main' returned '0': AMENT_PREFIX_PATH=/home/ibrahim/R2D2/install/action_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ibrahim/R2D2/install/action_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ibrahim/R2D2/build/r2d2_main -- -j16 -l16
+[15.055s] Invoking command in '/home/ibrahim/R2D2/build/r2d2_main': AMENT_PREFIX_PATH=/home/ibrahim/R2D2/install/action_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ibrahim/R2D2/install/action_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ibrahim/R2D2/build/r2d2_main
+[15.066s] -- Install configuration: ""
+[15.067s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/LidarDetect
+[15.067s] -- Installing: /home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/NavigationServer
+[15.086s] -- Set runtime path of "/home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/NavigationServer" to ""
+[15.086s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/NavigationClient
+[15.087s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/lib/r2d2_main/CameraRotator
+[15.087s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch
+[15.088s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/bringup.launch.py
+[15.088s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/display.launch.py
+[15.089s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/slam_rviz.launch.py
+[15.089s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/__pycache__
+[15.089s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/__pycache__/gazebo.launch.cpython-310.pyc
+[15.089s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/gazebo.launch.py
+[15.089s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/launch/nav2.launch.py
+[15.089s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/urdf
+[15.090s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/urdf/robot.urdf
+[15.090s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/rviz
+[15.090s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/rviz/robot.rviz
+[15.090s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/rviz/model.rviz
+[15.090s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/worlds
+[15.090s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/worlds/world.sdf
+[15.091s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/config
+[15.091s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/config/mapper_params.yaml
+[15.091s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/config/nav2_params.yaml
+[15.091s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/maps
+[15.091s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/maps/my_map.yaml
+[15.091s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/ament_index/resource_index/package_run_dependencies/r2d2_main
+[15.091s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/ament_index/resource_index/parent_prefix_path/r2d2_main
+[15.091s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/ament_prefix_path.sh
+[15.091s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/ament_prefix_path.dsv
+[15.091s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/path.sh
+[15.091s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/environment/path.dsv
+[15.091s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.bash
+[15.091s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.sh
+[15.091s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.zsh
+[15.091s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/local_setup.dsv
+[15.091s] -- Installing: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/package.dsv
+[15.091s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/ament_index/resource_index/packages/r2d2_main
+[15.091s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/cmake/r2d2_mainConfig.cmake
+[15.091s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/cmake/r2d2_mainConfig-version.cmake
+[15.091s] -- Up-to-date: /home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/package.xml
+[15.093s] Invoked command in '/home/ibrahim/R2D2/build/r2d2_main' returned '0': AMENT_PREFIX_PATH=/home/ibrahim/R2D2/install/action_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ibrahim/R2D2/install/action_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ibrahim/R2D2/install/action_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ibrahim/R2D2/build/r2d2_main
