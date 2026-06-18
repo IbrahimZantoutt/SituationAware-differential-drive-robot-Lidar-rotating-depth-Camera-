@@ -1,0 +1,4 @@
+/home/ibrahim/R2D2/src/r2d2_main/src/NavigationServer.cpp: In member function ‘void NavigationServer::blindMove(std::shared_ptr<rclcpp_action::ServerGoalHandle<action_interfaces::action::Nav> >, double, double)’:
+/home/ibrahim/R2D2/src/r2d2_main/src/NavigationServer.cpp:230:26: warning: unused variable ‘yaw_tol’ [-Wunused-variable]
+  230 |             const double yaw_tol  = 0.30;   // rad: turn in place above this
+      |                          ^~~~~~~
