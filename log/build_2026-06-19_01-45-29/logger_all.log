@@ -1,0 +1,163 @@
+[0.387s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'r2d2_main', '--cmake-args', '-DCMAKE_BUILD_TYPE=Release']
+[0.387s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['r2d2_main'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_BUILD_TYPE=Release'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x747694a59360>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x747694a58d90>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x747694a58d90>>)
+[0.827s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.828s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ibrahim/R2D2'
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/action_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/action_interfaces) by extension 'ignore'
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/action_interfaces) by extension 'ignore_ament_install'
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/action_interfaces) by extensions ['colcon_pkg']
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/action_interfaces) by extension 'colcon_pkg'
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/action_interfaces) by extensions ['colcon_meta']
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/action_interfaces) by extension 'colcon_meta'
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/action_interfaces) by extensions ['ros']
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/action_interfaces) by extension 'ros'
+[0.858s] DEBUG:colcon.colcon_core.package_identification:Package 'src/action_interfaces' with type 'ros.ament_cmake' and name 'action_interfaces'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/r2d2_main) by extensions ['ignore', 'ignore_ament_install']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/r2d2_main) by extension 'ignore'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/r2d2_main) by extension 'ignore_ament_install'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/r2d2_main) by extensions ['colcon_pkg']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/r2d2_main) by extension 'colcon_pkg'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/r2d2_main) by extensions ['colcon_meta']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/r2d2_main) by extension 'colcon_meta'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/r2d2_main) by extensions ['ros']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/r2d2_main) by extension 'ros'
+[0.860s] DEBUG:colcon.colcon_core.package_identification:Package 'src/r2d2_main' with type 'ros.ament_cmake' and name 'r2d2_main'
+[0.860s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.860s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.860s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.860s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.860s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.909s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'action_interfaces' in 'src/action_interfaces'
+[0.910s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.911s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.920s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/ibrahim/R2D2/install
+[0.920s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/ibrahim/MoveItArm/install
+[0.921s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/ibrahim/RobotArmExpanded/install
+[0.921s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/ibrahim/RobotArm/install
+[0.921s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/ibrahim/TF2Sample/install
+[0.922s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/ibrahim/RobotNav/install
+[0.922s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/ibrahim/RobotMonitor/install
+[0.923s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/ibrahim/ros2_ws/install
+[0.925s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 430 installed packages in /opt/ros/humble
+[0.926s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'r2d2_main' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'r2d2_main' build argument 'cmake_target' from command line to 'None'
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'r2d2_main' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'r2d2_main' build argument 'cmake_clean_cache' from command line to 'False'
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'r2d2_main' build argument 'cmake_clean_first' from command line to 'False'
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'r2d2_main' build argument 'cmake_force_configure' from command line to 'False'
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'r2d2_main' build argument 'ament_cmake_args' from command line to 'None'
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'r2d2_main' build argument 'catkin_cmake_args' from command line to 'None'
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'r2d2_main' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.976s] DEBUG:colcon.colcon_core.verb:Building package 'r2d2_main' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ibrahim/R2D2/build/r2d2_main', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ibrahim/R2D2/install/r2d2_main', 'merge_install': False, 'path': '/home/ibrahim/R2D2/src/r2d2_main', 'symlink_install': False, 'test_result_base': None}
+[0.976s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.977s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.978s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ibrahim/R2D2/src/r2d2_main' with build type 'ament_cmake'
+[0.978s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ibrahim/R2D2/src/r2d2_main'
+[0.987s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.987s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.987s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.108s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ibrahim/R2D2/build/r2d2_main': CMAKE_PREFIX_PATH=/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/R2D2/install/r2d2_main:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake /home/ibrahim/R2D2/src/r2d2_main -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/ibrahim/R2D2/install/r2d2_main
+[2.509s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ibrahim/R2D2/build/r2d2_main' returned '0': CMAKE_PREFIX_PATH=/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/R2D2/install/r2d2_main:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake /home/ibrahim/R2D2/src/r2d2_main -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/ibrahim/R2D2/install/r2d2_main
+[2.512s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ibrahim/R2D2/build/r2d2_main': CMAKE_PREFIX_PATH=/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/R2D2/install/r2d2_main:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/R2D2/build/r2d2_main -- -j16 -l16
+[25.236s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ibrahim/R2D2/build/r2d2_main' returned '0': CMAKE_PREFIX_PATH=/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/R2D2/install/r2d2_main:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/R2D2/build/r2d2_main -- -j16 -l16
+[25.251s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ibrahim/R2D2/build/r2d2_main': CMAKE_PREFIX_PATH=/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/R2D2/install/r2d2_main:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --install /home/ibrahim/R2D2/build/r2d2_main
+[25.282s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(r2d2_main)
+[25.283s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ibrahim/R2D2/build/r2d2_main' returned '0': CMAKE_PREFIX_PATH=/home/ibrahim/R2D2/install/action_interfaces:/home/ibrahim/R2D2/install/r2d2_main:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --install /home/ibrahim/R2D2/build/r2d2_main
+[25.291s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/R2D2/install/r2d2_main' for CMake module files
+[25.292s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/R2D2/install/r2d2_main' for CMake config files
+[25.293s] Level 1:colcon.colcon_core.shell:create_environment_hook('r2d2_main', 'cmake_prefix_path')
+[25.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/hook/cmake_prefix_path.ps1'
+[25.295s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/hook/cmake_prefix_path.dsv'
+[25.296s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/hook/cmake_prefix_path.sh'
+[25.297s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/R2D2/install/r2d2_main/lib'
+[25.297s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/R2D2/install/r2d2_main/bin'
+[25.297s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/R2D2/install/r2d2_main/lib/pkgconfig/r2d2_main.pc'
+[25.298s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/R2D2/install/r2d2_main/lib/python3.10/site-packages'
+[25.298s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/R2D2/install/r2d2_main/bin'
+[25.298s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/package.ps1'
+[25.300s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/package.dsv'
+[25.300s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/package.sh'
+[25.301s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/package.bash'
+[25.302s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/package.zsh'
+[25.303s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ibrahim/R2D2/install/r2d2_main/share/colcon-core/packages/r2d2_main)
+[25.304s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(r2d2_main)
+[25.304s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/R2D2/install/r2d2_main' for CMake module files
+[25.305s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/R2D2/install/r2d2_main' for CMake config files
+[25.306s] Level 1:colcon.colcon_core.shell:create_environment_hook('r2d2_main', 'cmake_prefix_path')
+[25.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/hook/cmake_prefix_path.ps1'
+[25.306s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/hook/cmake_prefix_path.dsv'
+[25.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/hook/cmake_prefix_path.sh'
+[25.307s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/R2D2/install/r2d2_main/lib'
+[25.307s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/R2D2/install/r2d2_main/bin'
+[25.307s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/R2D2/install/r2d2_main/lib/pkgconfig/r2d2_main.pc'
+[25.307s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/R2D2/install/r2d2_main/lib/python3.10/site-packages'
+[25.307s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/R2D2/install/r2d2_main/bin'
+[25.308s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/package.ps1'
+[25.308s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/package.dsv'
+[25.308s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/package.sh'
+[25.309s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/package.bash'
+[25.309s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/R2D2/install/r2d2_main/share/r2d2_main/package.zsh'
+[25.309s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ibrahim/R2D2/install/r2d2_main/share/colcon-core/packages/r2d2_main)
+[25.310s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[25.310s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[25.310s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[25.310s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[25.366s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[25.366s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[25.366s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[25.367s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[25.367s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[25.367s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[25.367s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ibrahim/R2D2/install/local_setup.ps1'
+[25.370s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ibrahim/R2D2/install/_local_setup_util_ps1.py'
+[25.372s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ibrahim/R2D2/install/setup.ps1'
+[25.389s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ibrahim/R2D2/install/local_setup.sh'
+[25.390s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ibrahim/R2D2/install/_local_setup_util_sh.py'
+[25.391s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ibrahim/R2D2/install/setup.sh'
+[25.393s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ibrahim/R2D2/install/local_setup.bash'
+[25.394s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ibrahim/R2D2/install/setup.bash'
+[25.397s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ibrahim/R2D2/install/local_setup.zsh'
+[25.398s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ibrahim/R2D2/install/setup.zsh'

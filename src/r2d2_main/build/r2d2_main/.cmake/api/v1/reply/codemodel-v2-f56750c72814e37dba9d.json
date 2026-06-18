@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-4793d1cbe2c5b9641285.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "r2d2_main",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CameraRotator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CameraRotator-58a84366941846cc545d.json",
+					"name" : "CameraRotator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LidarDetect::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LidarDetect-af365c8c313d025c0665.json",
+					"name" : "LidarDetect",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "NavigationClient::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-NavigationClient-56c7ac383f6c22d38e06.json",
+					"name" : "NavigationClient",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "NavigationServer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-NavigationServer-110f2b8f7e92ae6be0ea.json",
+					"name" : "NavigationServer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "r2d2_main_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-r2d2_main_uninstall-d480faa889bd3dd354ba.json",
+					"name" : "r2d2_main_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-e739dc7d818347146ab1.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ibrahim/R2D2/src/r2d2_main/build/r2d2_main",
+		"source" : "/home/ibrahim/R2D2/src/r2d2_main"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

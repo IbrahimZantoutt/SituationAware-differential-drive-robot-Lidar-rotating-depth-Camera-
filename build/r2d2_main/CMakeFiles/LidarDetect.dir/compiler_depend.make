@@ -32,8 +32,12 @@ CMakeFiles/LidarDetect.dir/src/LidarDetect.cpp.o: /home/ibrahim/R2D2/src/r2d2_ma
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h
 
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
@@ -56,6 +60,8 @@ CMakeFiles/LidarDetect.dir/src/LidarDetect.cpp.o: /home/ibrahim/R2D2/src/r2d2_ma
 /usr/include/stdc-predef.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 

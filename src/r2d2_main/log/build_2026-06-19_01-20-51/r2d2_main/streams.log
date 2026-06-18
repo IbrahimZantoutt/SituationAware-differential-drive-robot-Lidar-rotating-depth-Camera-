@@ -1,0 +1,73 @@
+[0.014s] Invoking command in '/home/ibrahim/R2D2/src/r2d2_main/build/r2d2_main': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake /home/ibrahim/R2D2/src/r2d2_main -DCMAKE_INSTALL_PREFIX=/home/ibrahim/R2D2/src/r2d2_main/install/r2d2_main
+[0.223s] -- The C compiler identification is GNU 11.4.0
+[0.679s] -- The CXX compiler identification is GNU 11.4.0
+[0.998s] -- Detecting C compiler ABI info
+[1.157s] -- Detecting C compiler ABI info - done
+[1.161s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.162s] -- Detecting C compile features
+[1.164s] -- Detecting C compile features - done
+[1.167s] -- Detecting CXX compiler ABI info
+[1.314s] -- Detecting CXX compiler ABI info - done
+[1.319s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.319s] -- Detecting CXX compile features
+[1.319s] -- Detecting CXX compile features - done
+[1.353s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.489s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.626s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[1.810s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.820s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.836s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.862s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.890s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.965s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.973s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[2.018s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.038s] -- Looking for pthread.h
+[2.180s] -- Looking for pthread.h - found
+[2.180s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.324s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.325s] -- Found Threads: TRUE  
+[2.408s] -- Found rclcpp_action: 16.0.19 (/opt/ros/humble/share/rclcpp_action/cmake)
+[2.463s] -- Found action_interfaces: 0.0.0 (/home/ibrahim/RobotArmExpanded/install/action_interfaces/share/action_interfaces/cmake)
+[2.490s] -- Found nav2_msgs: 1.1.20 (/opt/ros/humble/share/nav2_msgs/cmake)
+[2.562s] -- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.663s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.684s] -- Found trajectory_msgs: 4.9.1 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[2.711s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.819s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.819s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ibrahim/R2D2/src/r2d2_main/include>
+[2.820s] -- Configured cppcheck exclude dirs and/or files: 
+[2.822s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.825s] -- Added test 'lint_cmake' to check CMake code style
+[2.827s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.835s] -- Added test 'uncrustify' to check C / C++ code style
+[2.835s] -- Configured uncrustify additional arguments: 
+[2.837s] -- Added test 'xmllint' to check XML markup files
+[2.841s] -- Configuring done
+[2.885s] -- Generating done
+[2.897s] -- Build files have been written to: /home/ibrahim/R2D2/src/r2d2_main/build/r2d2_main
+[2.910s] Invoked command in '/home/ibrahim/R2D2/src/r2d2_main/build/r2d2_main' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake /home/ibrahim/R2D2/src/r2d2_main -DCMAKE_INSTALL_PREFIX=/home/ibrahim/R2D2/src/r2d2_main/install/r2d2_main
+[2.912s] Invoking command in '/home/ibrahim/R2D2/src/r2d2_main/build/r2d2_main': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/R2D2/src/r2d2_main/build/r2d2_main -- -j16 -l16
+[2.968s] [ 50%] Building CXX object CMakeFiles/LidarDetect.dir/src/LidarDetect.cpp.o
+[2.968s] [ 50%] Building CXX object CMakeFiles/CameraRotator.dir/src/CameraRotator.cpp.o
+[2.968s] [ 50%] Building CXX object CMakeFiles/NavigationClient.dir/src/NavigationClient.cpp.o
+[2.968s] [ 50%] Building CXX object CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o
+[3.000s] [ 62%] Linking CXX executable LidarDetect
+[3.128s] [ 62%] Built target LidarDetect
+[3.281s] /home/ibrahim/R2D2/src/r2d2_main/src/NavigationClient.cpp:8:10: fatal error: action_interfaces/action/nav.hpp: No such file or directory
+[3.282s]     8 | #include "action_interfaces/action/nav.hpp"
+[3.282s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3.282s] compilation terminated.
+[3.288s] gmake[2]: *** [CMakeFiles/NavigationClient.dir/build.make:76: CMakeFiles/NavigationClient.dir/src/NavigationClient.cpp.o] Error 1
+[3.288s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/NavigationClient.dir/all] Error 2
+[3.288s] gmake[1]: *** Waiting for unfinished jobs....
+[3.298s] /home/ibrahim/R2D2/src/r2d2_main/src/NavigationServer.cpp:14:10: fatal error: action_interfaces/action/nav.hpp: No such file or directory
+[3.298s]    14 | #include "action_interfaces/action/nav.hpp"
+[3.299s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3.299s] compilation terminated.
+[3.304s] gmake[2]: *** [CMakeFiles/NavigationServer.dir/build.make:76: CMakeFiles/NavigationServer.dir/src/NavigationServer.cpp.o] Error 1
+[3.304s] gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/NavigationServer.dir/all] Error 2
+[12.653s] [ 75%] Linking CXX executable CameraRotator
+[13.604s] [ 75%] Built target CameraRotator
+[13.606s] gmake: *** [Makefile:146: all] Error 2
+[13.611s] Invoked command in '/home/ibrahim/R2D2/src/r2d2_main/build/r2d2_main' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/R2D2/src/r2d2_main/build/r2d2_main -- -j16 -l16

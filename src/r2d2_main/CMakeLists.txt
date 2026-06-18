@@ -17,6 +17,7 @@ find_package(geometry_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(trajectory_msgs REQUIRED)
+find_package(visualization_msgs REQUIRED)
 
 add_executable(LidarDetect src/LidarDetect.cpp)
 target_include_directories(LidarDetect PUBLIC
@@ -27,7 +28,7 @@ target_compile_features(LidarDetect PUBLIC c_std_99 cxx_std_17)  # Require C99 a
 # Custom navigation action server / client
 add_executable(NavigationServer src/NavigationServer.cpp)
 ament_target_dependencies(NavigationServer
-  rclcpp rclcpp_action action_interfaces nav2_msgs nav_msgs tf2_ros geometry_msgs std_msgs)
+  rclcpp rclcpp_action action_interfaces nav2_msgs nav_msgs tf2_ros geometry_msgs std_msgs visualization_msgs)
 
 add_executable(NavigationClient src/NavigationClient.cpp)
 ament_target_dependencies(NavigationClient

@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-91dc5db84037515bd679.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "r2d2_main",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CameraRotator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CameraRotator-Release-1db6bcd6fa962835efda.json",
+					"name" : "CameraRotator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LidarDetect::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LidarDetect-Release-2e491626608404162f42.json",
+					"name" : "LidarDetect",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "NavigationClient::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-NavigationClient-Release-fd31e041f550416f38f1.json",
+					"name" : "NavigationClient",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "NavigationServer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-NavigationServer-Release-ebc6367c49ac8749ba56.json",
+					"name" : "NavigationServer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "r2d2_main_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-r2d2_main_uninstall-Release-ed3df67783070f9cecdb.json",
+					"name" : "r2d2_main_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-e739dc7d818347146ab1.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ibrahim/R2D2/build/r2d2_main",
+		"source" : "/home/ibrahim/R2D2/src/r2d2_main"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

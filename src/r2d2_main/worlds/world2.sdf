@@ -77,23 +77,23 @@
     </model>
 
     <!-- ===== Pillars (local obstacles for the costmap) ===== -->
-    <model name="pillar_1">
+    <!-- <model name="pillar_1">
       <static>true</static>
       <link name="link">
         <collision name="collision"><geometry><box><size>0.3 0.3 0.5</size></box></geometry></collision>
         <visual name="visual"><geometry><box><size>0.3 0.3 0.5</size></box></geometry></visual>
       </link>
       <pose>1 0 0.25 0 0 0</pose>
-    </model>
+    </model> -->
 
-    <model name="pillar_2">
+    <!-- <model name="pillar_2">
       <static>true</static>
       <link name="link">
         <collision name="collision"><geometry><box><size>0.3 0.3 0.5</size></box></geometry></collision>
         <visual name="visual"><geometry><box><size>0.3 0.3 0.5</size></box></geometry></visual>
       </link>
       <pose>-1 0 0.25 0 0 0</pose>
-    </model>
+    </model> -->
 
   </world>
 </sdf>

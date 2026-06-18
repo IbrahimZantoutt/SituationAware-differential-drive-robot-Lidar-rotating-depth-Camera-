@@ -6,9 +6,6 @@
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
 #include "action_interfaces/action/nav.hpp"
-#include "tf2_ros/transform_listener.h"
-#include "geometry_msgs/msg/transform_stamped.hpp"
-#include "tf2_ros/buffer.h"
 
 using Navigation = action_interfaces::action::Nav;
 using GoalHandle = rclcpp_action::ClientGoalHandle<Navigation>;
@@ -23,21 +20,25 @@ class NavigationClient : public rclcpp::Node{
         }
 
         input_thread_ = std::thread([this](){
-            while(true){
-                float x, y;
+            float x, y;
+            while(rclcpp::ok()){
                 std::cout << "Enter target X: ";
-                std::cin >> x;
+                if(!(std::cin >> x)){
+                    RCLCPP_WARN(this->get_logger(),
+                        "stdin closed/invalid -> stopping goal input loop. "
+                        "Run NavigationClient in an interactive terminal.");
+                    break;   // EOF / bad input: stop instead of spinning forever
+                }
                 std::cout << "Enter target Y: ";
-                std::cin >> y;
+                if(!(std::cin >> y)){
+                    RCLCPP_WARN(this->get_logger(),
+                        "stdin closed/invalid -> stopping goal input loop.");
+                    break;
+                }
                 sendGoal(x, y);
             }
         });
         input_thread_.detach();
-
-        //tf2 part:
-        nav_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
-        nav_listener_ = std::make_shared<tf2_ros::TransformListener>(*nav_buffer_, this);
-        
     }
 
     void sendGoal(float x, float y){
@@ -66,32 +67,11 @@ class NavigationClient : public rclcpp::Node{
         goal.target_x = x;
         goal.target_y = y;
         nav_client_->async_send_goal(goal, options);
-
-        timer_ = this->create_wall_timer(std::chrono::seconds(1), [this](){
-            try {
-                geometry_msgs::msg::TransformStamped t = nav_buffer_->lookupTransform(
-                    "map",
-                    "robot_base",
-                    tf2::TimePointZero
-                );
-                RCLCPP_INFO(this->get_logger(), "TF2 coordinates: x: %f  y: %f",
-                    t.transform.translation.x, t.transform.translation.y);
-            }
-            catch (const tf2::LookupException & e) {
-                RCLCPP_WARN(this->get_logger(), "Transform not available yet: %s", e.what());
-            }
-        });
     }
 
     private:
     rclcpp_action::Client<Navigation>::SharedPtr nav_client_;
     std::thread input_thread_;
-
-
-    rclcpp::TimerBase::SharedPtr timer_;
-    std::shared_ptr<tf2_ros::Buffer> nav_buffer_;
-    std::shared_ptr<tf2_ros::TransformListener> nav_listener_;
-
 };
 
 int main(int argc, char** argv){
