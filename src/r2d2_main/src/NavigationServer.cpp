@@ -56,7 +56,7 @@ class FrontierSearch {
     public:
         FrontierSearch(const nav_msgs::msg::OccupancyGrid & grid,
                        double potential_scale, double gain_scale,
-                       double min_frontier_size)
+                       double min_frontier_size, int occupied_threshold)
             : data_(grid.data),
               size_x_(grid.info.width),
               size_y_(grid.info.height),
@@ -65,7 +65,8 @@ class FrontierSearch {
               origin_y_(grid.info.origin.position.y),
               potential_scale_(potential_scale),
               gain_scale_(gain_scale),
-              min_frontier_size_(min_frontier_size) {}
+              min_frontier_size_(min_frontier_size),
+              occupied_threshold_(occupied_threshold) {}
 
         // Search for frontiers reachable from `position`, sorted by ascending cost.
         std::vector<Frontier> searchFrom(const geometry_msgs::msg::Point & position){
@@ -98,9 +99,11 @@ class FrontierSearch {
 
                 // Iterate over the 4-connected neighbourhood.
                 for (unsigned int nbr : nhood4(idx)){
-                    // Add free, unvisited cells to the queue (descending search so
-                    // we stay in genuinely free space and don't climb into cost).
-                    if (data_[nbr] >= 0 && data_[nbr] <= data_[idx] && !visited_flag[nbr]){
+                    // Add navigable, unvisited cells to the queue. We traverse any
+                    // known cell below the occupied threshold (not just value 0), so
+                    // the search can cross inflated corridors/doorways and still find
+                    // unexplored pockets behind them.
+                    if (isNavigable(nbr) && !visited_flag[nbr]){
                         visited_flag[nbr] = true;
                         bfs.push(nbr);
                     } else if (isNewFrontierCell(nbr, frontier_flag)){
@@ -180,13 +183,19 @@ class FrontierSearch {
             return output;
         }
 
-        // A frontier cell is unknown, not yet claimed, and borders free space.
+        // A frontier cell is unknown, not yet claimed, and borders navigable space.
         bool isNewFrontierCell(unsigned int idx, const std::vector<bool> & frontier_flag) const {
             if (data_[idx] >= 0 || frontier_flag[idx]) return false;  // must be unknown
             for (unsigned int nbr : nhood4(idx)){
-                if (data_[nbr] == 0) return true;                      // borders free space
+                if (isNavigable(nbr)) return true;                    // borders navigable space
             }
             return false;
+        }
+
+        // A known cell the robot could plausibly travel through (below the occupied
+        // threshold). Unknown (<0) and lethal/inflated-above-threshold are excluded.
+        bool isNavigable(unsigned int idx) const {
+            return data_[idx] >= 0 && data_[idx] < occupied_threshold_;
         }
 
         // cost = potential_scale * distance - gain_scale * size  (lower is better).
@@ -195,9 +204,9 @@ class FrontierSearch {
                    (gain_scale_ * f.size * resolution_);
         }
 
-        // BFS outward from `start` for the nearest free (value == 0) cell.
+        // BFS outward from `start` for the nearest navigable cell.
         bool nearestFreeCell(unsigned int & result, unsigned int start) const {
-            if (data_[start] == 0){ result = start; return true; }
+            if (isNavigable(start)){ result = start; return true; }
             const size_t n = static_cast<size_t>(size_x_) * size_y_;
             std::vector<bool> visited(n, false);
             std::queue<unsigned int> bfs;
@@ -206,7 +215,7 @@ class FrontierSearch {
             while (!bfs.empty()){
                 unsigned int idx = bfs.front();
                 bfs.pop();
-                if (data_[idx] == 0){ result = idx; return true; }
+                if (isNavigable(idx)){ result = idx; return true; }
                 for (unsigned int nbr : nhood8(idx)){
                     if (!visited[nbr]){ visited[nbr] = true; bfs.push(nbr); }
                 }
@@ -262,6 +271,7 @@ class FrontierSearch {
         double potential_scale_;
         double gain_scale_;
         double min_frontier_size_;
+        int occupied_threshold_;
 };
 
 // ===========================================================================
@@ -292,6 +302,11 @@ class NavigationServer : public rclcpp::Node
             min_frontier_size_ = this->declare_parameter("min_frontier_size", 0.5);
             planner_frequency_ = this->declare_parameter("planner_frequency", 0.33);
             progress_timeout_  = this->declare_parameter("progress_timeout", 30.0);
+            // Costmap cells at/above this cost (0..100) are treated as blocked by the
+            // frontier search. Below it (incl. inflation) is traversable, so the
+            // search can reach unexplored space through inflated corridors.
+            occupied_threshold_ = static_cast<int>(
+                this->declare_parameter("frontier_occupied_threshold", 90));
 
             nav_server_ = rclcpp_action::create_server<Navigation>(
                 this, "navigate",
@@ -394,8 +409,7 @@ class NavigationServer : public rclcpp::Node
                 }
 
                 frontier_blacklist_.clear();
-                prev_goal_ = geometry_msgs::msg::Point();
-                prev_distance_ = 0.0;
+                goal_active_ = false;
                 last_progress_ = this->now();
 
                 auto period = std::chrono::duration_cast<std::chrono::nanoseconds>(
@@ -442,7 +456,8 @@ class NavigationServer : public rclcpp::Node
             pose.x = rx;
             pose.y = ry;
 
-            FrontierSearch search(*costmap, potential_scale_, gain_scale_, min_frontier_size_);
+            FrontierSearch search(*costmap, potential_scale_, gain_scale_,
+                                  min_frontier_size_, occupied_threshold_);
             auto frontiers = search.searchFrom(pose);
 
             if (frontiers.empty()){
@@ -454,7 +469,34 @@ class NavigationServer : public rclcpp::Node
 
             publishFrontiers(frontiers, costmap->header);
 
-            // First frontier that isn't blacklisted.
+            // If we're already driving to a frontier, keep driving to it. Re-picking
+            // (and preempting) the goal every cycle makes the robot thrash between
+            // near-equal frontiers, and each Nav2 preemption-abort would wrongly
+            // blacklist a good frontier -- which is what ends exploration early. We
+            // only check that we're still making progress.
+            if (goal_active_){
+                // Progress = the robot is actually moving. Measuring straight-line
+                // distance to the goal would falsely flag "stuck" whenever the path
+                // winds around walls (distance to goal barely shrinks), so we instead
+                // reset the timer whenever the robot moves a meaningful amount.
+                if (std::hypot(rx - last_moved_x_, ry - last_moved_y_) > kProgressMoveDist){
+                    last_moved_x_ = rx;
+                    last_moved_y_ = ry;
+                    last_progress_ = this->now();
+                }
+                if ((this->now() - last_progress_) >
+                    rclcpp::Duration::from_seconds(progress_timeout_)){
+                    RCLCPP_WARN(this->get_logger(),
+                                "Robot stuck en route to (%.2f, %.2f); blacklisting it.",
+                                active_goal_.x, active_goal_.y);
+                    frontier_blacklist_.push_back(active_goal_);
+                    goal_active_ = false;                  // CANCELED callback replans
+                    nav2_client_->async_cancel_all_goals();
+                }
+                return;
+            }
+
+            // No active goal: pick the lowest-cost frontier that isn't blacklisted.
             auto frontier = std::find_if_not(frontiers.begin(), frontiers.end(),
                 [this](const Frontier & f){ return goalOnBlacklist(f.centroid); });
             if (frontier == frontiers.end()){
@@ -463,34 +505,24 @@ class NavigationServer : public rclcpp::Node
                 stopExploration();
                 return;
             }
-            geometry_msgs::msg::Point target = frontier->centroid;
 
-            // Time out if we are not making progress toward the current goal.
-            bool same_goal = std::hypot(target.x - prev_goal_.x, target.y - prev_goal_.y)
-                             < (5.0 * last_resolution_);
-            prev_goal_ = target;
-            if (!same_goal || prev_distance_ > frontier->min_distance){
-                last_progress_ = this->now();
-                prev_distance_ = frontier->min_distance;
-            }
-            if ((this->now() - last_progress_) >
-                rclcpp::Duration::from_seconds(progress_timeout_)){
-                frontier_blacklist_.push_back(target);
-                RCLCPP_WARN(this->get_logger(),
-                            "No progress toward (%.2f, %.2f); blacklisting it.",
-                            target.x, target.y);
-                makePlan();
-                return;
-            }
+            sendExploreGoal(frontier->centroid, costmap->header.frame_id, rx, ry);
+        }
 
-            // Nothing to do if we're already pursuing this goal.
-            if (same_goal) return;
-
+        // Send one exploration goal to Nav2 and start tracking progress toward it.
+        void sendExploreGoal(const geometry_msgs::msg::Point & target,
+                             const std::string & frame, double rx, double ry){
             RCLCPP_INFO(this->get_logger(), "Exploring frontier at (%.2f, %.2f).",
                         target.x, target.y);
 
+            goal_active_ = true;
+            active_goal_ = target;
+            last_moved_x_ = rx;
+            last_moved_y_ = ry;
+            last_progress_ = this->now();
+
             NavToPose::Goal nav2_goal;
-            nav2_goal.pose.header.frame_id = costmap->header.frame_id;
+            nav2_goal.pose.header.frame_id = frame;
             nav2_goal.pose.header.stamp = this->get_clock()->now();
             nav2_goal.pose.pose.position = target;
             nav2_goal.pose.pose.orientation.w = 1.0;
@@ -506,20 +538,26 @@ class NavigationServer : public rclcpp::Node
         // Result callback for an exploration goal (port of explore_lite reachedGoal).
         void reachedGoal(const NavToPoseGoalHandle::WrappedResult & result,
                          const geometry_msgs::msg::Point & frontier_goal){
+            goal_active_ = false;
             switch (result.code){
                 case rclcpp_action::ResultCode::SUCCEEDED:
+                    RCLCPP_INFO(this->get_logger(), "Reached frontier (%.2f, %.2f).",
+                                frontier_goal.x, frontier_goal.y);
                     break;
                 case rclcpp_action::ResultCode::ABORTED:
-                    // Aborted (often because we preempted it with a better frontier,
-                    // or it's genuinely unreachable): blacklist and let the timer
-                    // pick the next one.
+                    // Nav2 genuinely gave up on this goal (e.g. controller couldn't
+                    // make progress). Since we never preempt our own goals anymore,
+                    // an abort means it's really hard to reach -> blacklist it.
+                    RCLCPP_WARN(this->get_logger(),
+                                "Nav2 aborted (%.2f, %.2f); blacklisting it.",
+                                frontier_goal.x, frontier_goal.y);
                     frontier_blacklist_.push_back(frontier_goal);
-                    return;
+                    break;
                 case rclcpp_action::ResultCode::CANCELED:
-                    // Canceled, likely because exploration was stopped.
-                    return;
+                    // We canceled it (progress timeout, or exploration stopped).
+                    break;
                 default:
-                    return;
+                    break;
             }
             if (!explore_on_.load()) return;
             // Goal reached: replan immediately instead of waiting for the timer.
@@ -681,8 +719,11 @@ class NavigationServer : public rclcpp::Node
         rclcpp::TimerBase::SharedPtr oneshot_timer_;
         std::atomic<bool> explore_on_{false};
         std::vector<geometry_msgs::msg::Point> frontier_blacklist_;
-        geometry_msgs::msg::Point prev_goal_;
-        double prev_distance_ = 0.0;
+        bool goal_active_ = false;                  // are we currently driving to a frontier?
+        geometry_msgs::msg::Point active_goal_;     // the frontier we're driving to
+        double last_moved_x_ = 0.0;                 // robot pose when we last saw motion
+        double last_moved_y_ = 0.0;
+        static constexpr double kProgressMoveDist = 0.10;  // m of motion that counts as progress
         rclcpp::Time last_progress_;
         double last_resolution_ = 0.05;
 
@@ -692,6 +733,7 @@ class NavigationServer : public rclcpp::Node
         double min_frontier_size_;
         double planner_frequency_;
         double progress_timeout_;
+        int occupied_threshold_;
 
         rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr camera_angle_pub_;
 };
