@@ -237,6 +237,19 @@ steerable depth camera is all there.)
 - **`ament_cmake`** build system, with a custom `rosidl` action package
 
 ---
+Images:
+<img width="1622" height="1112" alt="image" src="https://github.com/user-attachments/assets/178b8510-405d-4067-9e66-50166f4640f4" />
+
+Before Explore Mode:
+<img width="1210" height="977" alt="image" src="https://github.com/user-attachments/assets/c3032b03-ad81-4e2a-939a-f77c50db134a" />
+
+Exploring:
+<img width="1220" height="982" alt="image" src="https://github.com/user-attachments/assets/7b954b8e-f029-48a3-9909-47da7d6be80c" />
+
+After Explore Mode:
+<img width="1220" height="977" alt="image" src="https://github.com/user-attachments/assets/b4c34eea-562e-4cc2-9fcb-3c3a357b11a6" />
+
+
 
 ## Repository layout
 
